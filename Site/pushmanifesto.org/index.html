@@ -7,9 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Push Manifesto</title>
 	<link href="./css/tabler.min.css" rel="stylesheet" />
+	<link href="./css/site.css" rel="stylesheet" />
 
 	<link rel="shortcut icon" href="./img/icon/favicon.ico" type="image/x-icon">
-	
+
 	<link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
@@ -19,7 +20,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="./img/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./img/icon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
@@ -46,22 +47,6 @@
 	<meta property="og:description"
 		content="I push the trolley around the supermarket. I push myself to exercise. I push my kids though school. Why is software development any different.">
 
-	<style>
-		.carousel-control-next-icon {
-			filter: invert(100%);
-		}
-
-		.carousel-control-prev-icon {
-			filter: invert(100%);
-		}
-
-		.carousel-inner {}
-
-		.carousel-outer {
-			margin-left: 120px !important;
-			margin-right: 120px !important;
-		}
-	</style>
 </head>
 
 <body class="antialiased antialiased border-top-wide border-primary">
@@ -69,11 +54,25 @@
 		<div class="page-wrapper">
 			<div class="container-xl">
 				<!-- Page title -->
-				<div class="page-header d-print-none">
-					<div class="row align-items-center ">
-						<h2 class="page-title">
-							Push Manifesto
-						</h2>
+				<div class="page-header">
+					<div class="row align-items-center">
+						<div class="col">
+							<h2 class="page-title">
+								Push Manifesto
+							</h2>
+						</div>
+						<div class="col-auto ms-auto">
+							<div class="btn-list">
+								<span class="d-none d-sm-inline">
+									<a href="https://github.com/wisejnrs/pushmanifesto" target="blank" class="btn btn-white">
+										<i class="fa fa-github"></i> GitHub
+									</a>
+									<a href="https://www.etsy.com/au/listing/1094343947/push-manifesto" class="btn btn-white">
+										Store
+									</a>
+								</span>																
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -208,49 +207,57 @@
 				</div>
 				</section>
 
-				<div class="empty pt-0">
-					<div class="empty-img p-1 m-1"><img src="./img/manifesto.svg" height="256" alt="Push Manifesto">
+				<div class="manifesto pt-0">
+					<div class="manifesto-img p-1 m-1"><img src="./img/manifesto.svg" height="256" alt="Push Manifesto">
 					</div>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Push:</strong> a logical unit of output that has a beginning, middle and end. 'End'
 						generally represents an outcome, doesn't need to immediately progress to the next, includes
 						all work items, has value, has an agreement of 'Done' - everybody gets something.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Ambiguity and Cognitive Bias:</strong> these kill projects. Offer high readability,
 						clear mental models, support diverse audiences, adopt simple conventions, reduced
 						complexity, take the least cost route, seek clarity and always, always question. Take an
 						agnostic approach.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
+						<strong>Risk:</strong> again kill projects. You don't get to space by crossing your fingers, continiously cite and counter risks.  Pretty sure Babbgage, Bool and Bayes knew Murphy. 
+					</p>
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Check-ins, Waypoints and Reviews:</strong> whilst stand-ups are useful, a low
 						ceremony, less noisy approach to follow-up on work items, prefer top and bottom of week,
 						honesty and shared understanding. In other words, "you're child's report card should not be
 						a surprise, by virtue of care and involvement".
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Identify and remove Road Blocks:</strong> early identification is key with an
 						inclusive approach taken.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Creating Shared Value:</strong> inclusive and humble approach in recognition that
 						your project, whilst having value and benefits contributes to wider goals.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Mise en place:</strong> don't start a project with-out your Mise en place done, get
 						those vegitables chopped.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Work Items:</strong> work items, tasks and cards transform Assets. Link the work
-						item to the asset. **Don't** deposit results back in the task. Knowledge management is first-class.
+						item to the asset. **Don't** deposit results back in the task. Knowledge management is
+						first-class.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
+					<p class="manifesto-subtitle text-muted pb-2">
 						<strong>Getting it Wrong:</strong> being learned, critical thinking and taking a scientific
 						appoach will always help you climb those mountains.
 					</p>
-					<p class="empty-subtitle text-muted pb-2">
-						<strong>Go Find Out:</strong> engage. Engage early, and enough, even if to make friends. Get out of the
+					<p class="manifesto-subtitle text-muted pb-2">
+						<strong>Go Find Out:</strong> engage. Engage early, and enough, even if to make friends. Get out
+						of the
 						chair and go find out. Do the work, and don't repeat the obvious.
+					</p>
+					<p class="manifesto-subtitle text-muted pb-2">
+						<strong>Know when to Roll Em:</strong> manage your work effort, dial in your approach and don't push your luck. Only kick a push if the conditions are favourable.  If it can go wrong it will - Murhpy's law applies.
 					</p>
 
 				</div>
