@@ -150,7 +150,7 @@
         {"author": "Michael Wise", "quote": "Creativity has no timeline."}, 
         {"author": "Michael Wise", "quote": "People and Data don't change. Pretty sure there's a cave painting out there with FNAME and LNAME on it."}, 
         {"author": "David Wise", "quote": "Create habits. People, process, technology and habit. If you want people to do things create habits."}, 
-        {"author": "Helmuth von Moltke the Elder, Carl von Clausewitz, Dwight D. Eisenhower, Apocryphal. Ok. Just about everyone.", "quote": "No plan survives first encounter."}, 
+        {"author": "Dwight D. Eisenhower", "quote": "No plan survives first encounter."}, 
         {"author": "Julia Galef", "quote": "Scout Mindset: being able to see things as they are, not as you wish they were."},
 		{"author": "Dennis Shortis", "quote": "Perfect is the destroyer of good enough!"}
         ]
@@ -185,7 +185,7 @@
       		return
       	}
       	if (direction == 'forward') {
-      		if (quoteID == 13) {} else quoteID++
+      		if (quoteID == 15) {} else quoteID++
       		document.getElementById('carousel').innerHTML = `<p>❝${tweets[quoteID].quote}❞</p><p style="margin-top: 1rem; color: #ccc"> - ${tweets[quoteID].author}</p>`
       		document.getElementById('carousel-link').href = "https://twitter.com/intent/tweet?text=" + tweets[quoteID].quote
       		return
