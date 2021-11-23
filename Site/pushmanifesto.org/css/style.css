@@ -156,6 +156,11 @@ body {
   padding-top: 4rem;
   padding-bottom: 4rem;
   min-height: 375px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner {
@@ -500,3 +505,4 @@ body {
   background-size: 100%;
   transition: background 0s;
 }
+
