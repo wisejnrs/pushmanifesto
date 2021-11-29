@@ -1,5 +1,4 @@
 # Push Manifesto
 
-## A way to do creativity
+The "Push Manifesto" is about _waypoints_, the founder's vision and the collective journey towards a creative outcome.
 
-> Push Manifesto is about waypoints, vision and the journey towards an outcome.
