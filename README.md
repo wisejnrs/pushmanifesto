@@ -1,8 +1,8 @@
 # Overview
 
-**"Push Manifesto"** is about vision, collaboration, inclusive behaviours, determination, communication, learning, and above all prioritizes the _journey_; using _waypoints_ over iterations and milestones, balancing desire for fit-for-purpose, targeting shared value outcomes for users and stakeholders.
+**Push Manifesto** is about vision, collaboration, inclusive behaviours, determination, communication, learning, and above all prioritizes the _journey_; using _waypoints_ over iterations and milestones, balancing desire for fit-for-purpose, targeting shared value outcomes for users and stakeholders.
 
-**"Push Manifesto"** feeds the Maturity Model, evidence-based mindset, supporting the scientific approach daring to explore the latent space, with a pragmatic world-view.
+**Push Manifesto** feeds the Maturity Model, evidence-based mindset, supporting the scientific approach daring to explore the latent space, with a pragmatic world-view.
 
 # Principles
 
