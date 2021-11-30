@@ -147,6 +147,17 @@ body {
   }
 }
 
+.header-logo {  
+  line-height: 1.25;
+  text-align: center;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);  
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+}
+
 .link {
   color: var(--color-links-primary);
 }
@@ -264,6 +275,20 @@ body {
   font-size: 1.75rem;
   line-height: 1.25;
   text-align: center;
+  background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);  
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+
+.services-paragraph {  
+  line-height: 1.25;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .services {
@@ -286,7 +311,7 @@ body {
 }
 
 .services-item {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-primary);  
   padding: 1.25rem;
   border-radius: 7px;
   border: 1px solid #011C3D;
