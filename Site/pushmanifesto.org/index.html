@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/manifesto-ico.svg" />
     <title>Push Manifest - A way to do creativity</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style-2021-11-30-1.css">
+    <link rel="stylesheet" href="css/style-2021-11-30-2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="services-outer">
-        <div class="responsive-wrapper">
+        <div class="responsive-wrapper hero-gradient">
           <h2 class="services-title">The Manifesto</h2>
           <p class="services-paragraph"><strong>Push Manifesto</strong> is about vision, collaboration, inclusive behaviours, determination, communication, learning, and above all prioritizes <i>the journey</i>; using <i>waypoints</i> over iterations and milestones, balancing desire for fit-for-purpose, targeting shared value outcomes for users and stakeholders.</p>
           <p class="services-paragraph"><strong>Push Manifesto</strong> feeds the Maturity Model, evidence-based mindset, supporting the scientific approach daring to explore the latent space, with a pragmatic world-view.</p>        
@@ -164,14 +164,15 @@
         {"author": "David Wise", "quote": "Create habits. People, process, technology and habit. If you want people to do things create habits."}, 
         {"author": "Dwight D. Eisenhower", "quote": "No plan survives first encounter."}, 
         {"author": "Julia Galef", "quote": "Scout Mindset: being able to see things as they are, not as you wish they were."},
-		{"author": "Dennis Shortis", "quote": "Perfect is the destroyer of good enough!"}
+		{"author": "Dennis Shortis", "quote": "Perfect is the destroyer of good enough!"},
+        {"author": "Richard Feynman", "quote": "You are under no obligation to remain the same person you were a year ago, a month ago, or even a day ago. You are here to create yourself, continuously."}
         ]
 
       var [quoteID, pauseQuotes] = [-1, false]
       async function getQuoteFromTweets() {
-      	for (let time = 0; time < 16; time++) {
+      	for (let time = 0; time < 17; time++) {
       		if (pauseQuotes === true) return
-      		if (time >= 15) {
+      		if (time >= 16) {
       			let time = 0;
       			quoteID = -1;
       			getQuoteFromTweets()
@@ -197,7 +198,7 @@
       		return
       	}
       	if (direction == 'forward') {
-      		if (quoteID == 15) {} else quoteID++
+      		if (quoteID == 16) {} else quoteID++
       		document.getElementById('carousel').innerHTML = `<p>❝${tweets[quoteID].quote}❞</p><p style="margin-top: 1rem; color: #ccc"> - ${tweets[quoteID].author}</p>`
       		document.getElementById('carousel-link').href = "https://twitter.com/intent/tweet?text=" + tweets[quoteID].quote
       		return
