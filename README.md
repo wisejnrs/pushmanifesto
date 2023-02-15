@@ -24,7 +24,7 @@ In summary, the Push Manifesto is a set of principles and values that guide orga
 
 - **Creating Shared Value**: An inclusive and humble approach should be taken to recognize that the project, while having value and benefits, contributes to wider goals. The project should be designed with the goal of creating shared value for all stakeholders.
 
-- **Mise en place**: Don't start a project without preparing your "mise en place". This means getting all the necessary elements in place before starting the project.
+- **Mise en place**: Mise en place is a critical concept in project management. It means taking the time to get all the necessary elements in place before starting the project. This can include things like gathering resources, defining project scope, setting goals and timelines, identifying risks and potential issues, and ensuring that team members have the necessary skills and training to complete the project successfully. By taking the time to prepare your mise en place, you can reduce the risk of unexpected delays, budget overruns, and other issues that can derail a project. Additionally, having a clear plan in place from the beginning can help to ensure that everyone is on the same page and working towards the same goals. While it may take extra time and effort upfront, investing in your mise en place is a critical component of any successful project.
 
 - **Work Items**: Work items, tasks, and cards transform assets. Each work item should be linked to the corresponding asset, and results should be deposited in the appropriate place, with knowledge management being a first-class consideration.
 
