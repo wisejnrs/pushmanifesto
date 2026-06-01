@@ -1,15 +1,17 @@
 /** @type {import('next').NextConfig} */
 
-// Content Security Policy — covers the original site's integrations:
-// Google Fonts + Material Icons, Google Analytics (gtag), Buy Me a Coffee, Vercel.
+// Content Security Policy — covers the original site's integrations (Google
+// Fonts + Material Icons, Google Analytics, Buy Me a Coffee, Vercel) plus the
+// blog (Mermaid needs 'unsafe-eval'; posts embed audio/video from the CDN).
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com https://www.googletagmanager.com https://cdnjs.buymeacoffee.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://www.googletagmanager.com https://cdnjs.buymeacoffee.com;
   script-src-elem 'self' 'unsafe-inline' https://va.vercel-scripts.com https://www.googletagmanager.com https://cdnjs.buymeacoffee.com;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com;
   img-src 'self' data: blob: https://cdn.buymeacoffee.com https://www.googletagmanager.com https://*.google-analytics.com;
   font-src 'self' https://fonts.gstatic.com;
+  media-src 'self' https://s3.us-west-1.amazonaws.com https://cdn.wisejnrs.net;
   connect-src 'self' https://va.vercel-scripts.com https://www.googletagmanager.com https://*.google-analytics.com;
   frame-src 'self';
   object-src 'none';

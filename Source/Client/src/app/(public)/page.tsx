@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Script from "next/script";
 
 import { ManifestoClient } from "@/components/manifesto-client";
@@ -105,6 +106,9 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </div>
           <nav className="header-nav">
+            <Link href="/blog" className="header-nav-item">
+              Blog
+            </Link>
             <a
               target="_blank"
               href="https://github.com/wisejnrs/pushmanifesto"
