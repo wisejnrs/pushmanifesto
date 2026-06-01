@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 
-// Content Security Policy — start strict, widen per-integration as the app grows.
+// Content Security Policy — covers the original site's integrations:
+// Google Fonts + Material Icons, Google Analytics (gtag), Buy Me a Coffee, Vercel.
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com;
-  script-src-elem 'self' 'unsafe-inline' https://va.vercel-scripts.com;
-  style-src 'self' 'unsafe-inline';
-  img-src 'self' data: blob:;
-  font-src 'self';
-  connect-src 'self' https://va.vercel-scripts.com;
+  script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com https://www.googletagmanager.com https://cdnjs.buymeacoffee.com;
+  script-src-elem 'self' 'unsafe-inline' https://va.vercel-scripts.com https://www.googletagmanager.com https://cdnjs.buymeacoffee.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  img-src 'self' data: blob: https://cdn.buymeacoffee.com https://www.googletagmanager.com https://*.google-analytics.com;
+  font-src 'self' https://fonts.gstatic.com;
+  connect-src 'self' https://va.vercel-scripts.com https://www.googletagmanager.com https://*.google-analytics.com;
+  frame-src 'self';
   object-src 'none';
   base-uri 'self';
   form-action 'self';
