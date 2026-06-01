@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 // stylesheet + Material Icons are scoped to this route group only, so they
 // never leak into the (Tailwind-based) /blog routes.
 export const metadata: Metadata = {
-  title: "Push Manifest - A way to do creativity",
+  title: { absolute: "Push Manifest - A way to do creativity" },
   openGraph: {
     title: "Push Manifesto — A way to do creativity",
     description:
