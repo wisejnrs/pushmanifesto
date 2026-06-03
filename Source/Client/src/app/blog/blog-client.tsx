@@ -1,128 +1,338 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "next/link";
-import { CalendarDays, Clock, Search } from "lucide-react";
-
-import type { BlogPost } from "@/lib/blog";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
+import { CalendarDays, Clock, Tag, User, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { BlogPost } from "@/lib/blog";
+import SearchComponent from "@/components/blog/search-component";
+import { useSearch } from "@/hooks/use-search";
+import { useKeyboardNavigation } from "@/hooks/use-keyboard-navigation";
+import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
-function formatDate(d: string) {
-  return new Date(d).toLocaleDateString("en-AU", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+interface BlogClientProps {
+    initialPosts: BlogPost[];
+    categories: string[];
+    featuredPost: BlogPost | null;
+    allTags: string[];
 }
 
-export default function BlogClient({
-  posts,
-  categories,
-  tags,
-}: {
-  posts: BlogPost[];
-  categories: string[];
-  tags: string[];
-}) {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<string>("All");
-  const [tag, setTag] = useState<string | null>(null);
+export default function BlogClient({ initialPosts, categories, featuredPost, allTags }: BlogClientProps) {
+    const router = useRouter();
+    const blogGridRef = useRef<HTMLDivElement>(null);
 
-  const filtered = useMemo(() => {
-    const q = query.toLowerCase().trim();
-    return posts.filter((p) => {
-      if (category !== "All" && p.category !== category) return false;
-      if (tag && !p.tags.includes(tag)) return false;
-      if (!q) return true;
-      return (
-        p.title.toLowerCase().includes(q) ||
-        p.excerpt.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q))
-      );
+    const search = useSearch(initialPosts);
+    const {
+        searchResults,
+        searchStats,
+        addTagFilter,
+        filters
+    } = search;
+
+    // Keyboard navigation for blog posts grid
+    useKeyboardNavigation({
+        containerRef: blogGridRef,
+        itemSelector: '[data-keyboard-item]',
+        gridMode: true,
+        columnsPerRow: 3, // lg:grid-cols-3
+        onSelect: (index) => {
+            const post = regularPosts[index];
+            if (post) {
+                router.push(`/blog/${post.slug}`);
+            }
+        }
     });
-  }, [posts, query, category, tag]);
 
-  return (
-    <div className="space-y-10">
-      <header className="space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900">Blog</h1>
-        <p className="text-slate-500">
-          Writing on creativity, delivery, and the Push philosophy.
-        </p>
-      </header>
+    // Get posts to display (either search results or all posts)
+    const displayPosts = searchStats.hasQuery || searchStats.hasFilters
+        ? searchResults.map(result => result.item)
+        : initialPosts;
 
-      <div className="flex flex-col gap-4">
-        <div className="relative max-w-md">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search posts…"
-            aria-label="Search posts"
-            className="h-10 w-full rounded-md border border-slate-300 bg-white pl-9 pr-3 text-sm text-slate-800 outline-none placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20"
-          />
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {["All", ...categories].map((c) => (
-            <button
-              key={c}
-              onClick={() => setCategory(c)}
-              className={
-                "rounded-full border px-3 py-1 text-xs transition " +
-                (category === c
-                  ? "border-teal-500/50 bg-teal-50 text-teal-700"
-                  : "border-slate-200 text-slate-500 hover:text-slate-900")
-              }
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {tags.map((t) => (
-              <button
-                key={t}
-                onClick={() => setTag(tag === t ? null : t)}
-                className={
-                  "text-xs transition " +
-                  (tag === t ? "text-teal-700" : "text-slate-400 hover:text-slate-600")
-                }
-              >
-                #{t}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
+    const regularPosts = displayPosts.filter(post => !post.featured);
 
-      {filtered.length === 0 ? (
-        <p className="text-slate-500">No posts match your filters.</p>
-      ) : (
-        <div className="grid gap-6">
-          {filtered.map((p) => (
-            <Link
-              key={p.slug}
-              href={`/blog/${p.slug}`}
-              className="block rounded-xl border border-slate-200 bg-white p-6 transition hover:border-teal-300 hover:shadow-sm"
-            >
-              <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-slate-500">
-                <Badge variant="secondary">{p.category}</Badge>
-                <span className="inline-flex items-center gap-1">
-                  <CalendarDays className="h-3.5 w-3.5" />
-                  {formatDate(p.publishedAt)}
-                </span>
-                <span className="inline-flex items-center gap-1">
-                  <Clock className="h-3.5 w-3.5" />
-                  {p.readingTime} min read
-                </span>
-              </div>
-              <h2 className="text-xl font-semibold text-slate-900">{p.title}</h2>
-              <p className="mt-2 text-slate-600">{p.excerpt}</p>
-            </Link>
-          ))}
+    // Handle tag click
+    const handleTagClick = (tag: string) => {
+        // Only add tag if it's not already selected
+        if (!filters.tags?.includes(tag)) {
+            addTagFilter(tag);
+        }
+    };
+
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-background to-muted/30">
+            <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-8">
+                {/* Header */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-12"
+                >
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                        <span className="bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent">
+                            Blog
+                        </span>
+                    </h1>
+                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                        Insights on music production, technology, and the intersection of creativity and code.
+                    </p>
+                </motion.div>
+
+                {/* Advanced Search */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                    className="mb-8 max-w-2xl mx-auto"
+                >
+                    <SearchComponent
+                        posts={initialPosts}
+                        placeholder="Search articles by title, content, tags, or author..."
+                        showFilters={true}
+                        maxResults={8}
+                        autoFocus={true}
+                        searchState={search}
+                    />
+                </motion.div>
+
+                {/* Featured Post */}
+                {featuredPost && !searchStats.hasQuery && !searchStats.hasFilters && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.6 }}
+                        className="mb-12"
+                    >
+                        <FeaturedPostCard post={featuredPost} onTagClick={handleTagClick} />
+                    </motion.div>
+                )}
+
+                {/* Regular Posts Grid */}
+                <motion.div
+                    ref={blogGridRef}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6, duration: 0.6 }}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    {regularPosts.map((post, index) => (
+                        <motion.div
+                            key={post.slug}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.1 * index, duration: 0.5 }}
+                            data-keyboard-item
+                            tabIndex={0}
+                            className="focus:outline-none"
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                    e.preventDefault();
+                                    router.push(`/blog/${post.slug}`);
+                                }
+                            }}
+                            role="button"
+                            aria-label={`Read blog post: ${post.title}`}
+                        >
+                            <PostCard post={post} onTagClick={handleTagClick} />
+                        </motion.div>
+                    ))}
+                </motion.div>
+
+                {displayPosts.length === 0 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="text-center py-12"
+                        role="status"
+                        aria-live="polite"
+                    >
+                        <p className="text-muted-foreground text-lg">
+                            No posts found matching your criteria.
+                        </p>
+                    </motion.div>
+                )}
+            </div>
         </div>
-      )}
-    </div>
-  );
+    );
+}
+
+function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: string) => void }) {
+    return (
+        <Card className="overflow-hidden shadow-2xl bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-500">
+            <div className="md:flex">
+                <div className="md:w-1/2">
+                    {post.coverImage && (
+                        <div className="relative h-72 md:h-full bg-muted/20 overflow-hidden">
+                            <Image
+                                src={post.coverImage}
+                                alt={post.title}
+                                fill
+                                className="object-cover hover:scale-[1.02] transition-transform duration-700 ease-out"
+                                priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                        </div>
+                    )}
+                </div>
+                <div className="md:w-1/2 p-10 flex flex-col justify-center">
+                    <div className="flex items-center gap-3 mb-6">
+                        <Badge className="bg-gradient-to-r from-[#D247BF] to-[#FF6B35] text-white shadow-lg px-4 py-1.5 text-sm font-medium tracking-wide">FEATURED</Badge>
+                        <Badge className="bg-background/30 backdrop-blur-xl text-foreground border-white/30 dark:border-slate-400/40 px-4 py-1.5 text-sm font-medium tracking-wide">{post.category}</Badge>
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-[1.2] tracking-tight">
+                        <Link href={`/blog/${post.slug}`} className="hover:opacity-90 transition-opacity">
+                            <span className="bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent">
+                                {post.title}
+                            </span>
+                        </Link>
+                    </h2>
+                    <p className="text-muted-foreground text-base mb-8 leading-[1.75] max-w-prose">
+                        {post.excerpt}
+                    </p>
+                    <div className="flex items-center gap-6 mb-8 text-sm text-muted-foreground/80">
+                        <div className="flex items-center gap-2">
+                            <CalendarDays className="h-4 w-4 opacity-70" />
+                            <span className="font-medium">{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Clock className="h-4 w-4 opacity-70" />
+                            <span className="font-medium">{post.readingTime} min read</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <User className="h-4 w-4 opacity-70" />
+                            <span className="font-medium">{post.author.name}</span>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2.5 mb-8">
+                        {post.tags.slice(0, 6).map(tag => (
+                            <motion.div key={tag} whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05, y: -2 }}>
+                                <Badge
+                                    className="bg-background/25 backdrop-blur-xl text-foreground/90 border-white/20 dark:border-slate-400/30 hover:bg-background/35 dark:hover:bg-background/30 hover:border-white/30 cursor-pointer px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-200"
+                                    role="button"
+                                    tabIndex={0}
+                                    onClick={() => onTagClick(tag)}
+                                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onTagClick(tag); } }}
+                                    aria-label={`Filter by tag: ${tag}`}
+                                >
+                                    {tag}
+                                </Badge>
+                            </motion.div>
+                        ))}
+                        {post.tags.length > 6 && (
+                            <Badge className="bg-background/15 backdrop-blur-xl text-muted-foreground/70 border-white/15 cursor-default px-3 py-1.5 text-xs">
+                                +{post.tags.length - 6}
+                            </Badge>
+                        )}
+                    </div>
+                    <motion.div whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.02 }}>
+                        <Button asChild variant="outline" className="h-11 px-6 font-semibold tracking-wide group/btn">
+                            <Link href={`/blog/${post.slug}`}>
+                                Read Article
+                                <motion.div
+                                    whileHover={{ x: 3 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                                    className="inline-block"
+                                >
+                                    <ChevronRight className="h-5 w-5 ml-2" />
+                                </motion.div>
+                            </Link>
+                        </Button>
+                    </motion.div>
+                </div>
+            </div>
+        </Card>
+    );
+}
+
+function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: string) => void }) {
+    return (
+        <Card className="h-full overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group flex flex-col focus-within:ring-2 focus-within:ring-[#F97316] focus-within:ring-offset-2 focus-within:ring-offset-background bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10">
+            {post.coverImage && (
+                <div className="relative h-56 overflow-hidden bg-muted/20">
+                    <Image
+                        src={post.coverImage}
+                        alt={post.title}
+                        fill
+                        className="object-cover group-hover:scale-[1.08] transition-transform duration-700 ease-out"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+            )}
+            <CardHeader className="pb-4 pt-6 px-6">
+                <div className="flex items-center justify-between mb-3">
+                    <Badge className="bg-background/30 backdrop-blur-xl text-foreground/90 border-white/25 dark:border-slate-400/35 px-3 py-1 text-xs font-medium tracking-wide">
+                        {post.category}
+                    </Badge>
+                    <div className="flex items-center gap-1.5 text-xs text-muted-foreground/70">
+                        <CalendarDays className="h-3.5 w-3.5" />
+                        <span className="font-medium">{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    </div>
+                </div>
+                <h3 className="font-bold text-xl leading-[1.3] tracking-tight mb-3 group-hover:text-[#F97316] transition-colors duration-300">
+                    <Link href={`/blog/${post.slug}`} className="hover:underline decoration-2 underline-offset-4 decoration-[#F97316]/50">
+                        {post.title}
+                    </Link>
+                </h3>
+            </CardHeader>
+            <CardContent className="pt-0 px-6 pb-6 flex-grow flex flex-col">
+                <p className="text-muted-foreground/90 text-sm mb-5 leading-[1.7] line-clamp-3 flex-grow">
+                    {post.excerpt}
+                </p>
+                <div className="flex items-center gap-4 mb-5 text-xs text-muted-foreground/70">
+                    <div className="flex items-center gap-1.5">
+                        <Clock className="h-3.5 w-3.5" />
+                        <span className="font-medium">{post.readingTime} min</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                        <User className="h-3.5 w-3.5" />
+                        <span className="font-medium">{post.author.name}</span>
+                    </div>
+                </div>
+                {/* Tags at bottom of content area */}
+                <div className="flex flex-wrap gap-2 mt-auto">
+                    {post.tags.slice(0, 3).map(tag => (
+                        <motion.div key={tag} whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05, y: -2 }}>
+                            <Badge
+                                className="bg-background/25 backdrop-blur-xl text-foreground/80 border-white/20 dark:border-slate-400/30 hover:bg-background/35 hover:border-[#F97316]/30 cursor-pointer px-2.5 py-1 text-xs font-medium tracking-wide transition-all duration-200"
+                                role="button"
+                                tabIndex={0}
+                                onClick={() => onTagClick(tag)}
+                                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onTagClick(tag); } }}
+                                aria-label={`Filter by tag: ${tag}`}
+                            >
+                                {tag}
+                            </Badge>
+                        </motion.div>
+                    ))}
+                    {post.tags.length > 3 && (
+                        <Badge className="bg-background/15 backdrop-blur-xl text-muted-foreground/60 border-white/15 cursor-default px-2.5 py-1 text-xs">
+                            +{post.tags.length - 3}
+                        </Badge>
+                    )}
+                </div>
+            </CardContent>
+            <CardFooter className="pt-0 px-6 pb-6">
+                <motion.div whileTap={{ scale: 0.97 }} whileHover={{ scale: 1.02 }} className="w-full">
+                    <Button asChild variant="outline" className="w-full h-10 font-semibold tracking-wide group/btn">
+                        <Link href={`/blog/${post.slug}`}>
+                            Read Article
+                            <motion.div
+                                whileHover={{ x: 3 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                                className="inline-block"
+                            >
+                                <ChevronRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-0.5 transition-transform" />
+                            </motion.div>
+                        </Link>
+                    </Button>
+                </motion.div>
+            </CardFooter>
+        </Card>
+    );
 }

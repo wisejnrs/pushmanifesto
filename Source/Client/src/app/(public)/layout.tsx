@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
-// The landing page keeps the original pushmanifesto.org look. The original
-// stylesheet + Material Icons are scoped to this route group only, so they
-// never leak into the (Tailwind-based) /blog routes.
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
+
 export const metadata: Metadata = {
-  title: { absolute: "Push Manifest - A way to do creativity" },
+  title: { absolute: "Push Manifesto — A way to do creativity" },
   openGraph: {
     title: "Push Manifesto — A way to do creativity",
     description:
@@ -17,13 +17,10 @@ export const metadata: Metadata = {
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <link
-        href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="/css/style-2021-11-30-5.css" />
-      {children}
-    </>
+    <div className="flex min-h-[100dvh] flex-col">
+      <SiteHeader />
+      <main className="flex-1">{children}</main>
+      <SiteFooter />
+    </div>
   );
 }

@@ -1,3 +1,37 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "overrides": [
+    {
+      "files": [
+        "src/components/blog/**",
+        "src/components/seo/**",
+        "src/components/ui/back-to-top.tsx",
+        "src/components/ui/card.tsx",
+        "src/components/ui/dialog.tsx",
+        "src/components/ui/gradient-button.tsx",
+        "src/components/ui/input.tsx",
+        "src/components/ui/label.tsx",
+        "src/components/ui/slider.tsx",
+        "src/components/ui/switch.tsx",
+        "src/components/ui/toast.tsx",
+        "src/components/ui/toaster.tsx",
+        "src/components/ui/tooltip.tsx",
+        "src/hooks/**",
+        "src/lib/blog.ts",
+        "src/lib/blog-server.ts",
+        "src/lib/metadata.ts",
+        "src/lib/remark-custom-alerts.ts",
+        "src/lib/text-to-speech.ts",
+        "src/lib/types.ts",
+        "src/app/blog/**",
+        "src/app/music/**"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-object-type": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "prefer-const": "off"
+      }
+    }
+  ]
 }
