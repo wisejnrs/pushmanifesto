@@ -306,6 +306,28 @@
       linear-gradient(to bottom, hsl(var(--border) / 0.5) 1px, transparent 1px);
     background-size: 56px 56px;
   }
+  /* Glowing brand gradient border that lights up on card hover. */
+  .gradient-ring::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: linear-gradient(135deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    background-size: 200% 200%;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+  }
+  .gradient-ring:hover::after {
+    opacity: 1;
+    animation: gradient-pan 6s ease infinite;
+  }
 }
 
 @keyframes gradient-pan {

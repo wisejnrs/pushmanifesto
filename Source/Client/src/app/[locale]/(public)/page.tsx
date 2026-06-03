@@ -203,23 +203,22 @@ gtag('config', 'G-VZ3GBPF421');`}
                     href={tweetHref(`${label}: ${description.replace(/[*_]/g, "")}`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group glass relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_28px_56px_-26px_rgba(231,60,111,0.45)]"
+                    className="group glass gradient-ring relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_34px_70px_-22px_rgba(231,60,111,0.55)]"
                   >
-                    {/* brand-gradient accent line wipes in left→right on hover */}
+                    {/* brand wash glows up from the bottom on hover */}
                     <span
                       aria-hidden
-                      className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px origin-left scale-x-0 bg-gradient-brand transition-transform duration-500 ease-out group-hover:scale-x-100"
-                    />
-                    {/* faint brand wash fades in */}
-                    <span
-                      aria-hidden
-                      className="pointer-events-none absolute inset-0 -z-10 bg-gradient-brand opacity-0 transition-opacity duration-500 group-hover:opacity-[0.07]"
+                      className="pointer-events-none absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                      style={{
+                        background:
+                          "radial-gradient(120% 90% at 50% 120%, rgba(231,60,111,0.16), transparent 70%)",
+                      }}
                     />
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-all duration-300 group-hover:scale-110 group-hover:text-[#e73c6f]">
+                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-all duration-300 group-hover:scale-125 group-hover:text-[#e73c6f]">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#e73c6f]" />
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:scale-110 group-hover:text-[#e73c6f]" />
                     </div>
                     <h3 className="font-display text-lg font-semibold tracking-tight transition-colors duration-300 group-hover:text-foreground">
                       {label}
