@@ -37,18 +37,54 @@
     "eyebrow": "Prinzipien",
     "heading": "Die Bausteine eines Push.",
     "items": {
-      "push": { "label": "Push", "description": "Eine logische Arbeitseinheit mit Anfang, Mitte und Ende. Das ‚Ende‘ steht meist für ein Ergebnis, muss nicht sofort ins nächste übergehen, umfasst alle Arbeitsschritte, hat Wert und eine Vereinbarung über ‚Fertig‘ — jeder bekommt etwas." },
-      "ambiguity": { "label": "Mehrdeutigkeit & kognitive Verzerrung", "description": "Sie bringen Projekte zu Fall. Sorge für hohe Lesbarkeit, klare mentale Modelle, unterstütze vielfältige Zielgruppen, nutze einfache Konventionen, reduziere Komplexität, wähle den kostengünstigsten Weg, suche Klarheit und hinterfrage immer, immer. Bleib ergebnisoffen." },
-      "risk": { "label": "Risiko", "description": "Bringen ebenfalls Projekte zu Fall. Man kommt nicht ins All, indem man die Daumen drückt — benenne und entkräfte Risiken fortlaufend. Babbage, Boole und Bayes kannten sicher auch Murphy." },
-      "checkins": { "label": "Check-ins, Wegpunkte & Reviews", "description": "Stand-ups sind nützlich, doch bevorzuge eine zeremonienarme, ruhigere Nachverfolgung der Aufgaben — Anfang und Ende der Woche, mit Ehrlichkeit und geteiltem Verständnis. Das Zeugnis deines Kindes sollte dank Fürsorge und Beteiligung keine Überraschung sein." },
-      "roadblocks": { "label": "Hindernisse erkennen & beseitigen", "description": "Frühes Erkennen ist entscheidend, mit einem inklusiven Vorgehen." },
-      "sharedValue": { "label": "Gemeinsamen Mehrwert schaffen", "description": "Ein inklusiver, bescheidener Ansatz — in dem Bewusstsein, dass dein Projekt, so wertvoll es auch ist, zu größeren Zielen beiträgt." },
-      "miseEnPlace": { "label": "Mise en place", "description": "Beginne kein Projekt ohne deine Mise en place. Schnipsel erst das Gemüse." },
-      "workItems": { "label": "Arbeitselemente", "description": "Aufgaben, Items und Karten transformieren Assets. Verknüpfe das Arbeitselement mit dem Asset. Lege Ergebnisse **nicht** in der Aufgabe ab. Wissensmanagement ist erstklassig." },
-      "gettingItWrong": { "label": "Fehler machen", "description": "Gelehrtheit, kritisches Denken und ein wissenschaftlicher Ansatz helfen dir stets, diese Berge zu erklimmen." },
-      "goFindOut": { "label": "Geh und finde es heraus", "description": "Engagiere dich. Früh und genug — und sei es, um Freundschaften zu knüpfen. Steh vom Stuhl auf und finde es heraus. Mach die Arbeit und wiederhole nicht das Offensichtliche." },
-      "rollEm": { "label": "Wissen, wann man es wagt", "description": "Steuere deinen Aufwand, justiere dein Vorgehen und überreize nicht. Starte einen Push nur, wenn die Bedingungen günstig sind. Was schiefgehen kann, geht schief — Murphys Gesetz gilt." },
-      "hypothesis": { "label": "Hypothese", "description": "Jede große _Idee_ beginnt mit einer Teststrategie. Sie existiert nicht, wenn sie nicht testbar ist." }
+      "push": {
+        "label": "Push",
+        "description": "Eine logische Arbeitseinheit mit Anfang, Mitte und Ende. Das ‚Ende‘ steht meist für ein Ergebnis, muss nicht sofort ins nächste übergehen, umfasst alle Arbeitsschritte, hat Wert und eine Vereinbarung über ‚Fertig‘ — jeder bekommt etwas."
+      },
+      "ambiguity": {
+        "label": "Mehrdeutigkeit & kognitive Verzerrung",
+        "description": "Sie bringen Projekte zu Fall. Sorge für hohe Lesbarkeit, klare mentale Modelle, unterstütze vielfältige Zielgruppen, nutze einfache Konventionen, reduziere Komplexität, wähle den kostengünstigsten Weg, suche Klarheit und hinterfrage immer, immer. Bleib ergebnisoffen."
+      },
+      "risk": {
+        "label": "Risiko",
+        "description": "Bringen ebenfalls Projekte zu Fall. Man kommt nicht ins All, indem man die Daumen drückt — benenne und entkräfte Risiken fortlaufend. Babbage, Boole und Bayes kannten sicher auch Murphy."
+      },
+      "checkins": {
+        "label": "Check-ins, Wegpunkte & Reviews",
+        "description": "Stand-ups sind nützlich, doch bevorzuge eine zeremonienarme, ruhigere Nachverfolgung der Aufgaben — Anfang und Ende der Woche, mit Ehrlichkeit und geteiltem Verständnis. Das Zeugnis deines Kindes sollte dank Fürsorge und Beteiligung keine Überraschung sein."
+      },
+      "roadblocks": {
+        "label": "Hindernisse erkennen & beseitigen",
+        "description": "Frühes Erkennen ist entscheidend, mit einem inklusiven Vorgehen."
+      },
+      "sharedValue": {
+        "label": "Gemeinsamen Mehrwert schaffen",
+        "description": "Ein inklusiver, bescheidener Ansatz — in dem Bewusstsein, dass dein Projekt, so wertvoll es auch ist, zu größeren Zielen beiträgt."
+      },
+      "miseEnPlace": {
+        "label": "Mise en place",
+        "description": "Beginne kein Projekt ohne deine Mise en place. Schnipsel erst das Gemüse."
+      },
+      "workItems": {
+        "label": "Arbeitselemente",
+        "description": "Aufgaben, Items und Karten transformieren Assets. Verknüpfe das Arbeitselement mit dem Asset. Lege Ergebnisse **nicht** in der Aufgabe ab. Wissensmanagement ist erstklassig."
+      },
+      "gettingItWrong": {
+        "label": "Fehler machen",
+        "description": "Gelehrtheit, kritisches Denken und ein wissenschaftlicher Ansatz helfen dir stets, diese Berge zu erklimmen."
+      },
+      "goFindOut": {
+        "label": "Geh und finde es heraus",
+        "description": "Engagiere dich. Früh und genug — und sei es, um Freundschaften zu knüpfen. Steh vom Stuhl auf und finde es heraus. Mach die Arbeit und wiederhole nicht das Offensichtliche."
+      },
+      "rollEm": {
+        "label": "Wissen, wann man es wagt",
+        "description": "Steuere deinen Aufwand, justiere dein Vorgehen und überreize nicht. Starte einen Push nur, wenn die Bedingungen günstig sind. Was schiefgehen kann, geht schief — Murphys Gesetz gilt."
+      },
+      "hypothesis": {
+        "label": "Hypothese",
+        "description": "Jede große _Idee_ beginnt mit einer Teststrategie. Sie existiert nicht, wenn sie nicht testbar ist."
+      }
     }
   },
   "voices": {
@@ -65,5 +101,8 @@
   "footer": {
     "tagline": "Push Manifesto — eine Art, Kreativität zu leben.",
     "project": "Ein WiseJNRS-Projekt"
+  },
+  "blog": {
+    "machineTranslated": "Dieser Beitrag wurde maschinell übersetzt und wartet auf eine menschliche Überprüfung."
   }
 }

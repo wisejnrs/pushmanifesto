@@ -20,6 +20,8 @@ export interface BlogPost {
     featured: boolean;
     category: string;
     status: string;
+    /** True when this post is shown via an AI-drafted translation (pending review). */
+    aiTranslated?: boolean;
     // Header display options
     headerOverlay?: "light" | "dark" | "vignette" | "radial" | "none";
     headerOverlayIntensity?: number; // 0-100, default 60

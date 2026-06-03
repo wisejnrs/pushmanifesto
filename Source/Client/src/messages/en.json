@@ -101,5 +101,8 @@
   "footer": {
     "tagline": "Push Manifesto — a way to do creativity.",
     "project": "A WiseJNRS project"
+  },
+  "blog": {
+    "machineTranslated": "This post was machine-translated and is pending human review."
   }
 }

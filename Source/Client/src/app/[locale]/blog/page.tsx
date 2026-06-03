@@ -1,4 +1,5 @@
 import { getPublishedPostsServer, getAllCategoriesServer, getFeaturedPostServer } from "@/lib/blog-server";
+import { setRequestLocale } from "next-intl/server";
 import { constructMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import BlogClient from "./blog-client";
@@ -27,11 +28,13 @@ export const metadata = constructMetadata({
     url: `${siteConfig.url}/blog`
 });
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
     // Load data server-side for better performance and SEO
-    const posts = getPublishedPostsServer();
-    const categories = getAllCategoriesServer();
-    const featuredPost = getFeaturedPostServer();
+    const posts = getPublishedPostsServer(locale);
+    const categories = getAllCategoriesServer(locale);
+    const featuredPost = getFeaturedPostServer(locale);
     const allTags = Array.from(new Set(posts.flatMap(post => post.tags)));
 
     return (
