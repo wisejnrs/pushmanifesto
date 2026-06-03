@@ -8,7 +8,7 @@ export function QuotesMarquee({ quotes }: { quotes: Quote[] }) {
 
   return (
     <div
-      className="group relative flex overflow-hidden"
+      className="group relative flex overflow-hidden py-6"
       style={{
         maskImage:
           "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
