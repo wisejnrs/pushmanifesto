@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Push Manifesto — Une façon de faire de la créativité",
+    "description": "Le Push Manifesto est un ensemble de principes et de valeurs qui guident les organisations et les individus dans la recherche de l'innovation et du progrès."
+  },
+  "common": {
+    "skipToContent": "Aller au contenu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "palette": "Palette",
+    "changeTheme": "Changer le thème de couleur",
+    "changeLanguage": "Changer de langue"
+  },
+  "nav": {
+    "manifesto": "Manifeste",
+    "blog": "Blog",
+    "github": "GitHub",
+    "wiki": "Wiki",
+    "store": "Boutique"
+  },
+  "hero": {
+    "eyebrow": "Le Push Manifesto",
+    "titleLead": "Une façon de faire de la",
+    "titleHighlight": "créativité",
+    "lede": "Un ensemble de principes pour l'innovation et le progrès — vision, collaboration, comportement inclusif et un état d'esprit pragmatique fondé sur les preuves. Il privilégie le cheminement, en utilisant des points de repère plutôt que des jalons, en visant une valeur partagée pour toutes les parties prenantes.",
+    "readManifesto": "Lire le manifeste",
+    "readBlog": "Lire le blog"
+  },
+  "manifesto": {
+    "eyebrow": "Le Manifeste",
+    "heading": "Privilégier le cheminement.",
+    "body1": "Le Push Manifesto, c'est la vision, la collaboration, les comportements inclusifs, la détermination, la communication, la gouvernance et l'apprentissage — et surtout, il privilégie le cheminement : en utilisant des points de repère plutôt que des itérations et des jalons, en équilibrant le souci de l'adéquation à l'objectif avec des résultats à valeur partagée pour les utilisateurs et les parties prenantes.",
+    "body2": "Il nourrit le Modèle de Maturité et un état d'esprit fondé sur les preuves, soutenant l'approche scientifique — osant explorer l'espace latent, avec une vision du monde pragmatique."
+  },
+  "principles": {
+    "eyebrow": "Principes",
+    "heading": "Les fondations d'un push.",
+    "items": {
+      "push": { "label": "Push" },
+      "ambiguity": { "label": "Ambiguïté et biais cognitif" },
+      "risk": { "label": "Risque" },
+      "checkins": { "label": "Points, repères et revues" },
+      "roadblocks": { "label": "Identifier et lever les obstacles" },
+      "sharedValue": { "label": "Créer une valeur partagée" },
+      "miseEnPlace": { "label": "Mise en place" },
+      "workItems": { "label": "Éléments de travail" },
+      "gettingItWrong": { "label": "Se tromper" },
+      "goFindOut": { "label": "Va te renseigner" },
+      "rollEm": { "label": "Savoir quand tenter sa chance" },
+      "hypothesis": { "label": "Hypothèse" }
+    }
+  },
+  "voices": {
+    "eyebrow": "Voix",
+    "heading": "De petites choses, plus souvent."
+  },
+  "cta": {
+    "headingLead": "Lève-toi de ta chaise et",
+    "headingHighlight": "va te renseigner",
+    "lede": "Lisez la réflexion approfondie derrière le manifeste sur le blog, ou explorez le code source sur GitHub.",
+    "readBlog": "Lire le blog",
+    "viewGithub": "Voir sur GitHub"
+  },
+  "footer": {
+    "tagline": "Push Manifesto — une façon de faire de la créativité.",
+    "project": "Un projet WiseJNRS"
+  }
+}

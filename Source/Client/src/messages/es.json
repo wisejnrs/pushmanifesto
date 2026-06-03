@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Push Manifesto — Una forma de hacer creatividad",
+    "description": "El Push Manifesto es un conjunto de principios y valores que guían a organizaciones e individuos en la búsqueda de la innovación y el progreso."
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "newTab": "(se abre en una pestaña nueva)",
+    "palette": "Paleta",
+    "changeTheme": "Cambiar tema de color",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "nav": {
+    "manifesto": "Manifiesto",
+    "blog": "Blog",
+    "github": "GitHub",
+    "wiki": "Wiki",
+    "store": "Tienda"
+  },
+  "hero": {
+    "eyebrow": "El Push Manifesto",
+    "titleLead": "Una forma de hacer",
+    "titleHighlight": "creatividad",
+    "lede": "Un conjunto de principios para la innovación y el progreso: visión, colaboración, comportamiento inclusivo y una mentalidad pragmática basada en la evidencia. Prioriza el camino, usando puntos de referencia en lugar de hitos, buscando valor compartido para todos los implicados.",
+    "readManifesto": "Leer el manifiesto",
+    "readBlog": "Leer el blog"
+  },
+  "manifesto": {
+    "eyebrow": "El Manifiesto",
+    "heading": "Prioriza el camino.",
+    "body1": "El Push Manifesto trata de visión, colaboración, comportamientos inclusivos, determinación, comunicación, gobernanza y aprendizaje — y, sobre todo, prioriza el camino: usando puntos de referencia en lugar de iteraciones e hitos, equilibrando el deseo de ser apto para el propósito con resultados de valor compartido para usuarios y partes interesadas.",
+    "body2": "Alimenta el Modelo de Madurez y una mentalidad basada en la evidencia, apoyando el enfoque científico — atreviéndose a explorar el espacio latente, con una visión pragmática del mundo."
+  },
+  "principles": {
+    "eyebrow": "Principios",
+    "heading": "Los pilares de un push.",
+    "items": {
+      "push": { "label": "Push" },
+      "ambiguity": { "label": "Ambigüedad y sesgo cognitivo" },
+      "risk": { "label": "Riesgo" },
+      "checkins": { "label": "Seguimientos, hitos y revisiones" },
+      "roadblocks": { "label": "Identificar y eliminar obstáculos" },
+      "sharedValue": { "label": "Crear valor compartido" },
+      "miseEnPlace": { "label": "Mise en place" },
+      "workItems": { "label": "Elementos de trabajo" },
+      "gettingItWrong": { "label": "Equivocarse" },
+      "goFindOut": { "label": "Ve y averígualo" },
+      "rollEm": { "label": "Saber cuándo arriesgar" },
+      "hypothesis": { "label": "Hipótesis" }
+    }
+  },
+  "voices": {
+    "eyebrow": "Voces",
+    "heading": "Cosas pequeñas, más a menudo."
+  },
+  "cta": {
+    "headingLead": "Levántate de la silla y",
+    "headingHighlight": "ve a averiguarlo",
+    "lede": "Lee el pensamiento extenso detrás del manifiesto en el blog, o explora el código en GitHub.",
+    "readBlog": "Leer el blog",
+    "viewGithub": "Ver en GitHub"
+  },
+  "footer": {
+    "tagline": "Push Manifesto — una forma de hacer creatividad.",
+    "project": "Un proyecto de WiseJNRS"
+  }
+}

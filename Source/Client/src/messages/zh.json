@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Push Manifesto — 一种创造的方式",
+    "description": "Push Manifesto 是一套原则与价值观，指引组织与个人追求创新与进步。"
+  },
+  "common": {
+    "skipToContent": "跳转到主要内容",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "newTab": "（在新标签页中打开）",
+    "palette": "配色",
+    "changeTheme": "更改配色主题",
+    "changeLanguage": "切换语言"
+  },
+  "nav": {
+    "manifesto": "宣言",
+    "blog": "博客",
+    "github": "GitHub",
+    "wiki": "Wiki",
+    "store": "商店"
+  },
+  "hero": {
+    "eyebrow": "Push Manifesto",
+    "titleLead": "一种创造的",
+    "titleHighlight": "方式",
+    "lede": "一套关于创新与进步的原则——愿景、协作、包容的行为，以及务实、基于证据的思维方式。它重视过程本身，以航点而非里程碑为导向，为所有参与者创造共享价值。",
+    "readManifesto": "阅读宣言",
+    "readBlog": "阅读博客"
+  },
+  "manifesto": {
+    "eyebrow": "宣言",
+    "heading": "重视过程本身。",
+    "body1": "Push Manifesto 关乎愿景、协作、包容的行为、决心、沟通、治理与学习——而最重要的是，它重视过程本身：以航点取代迭代与里程碑，在追求合用与为用户和相关方创造共享价值之间取得平衡。",
+    "body2": "它支撑成熟度模型与基于证据的思维方式，支持科学的方法——以务实的世界观，勇于探索潜在空间。"
+  },
+  "principles": {
+    "eyebrow": "原则",
+    "heading": "一次 push 的基石。",
+    "items": {
+      "push": { "label": "Push" },
+      "ambiguity": { "label": "模糊与认知偏差" },
+      "risk": { "label": "风险" },
+      "checkins": { "label": "签到、航点与回顾" },
+      "roadblocks": { "label": "识别并清除障碍" },
+      "sharedValue": { "label": "创造共享价值" },
+      "miseEnPlace": { "label": "各就各位（Mise en place）" },
+      "workItems": { "label": "工作项" },
+      "gettingItWrong": { "label": "犯错" },
+      "goFindOut": { "label": "亲自去弄清楚" },
+      "rollEm": { "label": "懂得何时放手一搏" },
+      "hypothesis": { "label": "假设" }
+    }
+  },
+  "voices": {
+    "eyebrow": "心声",
+    "heading": "小步快跑，常做常新。"
+  },
+  "cta": {
+    "headingLead": "离开座位，",
+    "headingHighlight": "亲自去弄清楚",
+    "lede": "在博客上阅读宣言背后的长篇思考，或在 GitHub 上深入源码。",
+    "readBlog": "阅读博客",
+    "viewGithub": "在 GitHub 查看"
+  },
+  "footer": {
+    "tagline": "Push Manifesto — 一种创造的方式。",
+    "project": "WiseJNRS 出品"
+  }
+}

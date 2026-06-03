@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Twitter, Linkedin, Github, Rss, ArrowUpRight, Globe } from "lucide-react";
 
 const socials = [
@@ -10,13 +11,14 @@ const socials = [
 ];
 
 export function SiteFooter() {
+  const t = useTranslations("footer");
   return (
     <footer className="border-t border-border/60">
       <div className="container flex flex-col items-center gap-6 py-12 md:flex-row md:justify-between">
         <div className="flex items-center gap-2.5">
           <img src="/assets/manifesto-ico.svg" alt="" aria-hidden className="h-6 w-6" />
           <p className="text-sm text-muted-foreground">
-            Push Manifesto — a way to do creativity.{" "}
+            {t("tagline")}{" "}
             <span className="px-1 text-muted-foreground/40">·</span>{" "}
             <a
               href="https://www.wisejnrs.net"
@@ -24,7 +26,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-0.5 font-medium text-foreground/80 underline-offset-4 transition-colors hover:text-foreground hover:underline"
             >
-              A WiseJNRS project
+              {t("project")}
               <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </p>

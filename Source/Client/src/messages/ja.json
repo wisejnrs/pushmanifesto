@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Push Manifesto — 創造性のための一つの方法",
+    "description": "Push Manifesto は、組織と個人がイノベーションと前進を追求するための原則と価値観のセットです。"
+  },
+  "common": {
+    "skipToContent": "本文へスキップ",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "newTab": "（新しいタブで開きます）",
+    "palette": "パレット",
+    "changeTheme": "カラーテーマを変更",
+    "changeLanguage": "言語を変更"
+  },
+  "nav": {
+    "manifesto": "マニフェスト",
+    "blog": "ブログ",
+    "github": "GitHub",
+    "wiki": "Wiki",
+    "store": "ストア"
+  },
+  "hero": {
+    "eyebrow": "Push Manifesto",
+    "titleLead": "創造性のための",
+    "titleHighlight": "一つの方法",
+    "lede": "イノベーションと前進のための原則のセット — ビジョン、協働、包摂的なふるまい、そして実践的で根拠にもとづく姿勢。マイルストーンではなくウェイポイントを用い、過程そのものを重視し、関わるすべての人にとっての共有価値を目指します。",
+    "readManifesto": "マニフェストを読む",
+    "readBlog": "ブログを読む"
+  },
+  "manifesto": {
+    "eyebrow": "マニフェスト",
+    "heading": "過程そのものを重視する。",
+    "body1": "Push Manifesto は、ビジョン、協働、包摂的なふるまい、決意、コミュニケーション、ガバナンス、そして学びに関するものです。そして何よりも過程を重視します。反復やマイルストーンではなくウェイポイントを用い、目的への適合性と、ユーザーや関係者にとっての共有価値という成果のバランスをとります。",
+    "body2": "成熟度モデルと根拠にもとづく姿勢を支え、科学的アプローチを後押しします。実践的な世界観のもと、潜在空間を探求することを恐れません。"
+  },
+  "principles": {
+    "eyebrow": "原則",
+    "heading": "push を形づくる要素。",
+    "items": {
+      "push": { "label": "Push" },
+      "ambiguity": { "label": "曖昧さと認知バイアス" },
+      "risk": { "label": "リスク" },
+      "checkins": { "label": "チェックイン・ウェイポイント・レビュー" },
+      "roadblocks": { "label": "障害を見つけて取り除く" },
+      "sharedValue": { "label": "共有価値を生み出す" },
+      "miseEnPlace": { "label": "ミザンプラス（Mise en place）" },
+      "workItems": { "label": "作業項目" },
+      "gettingItWrong": { "label": "間違えること" },
+      "goFindOut": { "label": "自分で確かめに行く" },
+      "rollEm": { "label": "勝負どきを見極める" },
+      "hypothesis": { "label": "仮説" }
+    }
+  },
+  "voices": {
+    "eyebrow": "声",
+    "heading": "小さなことを、より頻繁に。"
+  },
+  "cta": {
+    "headingLead": "椅子から立ち上がって、",
+    "headingHighlight": "確かめに行こう",
+    "lede": "マニフェストの背景にある長文の考察をブログで読むか、GitHub でソースを掘り下げてください。",
+    "readBlog": "ブログを読む",
+    "viewGithub": "GitHub で見る"
+  },
+  "footer": {
+    "tagline": "Push Manifesto — 創造性のための一つの方法。",
+    "project": "WiseJNRS のプロジェクト"
+  }
+}

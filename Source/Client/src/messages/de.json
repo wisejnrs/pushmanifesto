@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Push Manifesto — Eine Art, Kreativität zu leben",
+    "description": "Das Push Manifesto ist eine Reihe von Prinzipien und Werten, die Organisationen und Einzelpersonen auf dem Weg zu Innovation und Fortschritt leiten."
+  },
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "newTab": "(wird in einem neuen Tab geöffnet)",
+    "palette": "Palette",
+    "changeTheme": "Farbthema ändern",
+    "changeLanguage": "Sprache ändern"
+  },
+  "nav": {
+    "manifesto": "Manifest",
+    "blog": "Blog",
+    "github": "GitHub",
+    "wiki": "Wiki",
+    "store": "Shop"
+  },
+  "hero": {
+    "eyebrow": "Das Push Manifesto",
+    "titleLead": "Eine Art, ",
+    "titleHighlight": "Kreativität",
+    "lede": "Eine Reihe von Prinzipien für Innovation und Fortschritt — Vision, Zusammenarbeit, inklusives Verhalten und eine pragmatische, evidenzbasierte Denkweise. Es stellt den Weg in den Vordergrund, nutzt Wegpunkte statt Meilensteine und zielt auf gemeinsamen Mehrwert für alle Beteiligten.",
+    "readManifesto": "Das Manifest lesen",
+    "readBlog": "Zum Blog"
+  },
+  "manifesto": {
+    "eyebrow": "Das Manifest",
+    "heading": "Den Weg in den Vordergrund stellen.",
+    "body1": "Beim Push Manifesto geht es um Vision, Zusammenarbeit, inklusives Verhalten, Entschlossenheit, Kommunikation, Governance und Lernen — und vor allem stellt es den Weg in den Vordergrund: mit Wegpunkten statt Iterationen und Meilensteinen, im Gleichgewicht zwischen Zweckmäßigkeit und Ergebnissen mit gemeinsamem Mehrwert für Nutzer und Beteiligte.",
+    "body2": "Es speist das Reifegradmodell und eine evidenzbasierte Denkweise, unterstützt den wissenschaftlichen Ansatz — und wagt es, den latenten Raum zu erkunden, mit einer pragmatischen Weltsicht."
+  },
+  "principles": {
+    "eyebrow": "Prinzipien",
+    "heading": "Die Bausteine eines Push.",
+    "items": {
+      "push": { "label": "Push" },
+      "ambiguity": { "label": "Mehrdeutigkeit & kognitive Verzerrung" },
+      "risk": { "label": "Risiko" },
+      "checkins": { "label": "Check-ins, Wegpunkte & Reviews" },
+      "roadblocks": { "label": "Hindernisse erkennen & beseitigen" },
+      "sharedValue": { "label": "Gemeinsamen Mehrwert schaffen" },
+      "miseEnPlace": { "label": "Mise en place" },
+      "workItems": { "label": "Arbeitselemente" },
+      "gettingItWrong": { "label": "Fehler machen" },
+      "goFindOut": { "label": "Geh und finde es heraus" },
+      "rollEm": { "label": "Wissen, wann man es wagt" },
+      "hypothesis": { "label": "Hypothese" }
+    }
+  },
+  "voices": {
+    "eyebrow": "Stimmen",
+    "heading": "Kleine Dinge, öfter."
+  },
+  "cta": {
+    "headingLead": "Steh vom Stuhl auf und",
+    "headingHighlight": "finde es heraus",
+    "lede": "Lies die ausführlichen Gedanken hinter dem Manifest im Blog oder erkunde den Quellcode auf GitHub.",
+    "readBlog": "Zum Blog",
+    "viewGithub": "Auf GitHub ansehen"
+  },
+  "footer": {
+    "tagline": "Push Manifesto — eine Art, Kreativität zu leben.",
+    "project": "Ein WiseJNRS-Projekt"
+  }
+}
