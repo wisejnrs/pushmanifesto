@@ -40,7 +40,7 @@ export function HeroAstronaut() {
           <img
             src="/img/manifesto.png"
             alt="The Push Manifesto astronaut, drifting through space"
-            className="mx-auto w-[280px] drop-shadow-2xl sm:w-[360px] lg:w-[480px] dark:invert"
+            className="mx-auto w-[200px] drop-shadow-2xl sm:w-[300px] lg:w-[480px] dark:invert"
           />
         </div>
       </motion.div>
