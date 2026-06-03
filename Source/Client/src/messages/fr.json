@@ -37,18 +37,18 @@
     "eyebrow": "Principes",
     "heading": "Les fondations d'un push.",
     "items": {
-      "push": { "label": "Push" },
-      "ambiguity": { "label": "Ambiguïté et biais cognitif" },
-      "risk": { "label": "Risque" },
-      "checkins": { "label": "Points, repères et revues" },
-      "roadblocks": { "label": "Identifier et lever les obstacles" },
-      "sharedValue": { "label": "Créer une valeur partagée" },
-      "miseEnPlace": { "label": "Mise en place" },
-      "workItems": { "label": "Éléments de travail" },
-      "gettingItWrong": { "label": "Se tromper" },
-      "goFindOut": { "label": "Va te renseigner" },
-      "rollEm": { "label": "Savoir quand tenter sa chance" },
-      "hypothesis": { "label": "Hypothèse" }
+      "push": { "label": "Push", "description": "Une unité logique de travail avec un début, un milieu et une fin. La « fin » représente généralement un résultat, n'a pas besoin d'enchaîner immédiatement sur la suivante, inclut toutes les tâches, a de la valeur et fait l'objet d'un accord sur le « Terminé » — chacun y gagne quelque chose." },
+      "ambiguity": { "label": "Ambiguïté et biais cognitif", "description": "Ils tuent les projets. Offrez une grande lisibilité, des modèles mentaux clairs, soutenez des publics variés, adoptez des conventions simples, réduisez la complexité, prenez la voie la moins coûteuse, cherchez la clarté et questionnez toujours, toujours. Adoptez une approche agnostique." },
+      "risk": { "label": "Risque", "description": "Eux aussi tuent les projets. On n'atteint pas l'espace en croisant les doigts — citez et contrez les risques en continu. Babbage, Boole et Bayes connaissaient sûrement Murphy." },
+      "checkins": { "label": "Points, repères et revues", "description": "Si les stand-ups sont utiles, préférez un suivi peu cérémonieux et peu bruyant des tâches — en début et en fin de semaine, avec honnêteté et compréhension partagée. Le bulletin de votre enfant ne devrait pas être une surprise, grâce au soin et à l'implication." },
+      "roadblocks": { "label": "Identifier et lever les obstacles", "description": "L'identification précoce est essentielle, avec une approche inclusive." },
+      "sharedValue": { "label": "Créer une valeur partagée", "description": "Une approche inclusive et humble, en reconnaissant que votre projet — tout en ayant de la valeur et des bénéfices — contribue à des objectifs plus larges." },
+      "miseEnPlace": { "label": "Mise en place", "description": "Ne démarrez pas un projet sans votre mise en place faite. Coupez d'abord ces légumes." },
+      "workItems": { "label": "Éléments de travail", "description": "Les tâches, items et cartes transforment des Actifs. Reliez la tâche à l'actif. **Ne** redéposez **pas** les résultats dans la tâche. La gestion des connaissances est de première importance." },
+      "gettingItWrong": { "label": "Se tromper", "description": "L'érudition, l'esprit critique et une approche scientifique vous aideront toujours à gravir ces montagnes." },
+      "goFindOut": { "label": "Va te renseigner", "description": "Impliquez-vous. Tôt et suffisamment — ne serait-ce que pour nouer des liens. Levez-vous de votre chaise et allez vous renseigner. Faites le travail et ne répétez pas l'évidence." },
+      "rollEm": { "label": "Savoir quand tenter sa chance", "description": "Gérez votre effort, ajustez votre approche et ne forcez pas votre chance. Ne lancez un push que si les conditions sont favorables. Si ça peut mal tourner, ça tournera mal — la loi de Murphy s'applique." },
+      "hypothesis": { "label": "Hypothèse", "description": "Toute grande _idée_ commence par une stratégie de test. Elle n'existe pas si elle ne peut pas être testée." }
     }
   },
   "voices": {
