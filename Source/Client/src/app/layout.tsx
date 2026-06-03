@@ -59,6 +59,12 @@ export default function RootLayout({
               "(function(){try{var t=localStorage.getItem('pm-theme');if(t&&t!=='default'){document.documentElement.classList.add(t);}}catch(e){}})();",
           }}
         />
+        <a
+          href="#main-content"
+          className="skip-link glass rounded-full px-4 py-2 text-sm font-medium text-foreground shadow-lg"
+        >
+          Skip to content
+        </a>
         <ThemeProvider attribute="class" forcedTheme="dark">
           {children}
         </ThemeProvider>

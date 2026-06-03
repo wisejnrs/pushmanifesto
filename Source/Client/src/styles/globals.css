@@ -126,6 +126,27 @@
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
   }
+  /* Visible, consistent keyboard focus for every interactive element
+     (WCAG 2.4.7). Modern browsers follow border-radius for outline. */
+  :where(a, button, [role="button"], [role="menuitem"], [role="menuitemradio"], [role="tab"], input, select, textarea, summary, [tabindex]:not([tabindex="-1"]))::-moz-focus-inner {
+    border: 0;
+  }
+  :where(a, button, [role="button"], [role="menuitem"], [role="menuitemradio"], [role="tab"], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+  /* Skip-to-content link: off-screen until focused. */
+  .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 200;
+    transform: translateY(-200%);
+    transition: transform 0.2s ease;
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+  }
   body {
     @apply bg-background text-foreground antialiased;
     text-rendering: optimizeLegibility;
