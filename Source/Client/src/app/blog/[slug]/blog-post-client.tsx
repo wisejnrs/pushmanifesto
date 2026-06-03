@@ -310,7 +310,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
             {/* Reading Progress Bar */}
             <div className="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-muted/10 to-muted/30 z-50 shadow-sm">
                 <motion.div
-                    className="h-full bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] shadow-lg shadow-primary/20"
+                    className="h-full bg-gradient-brand shadow-lg shadow-primary/20"
                     style={{ width: `${readingProgress}%` }}
                     initial={{ width: 0 }}
                     animate={{ width: `${readingProgress}%` }}
@@ -322,7 +322,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
             <div className="relative">
                 <div className="relative h-56 md:h-72 overflow-hidden">
                     <Image
-                        src={post.coverImage || "/music/SocialsHeader-min.png"}
+                        src={post.coverImage || "/img/space-bg.jpg"}
                         alt={post.title}
                         fill
                         className="object-cover"
@@ -352,7 +352,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                                         }}
                                     >
                                         <span
-                                            className={activeSettings.useWhiteText ? "text-white" : "bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent"}
+                                            className={activeSettings.useWhiteText ? "text-white" : "text-gradient-brand"}
                                             style={getTitleStyle()}
                                         >
                                             {post.title}
@@ -361,7 +361,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                                 )}
                                 {!activeSettings.backdrop && (
                                     <span
-                                        className={activeSettings.useWhiteText ? "text-white" : "bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent"}
+                                        className={activeSettings.useWhiteText ? "text-white" : "text-gradient-brand"}
                                         style={getTitleStyle()}
                                     >
                                         {post.title}
@@ -372,15 +372,15 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                             <div className="flex items-center gap-4 text-white/80 mb-2">
                                 <div className="flex items-center gap-2">
                                     <Image
-                                        src={post.author.avatar || "/apple-touch-icon.png"}
+                                        src={post.author.avatar || "/assets/manifesto-ico.svg"}
                                         alt={post.author.name}
                                         width={32}
                                         height={32}
                                         className="rounded-full"
                                         onError={(e) => {
                                             const target = e.target as HTMLImageElement;
-                                            if (target.src !== "/apple-touch-icon.png") {
-                                                target.src = "/apple-touch-icon.png";
+                                            if (target.src !== "/assets/manifesto-ico.svg") {
+                                                target.src = "/assets/manifesto-ico.svg";
                                             }
                                         }}
                                     />

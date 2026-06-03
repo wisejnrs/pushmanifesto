@@ -44,9 +44,12 @@ export function SiteHeader() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="group flex items-center gap-2.5">
-          <span className="grid h-7 w-7 place-items-center rounded-lg bg-gradient-to-br from-[#D247BF] to-[#FF6B35] text-[13px] font-bold text-white shadow-sm">
-            P
-          </span>
+          <img
+            src="/assets/manifesto-ico.svg"
+            alt=""
+            aria-hidden
+            className="h-8 w-8 transition-transform duration-300 group-hover:rotate-[8deg]"
+          />
           <span className="font-display text-lg font-semibold tracking-tight">
             Push Manifesto
           </span>

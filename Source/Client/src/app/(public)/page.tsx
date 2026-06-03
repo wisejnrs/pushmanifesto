@@ -172,14 +172,14 @@ gtag('config', 'G-VZ3GBPF421');`}
           className="pointer-events-none absolute -top-24 right-[-10%] h-[36rem] w-[36rem] rounded-full opacity-30 blur-3xl"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(210,71,191,0.45), transparent 60%)",
+              "radial-gradient(circle at center, rgba(231,60,111,0.42), transparent 60%)",
           }}
         />
         <div
           className="pointer-events-none absolute top-40 left-[-10%] h-[28rem] w-[28rem] rounded-full opacity-25 blur-3xl"
           style={{
             background:
-              "radial-gradient(circle at center, rgba(255,107,53,0.45), transparent 60%)",
+              "radial-gradient(circle at center, rgba(238,170,82,0.45), transparent 60%)",
           }}
         />
 
@@ -203,43 +203,63 @@ gtag('config', 'G-VZ3GBPF421');`}
           className="pointer-events-none absolute left-[16%] bottom-16 hidden h-6 w-6 animate-float-slower opacity-50 dark:invert lg:block"
         />
 
-        <div className="container relative flex min-h-[88vh] flex-col justify-center py-24 md:py-32">
-          <Reveal>
-            <Eyebrow>The Push Manifesto</Eyebrow>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.02em]">
-              A way to do{" "}
-              <span className="text-gradient-brand">creativity</span>.
-            </h1>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              A set of principles for innovation and progress — vision,
-              collaboration, inclusive behaviour, and a pragmatic, evidence-based
-              mindset. It prioritises <em>the journey</em>, using waypoints over
-              milestones, targeting shared value for everyone involved.
-            </p>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <div className="mt-10 flex flex-wrap items-center gap-3">
-              <Link
-                href="#manifesto"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#D247BF] to-[#FF6B35] py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#D247BF]/15 transition-transform duration-300 active:scale-[0.98]"
-              >
-                Read the manifesto
-                <span className="grid h-8 w-8 place-items-center rounded-full bg-white/20 transition-transform duration-300 group-hover:translate-y-0.5">
-                  <ArrowDown className="h-4 w-4" />
-                </span>
-              </Link>
-              <Link
-                href="/blog"
-                className="group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-muted"
-              >
-                Read the blog
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-              </Link>
-            </div>
+        <div className="container relative grid min-h-[88vh] items-center gap-10 py-24 md:py-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-6">
+          <div>
+            <Reveal>
+              <Eyebrow>The Push Manifesto</Eyebrow>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h1 className="mt-6 max-w-2xl font-display text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.02em]">
+                A way to do{" "}
+                <span className="text-gradient-brand">creativity</span>.
+              </h1>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+                A set of principles for innovation and progress — vision,
+                collaboration, inclusive behaviour, and a pragmatic,
+                evidence-based mindset. It prioritises <em>the journey</em>, using
+                waypoints over milestones, targeting shared value for everyone
+                involved.
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <div className="mt-10 flex flex-wrap items-center gap-3">
+                <Link
+                  href="#manifesto"
+                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20 transition-transform duration-300 active:scale-[0.98]"
+                >
+                  Read the manifesto
+                  <span className="grid h-8 w-8 place-items-center rounded-full bg-white/25 transition-transform duration-300 group-hover:translate-y-0.5">
+                    <ArrowDown className="h-4 w-4" />
+                  </span>
+                </Link>
+                <Link
+                  href="/blog"
+                  className="group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-muted"
+                >
+                  Read the blog
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+
+          {/* The original Push Manifesto "space cowboy" — drifting through the hero. */}
+          <Reveal delay={0.15} className="relative justify-self-center">
+            <div
+              aria-hidden
+              className="absolute left-1/2 top-1/2 -z-10 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-3xl"
+              style={{
+                background:
+                  "radial-gradient(circle at center, rgba(35,148,213,0.5), rgba(42,243,183,0.25) 45%, transparent 70%)",
+              }}
+            />
+            <img
+              src="/img/manifesto.png"
+              alt="The Push Manifesto astronaut, drifting through space"
+              className="mx-auto w-[260px] animate-float-slow drop-shadow-2xl sm:w-[340px] lg:w-[440px] dark:invert"
+            />
           </Reveal>
         </div>
       </section>
@@ -297,7 +317,7 @@ gtag('config', 'G-VZ3GBPF421');`}
                   rel="noopener noreferrer"
                   className="group flex gap-5 border-t border-border/60 py-7 transition-colors duration-300 hover:border-foreground/30"
                 >
-                  <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-colors group-hover:text-[#D247BF]">
+                  <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-colors group-hover:text-[#e73c6f]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="space-y-2">
@@ -350,7 +370,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <Link
                 href="/blog"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#D247BF] to-[#FF6B35] py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#D247BF]/15 transition-transform duration-300 active:scale-[0.98]"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20 transition-transform duration-300 active:scale-[0.98]"
               >
                 Read the blog
                 <span className="grid h-8 w-8 place-items-center rounded-full bg-white/20 transition-transform duration-300 group-hover:translate-x-0.5">

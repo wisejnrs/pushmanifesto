@@ -24,7 +24,11 @@ export const metadata: Metadata = {
   },
   description:
     "The Push Manifesto is a set of principles and values that guide organisations and individuals in the pursuit of innovation and progress.",
-  icons: { shortcut: "/assets/manifesto-ico.svg" },
+  icons: {
+    icon: "/assets/manifesto-ico.svg",
+    shortcut: "/assets/manifesto-ico.svg",
+    apple: "/assets/manifesto-ico.svg",
+  },
 };
 
 export const viewport: Viewport = {

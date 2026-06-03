@@ -66,9 +66,21 @@
 }
 
 @layer utilities {
-  /* The Push Manifesto brand accent: magenta → pink → orange. */
+  /* The original Push Manifesto brand gradient: orange → pink → blue → teal,
+     slowly panning. Used for accent text. */
   .text-gradient-brand {
-    @apply bg-gradient-to-r from-[#D247BF] via-[#E5479A] to-[#FF6B35] bg-clip-text text-transparent;
+    background-image: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-pan 12s ease infinite;
+  }
+  /* Same gradient as a fill (buttons, logo marks, bars). */
+  .bg-gradient-brand {
+    background-image: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    background-size: 300% 300%;
+    animation: gradient-pan 12s ease infinite;
   }
   .bg-grid-faint {
     background-image:
@@ -76,6 +88,12 @@
       linear-gradient(to bottom, hsl(var(--border) / 0.5) 1px, transparent 1px);
     background-size: 56px 56px;
   }
+}
+
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

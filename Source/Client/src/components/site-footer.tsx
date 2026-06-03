@@ -13,9 +13,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60">
       <div className="container flex flex-col items-center gap-6 py-12 md:flex-row md:justify-between">
         <div className="flex items-center gap-2.5">
-          <span className="grid h-6 w-6 place-items-center rounded-md bg-gradient-to-br from-[#D247BF] to-[#FF6B35] text-[11px] font-bold text-white">
-            P
-          </span>
+          <img src="/assets/manifesto-ico.svg" alt="" aria-hidden className="h-6 w-6" />
           <p className="text-sm text-muted-foreground">
             Push Manifesto — a way to do creativity.
           </p>
