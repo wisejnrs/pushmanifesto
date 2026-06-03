@@ -47,3 +47,84 @@ These reviews should be used as an opportunity to assess progress, identify any 
 ## Notes
 
  - "Mise en place" is a French term that translates to "put in place" or "everything in its place." In the culinary world, it refers to the practice of preparing and organizing all ingredients and equipment before beginning to cook. This includes measuring and chopping ingredients, preparing equipment, and organizing everything in a way that makes the cooking process more efficient and streamlined.  In a broader sense, the term "mise en place" can refer to any situation where everything is prepared and organized in advance in order to ensure a smooth and efficient process. This can be applied to any type of project or task, from cooking to software development, and it's about having everything ready before starting, in order to have a seamless execution. In simple words, it's about being prepared and having all necessary elements in place before starting a project or task.
+
+---
+
+# The Website
+
+This repository also contains the source for **[pushmanifesto.org](https://www.pushmanifesto.org)** — a modern, dark, multilingual site that presents the manifesto and a blog.
+
+![Version](https://img.shields.io/github/v/tag/wisejnrs/pushmanifesto?label=version&sort=semver) ![License](https://img.shields.io/badge/license-see%20LICENSE-blue)
+
+## Highlights
+
+- **Dark-first glassmorphic design** built on Tailwind CSS 3 + shadcn/ui, with the original "space cowboy" astronaut and Push Manifesto gradient (`#eeaa52 → #e73c6f → #2394d5 → #2af3b7`).
+- **9 colour themes** via a palette switcher (Default, Aqua, Tunnel Drive, Graphic Design, Warp, Illustration, So, Oat Flat White, Webber), persisted to `localStorage`.
+- **6 languages** (English, Español, Français, Deutsch, 中文, 日本語) via `next-intl`, with localized landing **and** blog.
+- **Reader-facing blog engine** — Markdown posts, search, table of contents, related posts, RSS, reading time, in-post audio/video.
+- **Accessibility pass** — visible keyboard focus, skip link, labelled landmarks, a focus-trapped mobile menu dialog, and `prefers-reduced-motion` support.
+
+## Tech stack
+
+| | |
+|---|---|
+| Framework | Next.js 15 (App Router, React 19, TypeScript) |
+| Styling | Tailwind CSS 3 + shadcn/ui (New York), CSS-variable theming |
+| i18n | next-intl (`[locale]` segment, `as-needed` prefix) |
+| Fonts | Bricolage Grotesque (display) + Geist (body/mono) |
+| Motion | Framer Motion |
+| Hosting | Vercel (auto-deploy from `main`) |
+
+## Getting started
+
+```bash
+cd Source/Client
+npm install
+npm run dev          # http://localhost:3000
+npm run build        # production build (matches Vercel)
+npm run lint && npm run check-types
+```
+
+## Project structure
+
+```
+Source/Client/src/
+├── app/
+│   ├── [locale]/            # all localized routes
+│   │   ├── (public)/        # landing page
+│   │   └── blog/            # blog list + [slug] post pages
+│   ├── feed.xml/            # RSS
+│   └── layout.tsx           # root (pass-through to [locale]/layout)
+├── components/              # site-header, site-footer, theme/language switchers,
+│                            #   mobile-menu, blog/*, ui/* (shadcn)
+├── content/blog/<locale>/   # Markdown posts per language (en is canonical)
+├── i18n/                    # routing, navigation, request config
+├── messages/<locale>.json   # UI translation catalogs
+└── styles/globals.css       # theme tokens + 9 palettes + utilities
+```
+
+## Theming
+
+Themes are plain classes on `<html>` that override CSS variables (see `globals.css`). The default look needs no class; named palettes (`.aqua`, `.webber`, …) each define their own tokens and an accent-derived background glow. The switcher lives in `components/theme-switcher.tsx`.
+
+## Internationalisation
+
+- Locales and URL strategy are defined in `src/i18n/routing.ts` (`as-needed` prefix keeps English at the bare URL; others get `/es`, `/ja`, …).
+- UI strings live in `src/messages/<locale>.json`. Missing keys **fall back to English** (deep-merge in `src/i18n/request.ts`), so locales can be translated progressively.
+- **Add a language:** add the code to `routing.ts`, create `messages/<locale>.json`, and (optionally) `content/blog/<locale>/`.
+
+> **Note:** the non-English translations are **AI-drafted and pending native-speaker review**. Translated blog posts display a "machine-translated" banner.
+
+## Blog
+
+- Posts are Markdown with front-matter in `src/content/blog/<locale>/`. The English directory is canonical; a post not translated for a locale falls back to English.
+- **Add a post:** drop `your-slug.md` into `content/blog/en/` with front-matter (`title`, `excerpt`, `publishedAt`, `tags`, `category`, `status`). Translations go in the matching locale directory with `aiTranslated: true` to show the review banner.
+
+## Deployment & versioning
+
+- Pushing to `main` triggers an automatic Vercel production deploy.
+- Releases follow [semver](https://semver.org) and are git-tagged (`v1.x.y`); the current version is shown in the site footer and read from `Source/Client/package.json`.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). The legacy 2021 static site is preserved under `Site/pushmanifesto.org/` for reference. Licensed under [LICENSE](LICENSE).

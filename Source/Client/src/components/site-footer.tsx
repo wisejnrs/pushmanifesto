@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Twitter, Linkedin, Github, Rss, ArrowUpRight, Globe } from "lucide-react";
+import pkg from "../../package.json";
 
 const socials = [
   { label: "X / Twitter", href: "https://www.twitter.com/michael_wise", icon: Twitter },
@@ -28,6 +29,15 @@ export function SiteFooter() {
             >
               {t("project")}
               <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+            <span className="px-1 text-muted-foreground/40">·</span>
+            <a
+              href="https://github.com/wisejnrs/pushmanifesto/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-muted-foreground/60 transition-colors hover:text-foreground"
+            >
+              v{pkg.version}
             </a>
           </p>
         </div>
