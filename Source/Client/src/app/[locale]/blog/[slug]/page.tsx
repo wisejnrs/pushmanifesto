@@ -6,15 +6,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getPostBySlugServer, getAllPostSlugs, getAllPostsServer } from "@/lib/blog-server";
+import { setRequestLocale } from "next-intl/server";
 import BlogPostClient from "./blog-post-client";
 import { siteConfig } from "@/lib/site";
 import type { Metadata } from "next";
 import { StructuredData } from "@/components/seo/structured-data";
 
 // Generate dynamic metadata for blog posts
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
-    const post = getPostBySlugServer(slug);
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
+    const { locale, slug } = await params;
+    const post = getPostBySlugServer(slug, locale);
 
     if (!post) {
         return {
@@ -74,10 +75,11 @@ export async function generateStaticParams() {
 // Enable ISR with revalidation every hour
 export const revalidate = 3600;
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const post = getPostBySlugServer(slug);
-    const allPosts = getAllPostsServer();
+export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    const { locale, slug } = await params;
+    setRequestLocale(locale);
+    const post = getPostBySlugServer(slug, locale);
+    const allPosts = getAllPostsServer(locale);
 
     if (!post) {
         notFound();

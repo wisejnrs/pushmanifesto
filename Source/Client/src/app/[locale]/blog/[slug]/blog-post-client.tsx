@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -42,6 +44,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
     const [ttsService] = useState(() => new TextToSpeechService((status) => setTtsStatus(status)));
     const [showTTSTip, setShowTTSTip] = useState(false);
     const { toast } = useToast();
+    const tBlog = useTranslations("blog");
     const ttsTipShown = useRef(false);
 
     // Header settings come from post frontmatter (in-browser editor lives on the
@@ -409,6 +412,15 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                     </div>
                 </div>
             </div>
+
+            {post.aiTranslated && (
+                <div className="mx-auto w-full max-w-7xl px-4 pt-4 md:px-6">
+                    <p className="flex items-center gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-2.5 text-sm text-amber-600 dark:text-amber-200/90">
+                        <Languages className="h-4 w-4 shrink-0" />
+                        {tBlog("machineTranslated")}
+                    </p>
+                </div>
+            )}
 
             {/* Navigation Toolbar */}
             <TooltipProvider>
