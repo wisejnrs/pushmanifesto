@@ -1,28 +1,32 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Github, BookOpen, Store, Menu, X } from "lucide-react";
 
+import { Link } from "@/i18n/navigation";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { MobileMenu } from "@/components/mobile-menu";
 import { cn } from "@/lib/utils";
 
-type NavLink = {
-  label: string;
+export type NavItem = {
+  key: string;
   href: string;
   external?: boolean;
   icon?: React.ComponentType<{ className?: string }>;
 };
 
-const NAV: NavLink[] = [
-  { label: "Manifesto", href: "/#manifesto" },
-  { label: "Blog", href: "/blog" },
-  { label: "GitHub", href: "https://github.com/wisejnrs/pushmanifesto", external: true, icon: Github },
-  { label: "Wiki", href: "https://github.com/wisejnrs/pushmanifesto/wiki", external: true, icon: BookOpen },
-  { label: "Store", href: "https://wisejnrs.myshopify.com", external: true, icon: Store },
+export const NAV: NavItem[] = [
+  { key: "manifesto", href: "/#manifesto" },
+  { key: "blog", href: "/blog" },
+  { key: "github", href: "https://github.com/wisejnrs/pushmanifesto", external: true, icon: Github },
+  { key: "wiki", href: "https://github.com/wisejnrs/pushmanifesto/wiki", external: true, icon: BookOpen },
+  { key: "store", href: "https://wisejnrs.myshopify.com", external: true, icon: Store },
 ];
 
 export function SiteHeader() {
+  const t = useTranslations();
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
 
@@ -42,7 +46,7 @@ export function SiteHeader() {
           : "border-b border-transparent bg-background/0",
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center justify-between gap-2">
         <Link href="/" className="group flex items-center gap-2.5">
           <img
             src="/assets/manifesto-ico.svg"
@@ -55,55 +59,52 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
-          {NAV.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
-              className="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-muted hover:text-foreground"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <span className="mx-1 h-5 w-px bg-border" />
+        <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+          {NAV.map((item) =>
+            item.external ? (
+              <a
+                key={item.key}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-muted hover:text-foreground"
+              >
+                {t(`nav.${item.key}`)}
+                <span className="sr-only"> {t("common.newTab")}</span>
+              </a>
+            ) : (
+              <Link
+                key={item.key}
+                href={item.href}
+                className="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-muted hover:text-foreground"
+              >
+                {t(`nav.${item.key}`)}
+              </Link>
+            ),
+          )}
+          <span className="mx-1 h-5 w-px bg-border" aria-hidden="true" />
+          <LanguageSwitcher />
           <ThemeSwitcher />
         </nav>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-1.5 md:hidden">
+          <LanguageSwitcher />
           <ThemeSwitcher />
           <button
             type="button"
-            aria-label="Toggle menu"
+            aria-label={open ? t("common.closeMenu") : t("common.openMenu")}
             aria-expanded={open}
+            aria-haspopup="dialog"
+            aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border/70 text-foreground active:scale-95"
+            className="grid h-9 w-9 place-items-center rounded-full border border-border/70 text-foreground transition-colors hover:bg-foreground/10 active:scale-95"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
       </div>
 
-      {open && (
-        <nav className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
-          <div className="container flex flex-col py-2">
-            {NAV.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
-                onClick={() => setOpen(false)}
-                className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                {item.icon ? <item.icon className="h-4 w-4" /> : null}
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </nav>
-      )}
+      <MobileMenu open={open} onClose={() => setOpen(false)} nav={NAV} />
     </header>
   );
 }

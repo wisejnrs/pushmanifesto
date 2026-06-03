@@ -23,8 +23,10 @@
         "src/lib/remark-custom-alerts.ts",
         "src/lib/text-to-speech.ts",
         "src/lib/types.ts",
-        "src/app/blog/**",
-        "src/app/music/**"
+        "**/blog/**",
+        "**/blog-client.tsx",
+        "**/blog-post-client.tsx",
+        "**/music/**"
       ],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off",
