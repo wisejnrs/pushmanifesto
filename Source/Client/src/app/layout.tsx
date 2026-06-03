@@ -52,12 +52,14 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable} ${display.variable}`}
     >
       <body translate="no" className="font-sans">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+        {/* Apply the saved palette class before paint to avoid a flash. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('pm-theme');if(t&&t!=='default'){document.documentElement.classList.add(t);}}catch(e){}})();",
+          }}
+        />
+        <ThemeProvider attribute="class" forcedTheme="dark">
           {children}
         </ThemeProvider>
         <Analytics />

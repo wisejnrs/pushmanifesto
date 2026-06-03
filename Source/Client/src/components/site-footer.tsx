@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Github, Rss } from "lucide-react";
+import { Twitter, Linkedin, Github, Rss, ArrowUpRight, Globe } from "lucide-react";
 
 const socials = [
   { label: "X / Twitter", href: "https://www.twitter.com/michael_wise", icon: Twitter },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/michaelleahywise/", icon: Linkedin },
   { label: "GitHub", href: "https://github.com/wisejnrs/pushmanifesto", icon: Github },
   { label: "RSS", href: "/feed.xml", icon: Rss },
+  { label: "wisejnrs.net", href: "https://www.wisejnrs.net", icon: Globe },
 ];
 
 export function SiteFooter() {
@@ -15,7 +16,17 @@ export function SiteFooter() {
         <div className="flex items-center gap-2.5">
           <img src="/assets/manifesto-ico.svg" alt="" aria-hidden className="h-6 w-6" />
           <p className="text-sm text-muted-foreground">
-            Push Manifesto — a way to do creativity.
+            Push Manifesto — a way to do creativity.{" "}
+            <span className="px-1 text-muted-foreground/40">·</span>{" "}
+            <a
+              href="https://www.wisejnrs.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-0.5 font-medium text-foreground/80 underline-offset-4 transition-colors hover:text-foreground hover:underline"
+            >
+              A WiseJNRS project
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
           </p>
         </div>
 

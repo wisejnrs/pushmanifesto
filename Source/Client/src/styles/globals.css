@@ -42,6 +42,80 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
+  /* ── Palette themes (all dark) — layered on top of .dark via an <html> class.
+     Default = no class (the brand glass look above). Adapted from wisejnrs.net. */
+  .aqua {
+    --background: 224 71% 4%;
+    --foreground: 203 50% 92%;
+    --card: 224 60% 7%;
+    --card-foreground: 203 50% 92%;
+    --primary: 185 100% 40%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 198 100% 43%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 188 40% 14%;
+    --muted-foreground: 203 45% 74%;
+    --accent: 203 60% 60%;
+    --accent-foreground: 224 71% 4%;
+    --border: 188 38% 20%;
+    --input: 188 38% 20%;
+    --ring: 185 100% 40%;
+  }
+
+  .tunnel-drive {
+    --background: 220 60% 4%;
+    --foreground: 180 70% 93%;
+    --card: 220 50% 7%;
+    --card-foreground: 180 70% 93%;
+    --primary: 174 72% 56%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 180 100% 28%;
+    --secondary-foreground: 180 80% 95%;
+    --muted: 190 35% 13%;
+    --muted-foreground: 174 45% 74%;
+    --accent: 24 100% 55%;
+    --accent-foreground: 224 71% 4%;
+    --border: 180 35% 18%;
+    --input: 180 35% 18%;
+    --ring: 174 72% 56%;
+  }
+
+  .graphic-design {
+    --background: 220 55% 5%;
+    --foreground: 214 39% 88%;
+    --card: 220 45% 8%;
+    --card-foreground: 214 39% 88%;
+    --primary: 32 95% 50%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 214 50% 38%;
+    --secondary-foreground: 214 39% 95%;
+    --muted: 214 30% 14%;
+    --muted-foreground: 214 28% 70%;
+    --accent: 22 88% 56%;
+    --accent-foreground: 224 71% 4%;
+    --border: 214 28% 20%;
+    --input: 214 28% 20%;
+    --ring: 32 95% 50%;
+  }
+
+  .trek-warp {
+    --background: 250 60% 4%;
+    --foreground: 180 80% 94%;
+    --card: 250 45% 8%;
+    --card-foreground: 180 80% 94%;
+    --primary: 180 90% 46%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 309 90% 49%;
+    --secondary-foreground: 180 90% 95%;
+    --muted: 260 35% 14%;
+    --muted-foreground: 200 45% 76%;
+    --accent: 309 90% 60%;
+    --accent-foreground: 224 71% 4%;
+    --border: 260 35% 22%;
+    --input: 260 35% 22%;
+    --ring: 180 90% 46%;
+  }
 }
 
 @layer base {
@@ -73,6 +147,18 @@
       radial-gradient(48rem 48rem at 90% -12%, rgba(231, 60, 111, 0.24), transparent 60%),
       radial-gradient(46rem 46rem at -10% 12%, rgba(35, 148, 213, 0.24), transparent 60%),
       radial-gradient(44rem 44rem at 55% 122%, rgba(42, 243, 183, 0.16), transparent 62%);
+  }
+  /* Named palettes derive their mesh-glow from their own accent vars, so each
+     theme gets a distinct ambient world. Placed after .dark body to win. */
+  .aqua body,
+  .tunnel-drive body,
+  .graphic-design body,
+  .trek-warp body {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E"),
+      radial-gradient(48rem 48rem at 90% -12%, hsl(var(--primary) / 0.26), transparent 60%),
+      radial-gradient(46rem 46rem at -10% 12%, hsl(var(--accent) / 0.24), transparent 60%),
+      radial-gradient(44rem 44rem at 55% 122%, hsl(var(--secondary) / 0.20), transparent 62%);
   }
   ::selection {
     background-color: hsl(342 75% 58% / 0.3);
