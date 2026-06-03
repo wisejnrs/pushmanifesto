@@ -103,6 +103,11 @@
     "project": "Un proyecto de WiseJNRS"
   },
   "blog": {
-    "machineTranslated": "Esta entrada fue traducida automáticamente y está pendiente de revisión humana."
+    "machineTranslated": "Esta entrada fue traducida automáticamente y está pendiente de revisión humana.",
+    "subtitle": "Reflexiones sobre innovación, entrega y la intersección entre creatividad y código.",
+    "searchPlaceholder": "Busca artículos por título, contenido, etiquetas o autor…",
+    "noResults": "No se encontraron entradas que coincidan con tus criterios.",
+    "minRead": "{minutes} min de lectura",
+    "readArticle": "Leer artículo"
   }
 }

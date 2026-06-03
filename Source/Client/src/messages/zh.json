@@ -103,6 +103,11 @@
     "project": "WiseJNRS 出品"
   },
   "blog": {
-    "machineTranslated": "本文为机器翻译，尚待人工校对。"
+    "machineTranslated": "本文为机器翻译，尚待人工校对。",
+    "subtitle": "关于创新、交付，以及创造力与代码交汇之处的洞见。",
+    "searchPlaceholder": "按标题、内容、标签或作者搜索文章……",
+    "noResults": "没有符合条件的文章。",
+    "minRead": "阅读约 {minutes} 分钟",
+    "readArticle": "阅读文章"
   }
 }

@@ -103,6 +103,11 @@
     "project": "Ein WiseJNRS-Projekt"
   },
   "blog": {
-    "machineTranslated": "Dieser Beitrag wurde maschinell übersetzt und wartet auf eine menschliche Überprüfung."
+    "machineTranslated": "Dieser Beitrag wurde maschinell übersetzt und wartet auf eine menschliche Überprüfung.",
+    "subtitle": "Einblicke zu Innovation, Lieferung und dem Zusammenspiel von Kreativität und Code.",
+    "searchPlaceholder": "Artikel nach Titel, Inhalt, Tags oder Autor durchsuchen…",
+    "noResults": "Keine Beiträge gefunden, die deinen Kriterien entsprechen.",
+    "minRead": "{minutes} Min. Lesezeit",
+    "readArticle": "Artikel lesen"
   }
 }

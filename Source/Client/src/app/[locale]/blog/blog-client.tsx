@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ interface BlogClientProps {
 }
 
 export default function BlogClient({ initialPosts, categories, featuredPost, allTags }: BlogClientProps) {
+    const t = useTranslations("blog");
     const router = useRouter();
     const blogGridRef = useRef<HTMLDivElement>(null);
 
@@ -74,12 +76,10 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
                     className="text-center mb-12"
                 >
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                        <span className="bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent">
-                            Blog
-                        </span>
+                        <span className="text-gradient-brand">Blog</span>
                     </h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        Insights on music production, technology, and the intersection of creativity and code.
+                        {t("subtitle")}
                     </p>
                 </motion.div>
 
@@ -92,7 +92,7 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
                 >
                     <SearchComponent
                         posts={initialPosts}
-                        placeholder="Search articles by title, content, tags, or author..."
+                        placeholder={t("searchPlaceholder")}
                         showFilters={true}
                         maxResults={8}
                         autoFocus={true}
@@ -152,7 +152,7 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
                         aria-live="polite"
                     >
                         <p className="text-muted-foreground text-lg">
-                            No posts found matching your criteria.
+                            {t("noResults")}
                         </p>
                     </motion.div>
                 )}
@@ -162,6 +162,7 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
 }
 
 function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: string) => void }) {
+    const t = useTranslations("blog");
     return (
         <Card className="overflow-hidden shadow-2xl bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-500">
             <div className="md:flex">
@@ -201,7 +202,7 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
                         </div>
                         <div className="flex items-center gap-2">
                             <Clock className="h-4 w-4 opacity-70" />
-                            <span className="font-medium">{post.readingTime} min read</span>
+                            <span className="font-medium">{t("minRead", { minutes: post.readingTime })}</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <User className="h-4 w-4 opacity-70" />
@@ -231,9 +232,7 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
                     </div>
                     <motion.div whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.02 }}>
                         <Button asChild variant="outline" className="h-11 px-6 font-semibold tracking-wide group/btn">
-                            <Link href={`/blog/${post.slug}`}>
-                                Read Article
-                                <motion.div
+                            <Link href={`/blog/${post.slug}`}>{t("readArticle")}<motion.div
                                     whileHover={{ x: 3 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
                                     className="inline-block"
@@ -250,6 +249,7 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
 }
 
 function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: string) => void }) {
+    const t = useTranslations("blog");
     return (
         <Card className="h-full overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group flex flex-col focus-within:ring-2 focus-within:ring-[#F97316] focus-within:ring-offset-2 focus-within:ring-offset-background bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10">
             {post.coverImage && (
@@ -287,7 +287,7 @@ function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: stri
                 <div className="flex items-center gap-4 mb-5 text-xs text-muted-foreground/70">
                     <div className="flex items-center gap-1.5">
                         <Clock className="h-3.5 w-3.5" />
-                        <span className="font-medium">{post.readingTime} min</span>
+                        <span className="font-medium">{t("minRead", { minutes: post.readingTime })}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
                         <User className="h-3.5 w-3.5" />
@@ -320,9 +320,7 @@ function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: stri
             <CardFooter className="pt-0 px-6 pb-6">
                 <motion.div whileTap={{ scale: 0.97 }} whileHover={{ scale: 1.02 }} className="w-full">
                     <Button asChild variant="outline" className="w-full h-10 font-semibold tracking-wide group/btn">
-                        <Link href={`/blog/${post.slug}`}>
-                            Read Article
-                            <motion.div
+                        <Link href={`/blog/${post.slug}`}>{t("readArticle")}<motion.div
                                 whileHover={{ x: 3 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
                                 className="inline-block"

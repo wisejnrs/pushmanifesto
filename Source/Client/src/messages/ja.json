@@ -103,6 +103,11 @@
     "project": "WiseJNRS のプロジェクト"
   },
   "blog": {
-    "machineTranslated": "この記事は機械翻訳であり、人によるレビュー待ちです。"
+    "machineTranslated": "この記事は機械翻訳であり、人によるレビュー待ちです。",
+    "subtitle": "イノベーション、デリバリー、そして創造性とコードが交わる場所についての考察。",
+    "searchPlaceholder": "タイトル・本文・タグ・著者で記事を検索…",
+    "noResults": "条件に一致する記事はありません。",
+    "minRead": "約 {minutes} 分で読めます",
+    "readArticle": "記事を読む"
   }
 }

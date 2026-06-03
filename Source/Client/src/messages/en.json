@@ -103,6 +103,11 @@
     "project": "A WiseJNRS project"
   },
   "blog": {
-    "machineTranslated": "This post was machine-translated and is pending human review."
+    "machineTranslated": "This post was machine-translated and is pending human review.",
+    "subtitle": "Insights on innovation, delivery, and the intersection of creativity and code.",
+    "searchPlaceholder": "Search articles by title, content, tags, or author…",
+    "noResults": "No posts found matching your criteria.",
+    "minRead": "{minutes} min read",
+    "readArticle": "Read article"
   }
 }

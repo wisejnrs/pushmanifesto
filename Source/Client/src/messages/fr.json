@@ -103,6 +103,11 @@
     "project": "Un projet WiseJNRS"
   },
   "blog": {
-    "machineTranslated": "Cet article a été traduit automatiquement et est en attente de relecture humaine."
+    "machineTranslated": "Cet article a été traduit automatiquement et est en attente de relecture humaine.",
+    "subtitle": "Réflexions sur l'innovation, la livraison et la rencontre entre créativité et code.",
+    "searchPlaceholder": "Rechercher des articles par titre, contenu, tags ou auteur…",
+    "noResults": "Aucun article ne correspond à vos critères.",
+    "minRead": "{minutes} min de lecture",
+    "readArticle": "Lire l'article"
   }
 }
