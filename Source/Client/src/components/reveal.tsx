@@ -15,11 +15,17 @@ export function Reveal({ children, delay = 0, className, as = "div" }: RevealPro
   const reduce = useReducedMotion();
   const Comp = motion[as] as typeof motion.div;
 
+  // Reduced motion: render static, fully-visible content (no enter animation).
+  if (reduce) {
+    const Plain = as as React.ElementType;
+    return <Plain className={className}>{children}</Plain>;
+  }
+
   return (
     <Comp
       className={className}
-      initial={reduce ? false : { opacity: 0, y: 18 }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
     >

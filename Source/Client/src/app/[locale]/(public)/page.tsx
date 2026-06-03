@@ -114,7 +114,7 @@ gtag('config', 'G-VZ3GBPF421');`}
         <img src="/assets/layers-c.svg" alt="" aria-hidden className="pointer-events-none absolute right-[14%] top-72 hidden h-7 w-7 animate-float-slower opacity-60 dark:invert lg:block" />
         <img src="/assets/layers-rect.svg" alt="" aria-hidden className="pointer-events-none absolute left-[16%] bottom-16 hidden h-6 w-6 animate-float-slower opacity-50 dark:invert lg:block" />
 
-        <div className="container relative grid min-h-[88vh] items-center gap-6 py-24 md:py-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-0">
+        <div className="container relative grid min-h-[72vh] items-center gap-6 py-16 md:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-0">
           <div className="relative z-10">
             <Reveal>
               <Eyebrow>{t("hero.eyebrow")}</Eyebrow>
@@ -160,7 +160,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ─────────────────── The Manifesto intro ─────────────────── */}
       <section id="manifesto" className="scroll-mt-20 border-t border-border/60">
-        <div className="container grid gap-10 py-24 md:grid-cols-[1fr_2fr] md:py-32">
+        <div className="container grid gap-8 py-16 md:grid-cols-[1fr_2fr] md:py-24">
           <Reveal>
             <div className="md:sticky md:top-28">
               <Eyebrow>{t("manifesto.eyebrow")}</Eyebrow>
@@ -185,7 +185,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ───────────────────── Principles ───────────────────── */}
       <section className="border-t border-border/60">
-        <div className="container py-24 md:py-32">
+        <div className="container py-16 md:py-24">
           <Reveal>
             <Eyebrow>{t("principles.eyebrow")}</Eyebrow>
             <h2 className="mt-5 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
@@ -193,7 +193,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </Reveal>
 
-          <ol className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {PRINCIPLE_KEYS.map((key, i) => {
               const label = t(`principles.items.${key}.label`);
               const description = t(`principles.items.${key}.description`);
@@ -225,7 +225,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ───────────────────── Voices / quotes ───────────────────── */}
       <section className="border-y border-border/60 bg-muted/50">
-        <div className="container py-24 md:py-28">
+        <div className="container py-14 md:py-20">
           <Reveal>
             <Eyebrow>{t("voices.eyebrow")}</Eyebrow>
             <h2 className="mt-5 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
@@ -233,7 +233,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </Reveal>
         </div>
-        <Reveal className="pb-24 md:pb-28">
+        <Reveal className="pb-14 md:pb-20">
           <QuotesMarquee quotes={quotes} />
         </Reveal>
       </section>
