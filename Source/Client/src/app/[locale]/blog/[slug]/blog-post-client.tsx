@@ -15,8 +15,6 @@ import MarkdownRenderer from "@/components/blog/markdown-renderer";
 import RelatedPosts from "@/components/blog/related-posts";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { TextToSpeechService, TTSStatus } from "@/lib/text-to-speech";
-import { AISummarizer } from "@/components/blog/ai-summarizer";
-import { AIKeywords } from "@/components/blog/ai-keywords";
 import { useToast } from "@/hooks/use-toast";
 import { BackToTop } from "@/components/ui/back-to-top";
 import {
