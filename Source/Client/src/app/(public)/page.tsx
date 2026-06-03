@@ -145,7 +145,8 @@ function emphasise(text: string) {
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-border/70 bg-background/50 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+    <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground shadow-sm">
+      <span className="h-1.5 w-1.5 rounded-full bg-gradient-brand" />
       {children}
     </span>
   );
@@ -236,7 +237,7 @@ gtag('config', 'G-VZ3GBPF421');`}
                 </Link>
                 <Link
                   href="/blog"
-                  className="group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-muted"
+                  className="group glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground/5"
                 >
                   Read the blog
                   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -337,7 +338,7 @@ gtag('config', 'G-VZ3GBPF421');`}
       </section>
 
       {/* ───────────────────── Voices / quotes ───────────────────── */}
-      <section className="border-t border-border/60 bg-muted/30">
+      <section className="border-y border-border/60 bg-muted/50">
         <div className="container py-24 md:py-28">
           <Reveal>
             <Eyebrow>Voices</Eyebrow>
@@ -381,7 +382,7 @@ gtag('config', 'G-VZ3GBPF421');`}
                 href="https://github.com/wisejnrs/pushmanifesto"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-muted"
+                className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground/5"
               >
                 View on GitHub
                 <ArrowUpRight className="h-4 w-4" />

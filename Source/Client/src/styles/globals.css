@@ -4,28 +4,31 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm paper rather than pure #fff, so white cards/surfaces gain depth. */
+    --background: 38 36% 97%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
+    --secondary: 38 30% 94%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
+    --muted: 38 28% 93%;
+    /* Darker than the shadcn default — light gray on near-white reads "washed out". */
+    --muted-foreground: 220 16% 38%;
+    --accent: 38 30% 94%;
     --accent-foreground: 222.2 47.4% 11.2%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 220 18% 88%;
+    --input: 220 18% 88%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222 47% 5%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    /* Card slightly lifted off the background for elevation in dark mode. */
+    --card: 222 40% 9%;
     --card-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
@@ -52,9 +55,27 @@
   body {
     @apply bg-background text-foreground antialiased;
     text-rendering: optimizeLegibility;
+    /* Layered behind all content: fine grain over faint brand-tint orbs over
+       the warm base. Adds depth so the page never reads as flat white. */
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E"),
+      radial-gradient(45rem 45rem at 94% -10%, rgba(231, 60, 111, 0.12), transparent 60%),
+      radial-gradient(42rem 42rem at -8% 16%, rgba(35, 148, 213, 0.12), transparent 60%),
+      radial-gradient(40rem 40rem at 50% 116%, rgba(42, 243, 183, 0.10), transparent 60%);
+    background-attachment: fixed, fixed, fixed, fixed;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  }
+  /* Dark mode leans into the "ethereal glass" look: deep base with stronger,
+     glowing brand mesh-gradient orbs. */
+  .dark body {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E"),
+      radial-gradient(48rem 48rem at 90% -12%, rgba(231, 60, 111, 0.24), transparent 60%),
+      radial-gradient(46rem 46rem at -10% 12%, rgba(35, 148, 213, 0.24), transparent 60%),
+      radial-gradient(44rem 44rem at 55% 122%, rgba(42, 243, 183, 0.16), transparent 62%);
   }
   ::selection {
-    background-color: hsl(330 80% 60% / 0.22);
+    background-color: hsl(342 75% 58% / 0.3);
   }
   /* Even line lengths on headings, fewer orphans in prose. */
   h1, h2, h3 {
@@ -66,6 +87,20 @@
 }
 
 @layer utilities {
+  /* Frosted-glass surface. Translucent + blurred in both themes; a vantablack
+     white-tint with a bright hairline in dark mode. */
+  .glass {
+    background-color: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .dark .glass {
+    background-color: hsl(0 0% 100% / 0.05);
+    border-color: hsl(0 0% 100% / 0.12);
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 0.06);
+  }
+
   /* The original Push Manifesto brand gradient: orange → pink → blue → teal,
      slowly panning. Used for accent text. */
   .text-gradient-brand {

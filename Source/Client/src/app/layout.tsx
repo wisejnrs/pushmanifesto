@@ -53,7 +53,7 @@ export default function RootLayout({
       <body translate="no" className="font-sans">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

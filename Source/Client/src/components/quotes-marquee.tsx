@@ -20,12 +20,13 @@ export function QuotesMarquee({ quotes }: { quotes: Quote[] }) {
         {row.map((q, i) => (
           <figure
             key={i}
-            className="flex w-[320px] shrink-0 flex-col justify-between gap-4 rounded-2xl border border-border/70 bg-background/40 p-6 transition-colors duration-300 hover:border-border"
+            className="glass flex w-[320px] shrink-0 flex-col justify-between gap-4 rounded-2xl p-6 shadow-[0_1px_2px_rgba(16,24,40,0.04),0_16px_40px_-20px_rgba(16,24,40,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_2px_6px_rgba(16,24,40,0.06),0_28px_56px_-24px_rgba(16,24,40,0.45)]"
           >
             <blockquote className="font-display text-[17px] leading-snug text-foreground/90">
               “{q.quote}”
             </blockquote>
-            <figcaption className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
+            <figcaption className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
+              <span className="h-1.5 w-1.5 rounded-full bg-gradient-brand" />
               {q.author}
             </figcaption>
           </figure>
