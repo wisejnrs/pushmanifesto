@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Github, BookOpen, Store, Menu, X } from "lucide-react";
 
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 import { cn } from "@/lib/utils";
 
 type NavLink = {
@@ -68,11 +68,11 @@ export function SiteHeader() {
             </Link>
           ))}
           <span className="mx-1 h-5 w-px bg-border" />
-          <ThemeToggle />
+          <ThemeSwitcher />
         </nav>
 
         <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
+          <ThemeSwitcher />
           <button
             type="button"
             aria-label="Toggle menu"
