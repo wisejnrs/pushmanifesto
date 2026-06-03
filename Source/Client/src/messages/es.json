@@ -37,18 +37,18 @@
     "eyebrow": "Principios",
     "heading": "Los pilares de un push.",
     "items": {
-      "push": { "label": "Push" },
-      "ambiguity": { "label": "Ambigüedad y sesgo cognitivo" },
-      "risk": { "label": "Riesgo" },
-      "checkins": { "label": "Seguimientos, hitos y revisiones" },
-      "roadblocks": { "label": "Identificar y eliminar obstáculos" },
-      "sharedValue": { "label": "Crear valor compartido" },
-      "miseEnPlace": { "label": "Mise en place" },
-      "workItems": { "label": "Elementos de trabajo" },
-      "gettingItWrong": { "label": "Equivocarse" },
-      "goFindOut": { "label": "Ve y averígualo" },
-      "rollEm": { "label": "Saber cuándo arriesgar" },
-      "hypothesis": { "label": "Hipótesis" }
+      "push": { "label": "Push", "description": "Una unidad lógica de trabajo con principio, mitad y fin. El ‘fin’ suele representar un resultado, no tiene por qué pasar de inmediato al siguiente, incluye todas las tareas, tiene valor y cuenta con un acuerdo de ‘Hecho’: todos obtienen algo." },
+      "ambiguity": { "label": "Ambigüedad y sesgo cognitivo", "description": "Acaban con los proyectos. Ofrece alta legibilidad, modelos mentales claros, apoya a audiencias diversas, adopta convenciones simples, reduce la complejidad, toma la ruta de menor coste, busca la claridad y cuestiona siempre, siempre. Adopta un enfoque agnóstico." },
+      "risk": { "label": "Riesgo", "description": "También acaban con los proyectos. No se llega al espacio cruzando los dedos: cita y contrarresta los riesgos de forma continua. Seguro que Babbage, Boole y Bayes conocían a Murphy." },
+      "checkins": { "label": "Seguimientos, hitos y revisiones", "description": "Aunque las reuniones diarias sirven, prefiere un seguimiento de bajo protocolo y poco ruido sobre las tareas: al principio y al final de la semana, con honestidad y entendimiento compartido. El boletín de notas de tu hijo no debería ser una sorpresa, gracias al cuidado y la implicación." },
+      "roadblocks": { "label": "Identificar y eliminar obstáculos", "description": "La identificación temprana es clave, con un enfoque inclusivo." },
+      "sharedValue": { "label": "Crear valor compartido", "description": "Un enfoque inclusivo y humilde, reconociendo que tu proyecto —aun teniendo valor y beneficios— contribuye a metas más amplias." },
+      "miseEnPlace": { "label": "Mise en place", "description": "No empieces un proyecto sin tu mise en place lista. Ten esas verduras ya cortadas." },
+      "workItems": { "label": "Elementos de trabajo", "description": "Las tareas, ítems y tarjetas transforman Activos. Vincula la tarea al activo. **No** vuelques los resultados de nuevo en la tarea. La gestión del conocimiento es de primera clase." },
+      "gettingItWrong": { "label": "Equivocarse", "description": "Ser instruido, pensar de forma crítica y adoptar un enfoque científico siempre te ayudará a escalar esas montañas." },
+      "goFindOut": { "label": "Ve y averígualo", "description": "Implícate. Implícate pronto y lo suficiente, aunque sea para hacer amigos. Levántate de la silla y ve a averiguarlo. Haz el trabajo y no repitas lo obvio." },
+      "rollEm": { "label": "Saber cuándo arriesgar", "description": "Gestiona tu esfuerzo, ajusta tu enfoque y no tientes a la suerte. Solo lanza un push si las condiciones son favorables. Si algo puede salir mal, saldrá mal: aplica la ley de Murphy." },
+      "hypothesis": { "label": "Hipótesis", "description": "Toda gran _idea_ comienza con una estrategia de prueba. No existe si no se puede probar." }
     }
   },
   "voices": {
