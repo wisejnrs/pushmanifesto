@@ -116,6 +116,78 @@
     --input: 260 35% 22%;
     --ring: 180 90% 46%;
   }
+
+  .illustration {
+    --background: 28 45% 5%;
+    --foreground: 50 90% 92%;
+    --card: 28 40% 8%;
+    --card-foreground: 50 90% 92%;
+    --primary: 50 95% 52%;
+    --primary-foreground: 28 45% 6%;
+    --secondary: 45 95% 50%;
+    --secondary-foreground: 28 45% 6%;
+    --muted: 35 30% 13%;
+    --muted-foreground: 48 50% 76%;
+    --accent: 4 87% 60%;
+    --accent-foreground: 50 90% 95%;
+    --border: 40 35% 20%;
+    --input: 40 35% 20%;
+    --ring: 50 95% 52%;
+  }
+
+  .so {
+    --background: 309 30% 5%;
+    --foreground: 351 30% 93%;
+    --card: 309 28% 8%;
+    --card-foreground: 351 30% 93%;
+    --primary: 350 55% 78%;
+    --primary-foreground: 309 40% 8%;
+    --secondary: 309 40% 40%;
+    --secondary-foreground: 351 30% 95%;
+    --muted: 309 25% 14%;
+    --muted-foreground: 350 35% 78%;
+    --accent: 350 55% 78%;
+    --accent-foreground: 309 40% 8%;
+    --border: 309 25% 22%;
+    --input: 309 25% 22%;
+    --ring: 350 55% 78%;
+  }
+
+  .oat-flat-white {
+    --background: 20 35% 5%;
+    --foreground: 22 40% 90%;
+    --card: 20 30% 8%;
+    --card-foreground: 22 40% 90%;
+    --primary: 19 70% 60%;
+    --primary-foreground: 20 35% 6%;
+    --secondary: 17 45% 70%;
+    --secondary-foreground: 20 35% 6%;
+    --muted: 20 25% 13%;
+    --muted-foreground: 22 40% 78%;
+    --accent: 19 70% 60%;
+    --accent-foreground: 20 35% 6%;
+    --border: 20 28% 20%;
+    --input: 20 28% 20%;
+    --ring: 19 70% 60%;
+  }
+
+  .webber {
+    --background: 224 60% 5%;
+    --foreground: 222 60% 94%;
+    --card: 224 50% 8%;
+    --card-foreground: 222 60% 94%;
+    --primary: 215 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 231 96% 28%;
+    --secondary-foreground: 222 60% 95%;
+    --muted: 224 35% 14%;
+    --muted-foreground: 215 50% 78%;
+    --accent: 48 100% 52%;
+    --accent-foreground: 224 71% 6%;
+    --border: 224 35% 22%;
+    --input: 224 35% 22%;
+    --ring: 215 100% 55%;
+  }
 }
 
 @layer base {
@@ -174,7 +246,11 @@
   .aqua body,
   .tunnel-drive body,
   .graphic-design body,
-  .trek-warp body {
+  .trek-warp body,
+  .illustration body,
+  .so body,
+  .oat-flat-white body,
+  .webber body {
     background-image:
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E"),
       radial-gradient(48rem 48rem at 90% -12%, hsl(var(--primary) / 0.26), transparent 60%),

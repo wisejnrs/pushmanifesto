@@ -114,24 +114,24 @@ gtag('config', 'G-VZ3GBPF421');`}
         <img src="/assets/layers-c.svg" alt="" aria-hidden className="pointer-events-none absolute right-[14%] top-72 hidden h-7 w-7 animate-float-slower opacity-60 dark:invert lg:block" />
         <img src="/assets/layers-rect.svg" alt="" aria-hidden className="pointer-events-none absolute left-[16%] bottom-16 hidden h-6 w-6 animate-float-slower opacity-50 dark:invert lg:block" />
 
-        <div className="container relative grid min-h-[72vh] items-center gap-6 py-16 md:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-0">
+        <div className="container relative grid min-h-[calc(100dvh-3.5rem)] content-center items-center gap-1 py-6 md:min-h-[72vh] md:gap-6 md:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-0">
           <div className="relative z-10">
             <Reveal>
               <Eyebrow>{t("hero.eyebrow")}</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h1 className="mt-6 max-w-2xl font-display text-[clamp(2.75rem,7.5vw,6rem)] font-bold leading-[0.95] tracking-[-0.03em]">
+              <h1 className="mt-5 max-w-2xl font-display text-[clamp(2.25rem,7vw,6rem)] font-bold leading-[0.95] tracking-[-0.03em] md:mt-6">
                 {t("hero.titleLead")}{" "}
                 <span className="text-gradient-brand">{t("hero.titleHighlight")}</span>.
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:mt-7 md:text-xl">
                 {t("hero.lede")}
               </p>
             </Reveal>
             <Reveal delay={0.15}>
-              <div className="mt-10 flex flex-wrap items-center gap-3">
+              <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-10">
                 <MagneticButton
                   href="#manifesto"
                   className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/25 transition-transform duration-300 active:scale-[0.97]"
@@ -203,15 +203,27 @@ gtag('config', 'G-VZ3GBPF421');`}
                     href={tweetHref(`${label}: ${description.replace(/[*_]/g, "")}`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group glass flex h-full flex-col gap-3 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_-28px_rgba(0,0,0,0.55)]"
+                    className="group glass relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_28px_56px_-26px_rgba(231,60,111,0.45)]"
                   >
+                    {/* brand-gradient accent line wipes in left→right on hover */}
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px origin-left scale-x-0 bg-gradient-brand transition-transform duration-500 ease-out group-hover:scale-x-100"
+                    />
+                    {/* faint brand wash fades in */}
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-0 -z-10 bg-gradient-brand opacity-0 transition-opacity duration-500 group-hover:opacity-[0.07]"
+                    />
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-colors group-hover:text-[#e73c6f]">
+                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-all duration-300 group-hover:scale-110 group-hover:text-[#e73c6f]">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-muted-foreground" />
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#e73c6f]" />
                     </div>
-                    <h3 className="font-display text-lg font-semibold tracking-tight">{label}</h3>
+                    <h3 className="font-display text-lg font-semibold tracking-tight transition-colors duration-300 group-hover:text-foreground">
+                      {label}
+                    </h3>
                     <p className="text-[14px] leading-relaxed text-muted-foreground">
                       {emphasise(description)}
                     </p>

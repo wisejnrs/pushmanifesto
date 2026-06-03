@@ -16,6 +16,10 @@ const THEMES: Theme[] = [
   { id: "tunnel-drive", name: "Tunnel Drive", desc: "Teal & orange", swatches: ["#4db8ac", "#008b8b", "#ff7f00"] },
   { id: "graphic-design", name: "Graphic Design", desc: "Blue & orange", swatches: ["#5a82c2", "#f28705", "#f24405"] },
   { id: "trek-warp", name: "Warp", desc: "Cyan & magenta", swatches: ["#0bd9d9", "#f20ccc", "#f20f62"] },
+  { id: "illustration", name: "Illustration", desc: "Warm yellows", swatches: ["#f2e205", "#f2cb05", "#f24c3d"] },
+  { id: "so", name: "So", desc: "Vintage rose", swatches: ["#f2d0d5", "#582e54", "#da93a7"] },
+  { id: "oat-flat-white", name: "Oat Flat White", desc: "Earthy peach", swatches: ["#e3aa99", "#cd9f8f", "#dc7147"] },
+  { id: "webber", name: "Webber", desc: "Racing colours", swatches: ["#0066ff", "#dc0000", "#ffd700"] },
 ];
 
 const CLASSES = THEMES.filter((t) => t.id !== "default").map((t) => t.id);
