@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any -- generic deep-merge helper */
 import { getRequestConfig } from "next-intl/server";
+import { hasLocale } from "next-intl";
 
 import { routing } from "./routing";
 import en from "../messages/en.json";
@@ -21,7 +22,7 @@ function deepMerge<T>(base: T, override: Partial<T>): T {
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
-  const locale = (routing.locales as readonly string[]).includes(requested ?? "")
+  const locale = hasLocale(routing.locales, requested)
     ? requested
     : routing.defaultLocale;
   const messages =

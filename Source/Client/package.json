@@ -1,6 +1,6 @@
 {
   "name": "pushmanifesto",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "private": true,
   "scripts": {
     "predev": "npm run clean",
@@ -28,7 +28,6 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "@xenova/transformers": "^2.17.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
@@ -42,7 +41,7 @@
     "lucide-react": "^0.377.0",
     "mermaid": "^11.15.0",
     "next": "^15.5.9",
-    "next-intl": "^3.26.5",
+    "next-intl": "^4.13.0",
     "next-themes": "^0.4.3",
     "react": "^19.1.1",
     "react-chrono": "^2.9.1",
@@ -78,5 +77,8 @@
     "tailwindcss": "^3.4.3",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }
