@@ -1,116 +1,104 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { ArrowLeft, CalendarDays, Clock } from "lucide-react";
-
-import { getAllPostSlugs, getPostBySlug, getRelatedPosts } from "@/lib/blog";
-import { siteConfig } from "@/lib/site";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { MarkdownRenderer } from "@/components/blog/markdown-renderer";
-import { TableOfContents } from "@/components/blog/table-of-contents";
-import { RelatedPosts } from "@/components/blog/related-posts";
+import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { getPostBySlugServer, getAllPostSlugs, getAllPostsServer } from "@/lib/blog-server";
+import BlogPostClient from "./blog-post-client";
+import { siteConfig } from "@/lib/site";
+import type { Metadata } from "next";
+import { StructuredData } from "@/components/seo/structured-data";
 
+// Generate dynamic metadata for blog posts
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const post = getPostBySlugServer(slug);
+
+    if (!post) {
+        return {
+            title: "Post Not Found",
+            description: "The requested blog post could not be found.",
+        };
+    }
+
+    const ogImage = post.coverImage || `${siteConfig.url}/og-image.jpg`;
+    const publishedTime = new Date(post.publishedAt).toISOString();
+
+    return {
+        title: post.title,
+        description: post.excerpt,
+        authors: [{ name: post.author.name }],
+        openGraph: {
+            type: "article",
+            locale: "en_AU",
+            url: `${siteConfig.url}/blog/${slug}`,
+            title: post.title,
+            description: post.excerpt,
+            siteName: siteConfig.name,
+            publishedTime,
+            authors: [post.author.name],
+            tags: post.tags,
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                    type: "image/jpeg",
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.excerpt,
+            site: siteConfig.social.handles.x,
+            creator: siteConfig.social.handles.x,
+            images: [ogImage],
+        },
+        keywords: post.tags,
+        category: post.category,
+    };
+}
+
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+    const slugs = getAllPostSlugs();
+    return slugs.map((slug) => ({
+        slug,
+    }));
+}
+
+// Enable ISR with revalidation every hour
 export const revalidate = 3600;
 
-export function generateStaticParams() {
-  return getAllPostSlugs().map((slug) => ({ slug }));
-}
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = getPostBySlugServer(slug);
+    const allPosts = getAllPostsServer();
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
-  if (!post) return { title: "Post not found" };
-  const url = `${siteConfig.url}/blog/${slug}`;
-  return {
-    title: post.title,
-    description: post.excerpt,
-    authors: [{ name: post.author.name }],
-    keywords: post.tags,
-    alternates: { canonical: url },
-    openGraph: {
-      type: "article",
-      url,
-      title: post.title,
-      description: post.excerpt,
-      siteName: siteConfig.name,
-      publishedTime: new Date(post.publishedAt).toISOString(),
-      tags: post.tags,
-      images: post.coverImage ? [{ url: post.coverImage }] : undefined,
-    },
-    twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
-  };
-}
+    if (!post) {
+        notFound();
+    }
 
-function formatDate(d: string) {
-  return new Date(d).toLocaleDateString("en-AU", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
+    const articleStructuredData = {
+        title: post.title,
+        description: post.excerpt,
+        datePublished: new Date(post.publishedAt).toISOString(),
+        dateModified: post.updatedAt ? new Date(post.updatedAt).toISOString() : new Date(post.publishedAt).toISOString(),
+        image: post.coverImage || `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/blog/${slug}`,
+        keywords: post.tags.join(', '),
+        articleSection: post.category,
+        wordCount: post.content.split(/\s+/).length,
+    };
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
-  if (!post) notFound();
-  const related = getRelatedPosts(post);
-
-  return (
-    <article>
-      <Link
-        href="/blog"
-        className="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-teal-700"
-      >
-        <ArrowLeft className="h-4 w-4" /> All posts
-      </Link>
-
-      <header className="mt-6 space-y-4">
-        <Badge variant="secondary">{post.category}</Badge>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900">{post.title}</h1>
-        <p className="text-lg text-slate-600">{post.excerpt}</p>
-        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-          <span className="inline-flex items-center gap-1">
-            <CalendarDays className="h-4 w-4" />
-            {formatDate(post.publishedAt)}
-          </span>
-          <span className="inline-flex items-center gap-1">
-            <Clock className="h-4 w-4" />
-            {post.readingTime} min read
-          </span>
-          <span>by {post.author.name}</span>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {post.tags.map((t) => (
-            <span key={t} className="text-xs text-slate-400">
-              #{t}
-            </span>
-          ))}
-        </div>
-      </header>
-
-      <Separator className="my-8 bg-slate-200" />
-
-      <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
-        <div className="min-w-0">
-          <MarkdownRenderer content={post.content} />
-        </div>
-        <aside className="hidden lg:block">
-          <div className="sticky top-24">
-            <TableOfContents content={post.content} />
-          </div>
-        </aside>
-      </div>
-
-      <RelatedPosts posts={related} />
-    </article>
-  );
+    return (
+        <>
+            <StructuredData type="article" data={articleStructuredData} />
+            <BlogPostClient post={post} allPosts={allPosts} />
+        </>
+    );
 }
