@@ -5,6 +5,8 @@ import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/reveal";
 import { QuotesMarquee, type Quote } from "@/components/quotes-marquee";
+import { HeroAstronaut } from "@/components/hero-astronaut";
+import { MagneticButton } from "@/components/magnetic-button";
 
 type Principle = { label: string; description: string };
 
@@ -204,13 +206,13 @@ gtag('config', 'G-VZ3GBPF421');`}
           className="pointer-events-none absolute left-[16%] bottom-16 hidden h-6 w-6 animate-float-slower opacity-50 dark:invert lg:block"
         />
 
-        <div className="container relative grid min-h-[88vh] items-center gap-10 py-24 md:py-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-6">
-          <div>
+        <div className="container relative grid min-h-[88vh] items-center gap-6 py-24 md:py-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-0">
+          <div className="relative z-10">
             <Reveal>
               <Eyebrow>The Push Manifesto</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
-              <h1 className="mt-6 max-w-2xl font-display text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.02em]">
+              <h1 className="mt-6 max-w-2xl font-display text-[clamp(2.75rem,7.5vw,6rem)] font-bold leading-[0.95] tracking-[-0.03em]">
                 A way to do{" "}
                 <span className="text-gradient-brand">creativity</span>.
               </h1>
@@ -226,15 +228,15 @@ gtag('config', 'G-VZ3GBPF421');`}
             </Reveal>
             <Reveal delay={0.15}>
               <div className="mt-10 flex flex-wrap items-center gap-3">
-                <Link
+                <MagneticButton
                   href="#manifesto"
-                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20 transition-transform duration-300 active:scale-[0.98]"
+                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/25 transition-transform duration-300 active:scale-[0.97]"
                 >
                   Read the manifesto
                   <span className="grid h-8 w-8 place-items-center rounded-full bg-white/25 transition-transform duration-300 group-hover:translate-y-0.5">
                     <ArrowDown className="h-4 w-4" />
                   </span>
-                </Link>
+                </MagneticButton>
                 <Link
                   href="/blog"
                   className="group glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground/5"
@@ -246,22 +248,11 @@ gtag('config', 'G-VZ3GBPF421');`}
             </Reveal>
           </div>
 
-          {/* The original Push Manifesto "space cowboy" — drifting through the hero. */}
-          <Reveal delay={0.15} className="relative justify-self-center">
-            <div
-              aria-hidden
-              className="absolute left-1/2 top-1/2 -z-10 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-3xl"
-              style={{
-                background:
-                  "radial-gradient(circle at center, rgba(35,148,213,0.5), rgba(42,243,183,0.25) 45%, transparent 70%)",
-              }}
-            />
-            <img
-              src="/img/manifesto.png"
-              alt="The Push Manifesto astronaut, drifting through space"
-              className="mx-auto w-[260px] animate-float-slow drop-shadow-2xl sm:w-[340px] lg:w-[440px] dark:invert"
-            />
-          </Reveal>
+          {/* The "space cowboy" breaks the grid — larger, pulled left to drift
+              behind the headline, with scroll parallax. */}
+          <div className="pointer-events-none relative z-0 -mt-6 lg:-ml-28 lg:mt-0 xl:-ml-44">
+            <HeroAstronaut />
+          </div>
         </div>
       </section>
 
@@ -276,8 +267,8 @@ gtag('config', 'G-VZ3GBPF421');`}
               </h2>
             </div>
           </Reveal>
-          <div className="space-y-6">
-            <Reveal delay={0.05}>
+          <Reveal delay={0.05}>
+            <div className="glass space-y-6 rounded-3xl p-8 shadow-[0_24px_60px_-32px_rgba(0,0,0,0.5)] md:p-12">
               <p className="text-xl leading-relaxed text-foreground/90 md:text-2xl">
                 <strong className="font-semibold">Push Manifesto</strong> is about
                 vision, collaboration, inclusive behaviours, determination,
@@ -287,15 +278,14 @@ gtag('config', 'G-VZ3GBPF421');`}
                 fit-for-purpose with shared value outcomes for users and
                 stakeholders.
               </p>
-            </Reveal>
-            <Reveal delay={0.1}>
+              <div className="h-px bg-gradient-to-r from-border via-border/40 to-transparent" />
               <p className="text-lg leading-relaxed text-muted-foreground">
                 It feeds the Maturity Model and an evidence-based mindset,
                 supporting the scientific approach — daring to explore the latent
                 space, with a pragmatic world-view.
               </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -309,27 +299,27 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </Reveal>
 
-          <ol className="mt-14 grid gap-x-12 gap-y-px sm:grid-cols-2">
+          <ol className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {principles.map((p, i) => (
-              <Reveal as="li" key={p.label} delay={(i % 2) * 0.05}>
+              <Reveal as="li" key={p.label} delay={(i % 3) * 0.08}>
                 <a
                   href={tweetHref(`${p.label}: ${p.description.replace(/[*_]/g, "")}`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex gap-5 border-t border-border/60 py-7 transition-colors duration-300 hover:border-foreground/30"
+                  className="group glass flex h-full flex-col gap-3 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_-28px_rgba(0,0,0,0.55)]"
                 >
-                  <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-colors group-hover:text-[#e73c6f]">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="space-y-2">
-                    <h3 className="flex items-center gap-1.5 font-display text-xl font-medium tracking-tight">
-                      {p.label}
-                      <ArrowUpRight className="h-4 w-4 -translate-y-px text-muted-foreground/0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-muted-foreground" />
-                    </h3>
-                    <p className="text-[15px] leading-relaxed text-muted-foreground">
-                      {emphasise(p.description)}
-                    </p>
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-colors group-hover:text-[#e73c6f]">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <ArrowUpRight className="h-4 w-4 text-muted-foreground/0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-muted-foreground" />
                   </div>
+                  <h3 className="font-display text-lg font-semibold tracking-tight">
+                    {p.label}
+                  </h3>
+                  <p className="text-[14px] leading-relaxed text-muted-foreground">
+                    {emphasise(p.description)}
+                  </p>
                 </a>
               </Reveal>
             ))}

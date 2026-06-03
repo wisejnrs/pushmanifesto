@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
@@ -8,10 +8,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
 
-const fraunces = Fraunces({
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -48,7 +49,7 @@ export default function RootLayout({
       lang="en"
       translate="no"
       suppressHydrationWarning
-      className={`${GeistSans.variable} ${GeistMono.variable} ${fraunces.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable} ${display.variable}`}
     >
       <body translate="no" className="font-sans">
         <ThemeProvider
