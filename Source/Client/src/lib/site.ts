@@ -4,7 +4,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pushmanifesto.org",
   description: "A way to do creativity — principles for innovation and progress.",
   tagline: "A way to do creativity",
-  ogImage: "/assets/manifesto-ico.svg",
+  ogImage: "/img/manifesto-social.png",
   keywords: [
     "Push Manifesto",
     "innovation",
