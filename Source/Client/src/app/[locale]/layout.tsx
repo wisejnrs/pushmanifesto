@@ -10,6 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing } from "@/i18n/routing";
+import { siteConfig } from "@/lib/site";
 import "@/styles/globals.css";
 
 const display = Bricolage_Grotesque({
@@ -30,16 +31,52 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const ogLocale: Record<string, string> = {
+    en: "en_US",
+    es: "es_ES",
+    fr: "fr_FR",
+    de: "de_DE",
+    zh: "zh_CN",
+    ja: "ja_JP",
+  };
   return {
     metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pushmanifesto.org",
+      process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url,
     ),
-    title: { default: t("title"), template: "%s · Push Manifesto" },
+    title: { default: t("title"), template: `%s · ${siteConfig.name}` },
     description: t("description"),
+    applicationName: siteConfig.name,
+    keywords: siteConfig.keywords,
+    authors: [{ name: siteConfig.author.name }],
+    creator: siteConfig.creator.name,
+    publisher: siteConfig.creator.name,
+    alternates: { canonical: "/" },
     icons: {
       icon: "/assets/manifesto-ico.svg",
       shortcut: "/assets/manifesto-ico.svg",
       apple: "/assets/manifesto-ico.svg",
+    },
+    openGraph: {
+      type: "website",
+      siteName: siteConfig.name,
+      title: t("title"),
+      description: t("description"),
+      url: siteConfig.url,
+      locale: ogLocale[locale] ?? "en_US",
+      images: [{ url: siteConfig.ogImage, width: 1280, height: 641, alt: siteConfig.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      site: siteConfig.social.handles.x,
+      creator: siteConfig.social.handles.x,
+      images: [siteConfig.ogImage],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, "max-image-preview": "large" },
     },
   };
 }
