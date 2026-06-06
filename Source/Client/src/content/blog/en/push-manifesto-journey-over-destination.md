@@ -11,6 +11,7 @@ author:
 featured: false
 category: "Leadership"
 status: "published"
+coverImage: "/blog/covers/push-manifesto-journey-over-destination.jpg"
 headerOverlay: "radial"
 headerOverlayIntensity: 98
 titleTextShadow: "soft"
