@@ -6,6 +6,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/reveal";
 import { FeaturedProducts } from "@/components/featured-products";
+import { siteConfig } from "@/lib/site";
 import { QuotesMarquee, type Quote } from "@/components/quotes-marquee";
 import { HeroAstronaut } from "@/components/hero-astronaut";
 import { MagneticButton } from "@/components/magnetic-button";
@@ -86,8 +87,34 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: siteConfig.name,
+        url: siteConfig.url,
+        description: siteConfig.description,
+        inLanguage: "en",
+      },
+      {
+        "@type": "Organization",
+        name: siteConfig.name,
+        url: siteConfig.url,
+        logo: `${siteConfig.url}/assets/manifesto-ico.svg`,
+        description: siteConfig.description,
+        founder: { "@type": "Person", name: siteConfig.creator.name, url: siteConfig.creator.linkedin },
+        sameAs: [siteConfig.links.github, siteConfig.links.linkedin, siteConfig.links.x].filter(Boolean),
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-VZ3GBPF421"
         strategy="afterInteractive"
