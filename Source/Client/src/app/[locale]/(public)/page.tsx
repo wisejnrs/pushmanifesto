@@ -5,6 +5,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/reveal";
+import { FeaturedProducts } from "@/components/featured-products";
 import { QuotesMarquee, type Quote } from "@/components/quotes-marquee";
 import { HeroAstronaut } from "@/components/hero-astronaut";
 import { MagneticButton } from "@/components/magnetic-button";
@@ -248,6 +249,9 @@ gtag('config', 'G-VZ3GBPF421');`}
           <QuotesMarquee quotes={quotes} />
         </Reveal>
       </section>
+
+      {/* ─────────────────── Featured products (store) ─────────────────── */}
+      <FeaturedProducts />
 
       {/* ───────────────────── Closing CTA ───────────────────── */}
       <section className="border-t border-border/60">
