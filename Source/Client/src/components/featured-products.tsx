@@ -27,7 +27,7 @@ export function FeaturedProducts() {
         <div>
           <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Featured Products</h2>
           <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Handpicked items from our collection. Quality merchandise for music lovers and tech enthusiasts.
+            Handpicked pieces from the WiseJNRS store. Quality merch for makers and the creatively restless.
           </p>
         </div>
         <a
@@ -57,8 +57,12 @@ export function FeaturedProducts() {
                 alt={p.title}
                 fill
                 sizes="(min-width: 1024px) 22vw, 45vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover brightness-[0.92] saturate-[0.95] transition duration-500 group-hover:scale-105 group-hover:brightness-100 group-hover:saturate-100"
               />
+              {/* Fade the photo into the card so warm product shots sit in the dark theme. */}
+              <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-card/15 to-transparent" />
+              {/* Brand-tinted glow on hover. */}
+              <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             </div>
             <div className="flex flex-1 flex-col gap-1 p-4">
               <h3 className="line-clamp-2 text-sm font-medium leading-snug text-foreground">{p.title}</h3>
