@@ -6,7 +6,6 @@ import { Bricolage_Grotesque } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing } from "@/i18n/routing";
@@ -130,7 +129,6 @@ export default async function LocaleLayout({
           </ThemeProvider>
         </NextIntlClientProvider>
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
