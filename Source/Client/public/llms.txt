@@ -1,0 +1,15 @@
+# Push Manifesto
+
+> The Push Manifesto is a short philosophy of creative work by Michael Wise — "a way to do creativity." It argues for prioritising the journey over the destination and frames innovation as a series of deliberate "pushes": evidence-led, hypothesis-driven, tolerant of ambiguity and risk, and honest about getting things wrong. The manifesto and the long-form thinking behind it live at www.pushmanifesto.org.
+
+## Read
+- [Manifesto](https://www.pushmanifesto.org/#manifesto): the core text — prioritise the journey, then act through deliberate pushes.
+- [Principles](https://www.pushmanifesto.org/#principles): the building blocks of a push — Push, Ambiguity & Cognitive Bias, Risk, Check-ins/Waypoints/Reviews, Identify & Remove Road Blocks, Creating Shared Value, Mise en place, Work Items, Getting it Wrong, Go Find Out, Know when to Roll 'Em, and Hypothesis (an idea doesn't exist if it can't be tested).
+- [Blog](https://www.pushmanifesto.org/blog): essays expanding on the manifesto, starting with "Journey over Destination."
+- [Blog RSS feed](https://www.pushmanifesto.org/feed.xml): subscribe in any reader.
+
+## About
+- Author: Michael Wise — technology leader writing about creativity, delivery, and the Push philosophy.
+- Themes: innovation, creativity, product delivery, ways of working, evidence-based and scientific thinking.
+- Source: https://github.com/wisejnrs/pushmanifesto (and project wiki).
+- A WiseJNRS project (https://www.wisejnrs.net).
