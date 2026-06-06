@@ -20,6 +20,10 @@ const THEMES: Theme[] = [
   { id: "so", name: "So", desc: "Vintage rose", swatches: ["#f2d0d5", "#582e54", "#da93a7"] },
   { id: "oat-flat-white", name: "Oat Flat White", desc: "Earthy peach", swatches: ["#e3aa99", "#cd9f8f", "#dc7147"] },
   { id: "webber", name: "Webber", desc: "Racing colours", swatches: ["#0066ff", "#dc0000", "#ffd700"] },
+  { id: "ember", name: "Ember", desc: "Amber & fire", swatches: ["#f97316", "#ef4444", "#f59e0b"] },
+  { id: "verdant", name: "Verdant", desc: "Emerald & lime", swatches: ["#22c55e", "#84cc16", "#14b8a6"] },
+  { id: "amethyst", name: "Amethyst", desc: "Violet & magenta", swatches: ["#8b5cf6", "#d946ef", "#a855f7"] },
+  { id: "rose", name: "Rose", desc: "Rose & coral", swatches: ["#f43f5e", "#fb7185", "#ec4899"] },
 ];
 
 const CLASSES = THEMES.filter((t) => t.id !== "default").map((t) => t.id);

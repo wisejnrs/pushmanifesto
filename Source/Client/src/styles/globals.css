@@ -188,6 +188,78 @@
     --input: 224 35% 22%;
     --ring: 215 100% 55%;
   }
+
+  .ember {
+    --background: 20 30% 5%;
+    --foreground: 30 40% 94%;
+    --card: 20 28% 8%;
+    --card-foreground: 30 40% 94%;
+    --primary: 25 95% 55%;
+    --primary-foreground: 20 40% 6%;
+    --secondary: 0 75% 55%;
+    --secondary-foreground: 30 40% 96%;
+    --muted: 20 25% 14%;
+    --muted-foreground: 30 25% 74%;
+    --accent: 40 95% 55%;
+    --accent-foreground: 20 40% 6%;
+    --border: 20 25% 18%;
+    --input: 20 25% 18%;
+    --ring: 25 95% 55%;
+  }
+
+  .verdant {
+    --background: 160 40% 4%;
+    --foreground: 150 25% 93%;
+    --card: 160 35% 7%;
+    --card-foreground: 150 25% 93%;
+    --primary: 152 65% 46%;
+    --primary-foreground: 160 40% 5%;
+    --secondary: 90 65% 48%;
+    --secondary-foreground: 160 40% 5%;
+    --muted: 158 25% 13%;
+    --muted-foreground: 150 22% 74%;
+    --accent: 168 75% 50%;
+    --accent-foreground: 160 40% 5%;
+    --border: 158 25% 18%;
+    --input: 158 25% 18%;
+    --ring: 152 65% 46%;
+  }
+
+  .amethyst {
+    --background: 260 45% 5%;
+    --foreground: 270 30% 94%;
+    --card: 260 40% 8%;
+    --card-foreground: 270 30% 94%;
+    --primary: 268 85% 66%;
+    --primary-foreground: 260 45% 6%;
+    --secondary: 315 80% 62%;
+    --secondary-foreground: 270 35% 96%;
+    --muted: 262 28% 15%;
+    --muted-foreground: 270 22% 76%;
+    --accent: 290 80% 64%;
+    --accent-foreground: 260 45% 6%;
+    --border: 262 28% 20%;
+    --input: 262 28% 20%;
+    --ring: 268 85% 66%;
+  }
+
+  .rose {
+    --background: 340 30% 5%;
+    --foreground: 350 25% 94%;
+    --card: 340 28% 8%;
+    --card-foreground: 350 25% 94%;
+    --primary: 345 85% 63%;
+    --primary-foreground: 340 40% 6%;
+    --secondary: 13 88% 64%;
+    --secondary-foreground: 350 30% 96%;
+    --muted: 340 22% 15%;
+    --muted-foreground: 350 20% 76%;
+    --accent: 325 80% 65%;
+    --accent-foreground: 340 40% 6%;
+    --border: 340 22% 20%;
+    --input: 340 22% 20%;
+    --ring: 345 85% 63%;
+  }
 }
 
 @layer base {
@@ -250,7 +322,11 @@
   .illustration body,
   .so body,
   .oat-flat-white body,
-  .webber body {
+  .webber body,
+  .ember body,
+  .verdant body,
+  .amethyst body,
+  .rose body {
     background-image:
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E"),
       radial-gradient(48rem 48rem at 90% -12%, hsl(var(--primary) / 0.26), transparent 60%),
