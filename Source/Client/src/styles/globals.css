@@ -346,3 +346,17 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Entrance reveal — fade + rise that runs once on load. Pure CSS (driven by
+   the Reveal component) so content is never gated on JS hydration: if the
+   bundle fails to load (e.g. a stale cache after a deploy) the animation still
+   runs and the content ends visible. `animation-fill-mode: both` + the
+   reduced-motion rule above guarantee the final, visible state. Per-element
+   stagger comes from an inline `animation-delay`. */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+.reveal-up {
+  animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
