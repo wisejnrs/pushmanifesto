@@ -1,33 +1,25 @@
-"use client";
-
 import * as React from "react";
-import { motion, useReducedMotion } from "framer-motion";
 
 type RevealProps = {
   children: React.ReactNode;
   delay?: number;
   className?: string;
   /** Render as something other than a div (e.g. "li", "section"). */
-  as?: keyof typeof motion;
+  as?: React.ElementType;
 };
 
+// Entrance reveal driven by a pure-CSS animation (`.reveal-up` in globals.css),
+// NOT a JS scroll-observer. Content is therefore never gated on hydration: if
+// the JS bundle fails to load (e.g. a stale cache hitting 404'd chunks after a
+// deploy) the page still shows — the CSS animation runs on load and ends
+// visible. `delay` (seconds) staggers siblings via animation-delay; the
+// prefers-reduced-motion rule collapses it to an instant show.
 export function Reveal({ children, delay = 0, className, as = "div" }: RevealProps) {
-  const reduce = useReducedMotion();
-  const Comp = motion[as] as typeof motion.div;
-
-  // Reduced motion: render static, fully-visible content (no enter animation).
-  if (reduce) {
-    const Plain = as as React.ElementType;
-    return <Plain className={className}>{children}</Plain>;
-  }
-
+  const Comp = as;
   return (
     <Comp
-      className={className}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      className={["reveal-up", className].filter(Boolean).join(" ")}
+      style={delay ? { animationDelay: `${delay}s` } : undefined}
     >
       {children}
     </Comp>
