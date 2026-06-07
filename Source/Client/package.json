@@ -1,6 +1,6 @@
 {
   "name": "pushmanifesto",
-  "version": "1.12.3",
+  "version": "1.12.4",
   "private": true,
   "scripts": {
     "predev": "npm run clean",
