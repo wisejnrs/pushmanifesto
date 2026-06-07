@@ -80,7 +80,7 @@ export function ThemeSwitcher() {
       {open && (
         <div
           role="menu"
-          className="glass absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-2xl p-1.5 shadow-[0_24px_50px_-20px_rgba(0,0,0,0.6)]"
+          className="menu-scroll absolute right-0 z-50 mt-2 max-h-[min(70vh,24rem)] w-56 origin-top-right overflow-y-auto rounded-2xl border border-border/60 bg-card/95 p-1.5 shadow-[0_24px_50px_-20px_rgba(0,0,0,0.6)] backdrop-blur-xl"
         >
           <p className="px-2.5 pb-1 pt-1.5 text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
             Palette
