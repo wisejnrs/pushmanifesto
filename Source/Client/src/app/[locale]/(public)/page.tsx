@@ -6,6 +6,8 @@ import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/reveal";
 import { FeaturedProducts } from "@/components/featured-products";
+import { LatestArticles } from "@/components/latest-articles";
+import { getPublishedPostsServer } from "@/lib/blog-server";
 import { siteConfig } from "@/lib/site";
 import { QuotesMarquee, type Quote } from "@/components/quotes-marquee";
 import { HeroAstronaut } from "@/components/hero-astronaut";
@@ -86,6 +88,7 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+  const posts = getPublishedPostsServer(locale);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -276,6 +279,9 @@ gtag('config', 'G-VZ3GBPF421');`}
           <QuotesMarquee quotes={quotes} />
         </Reveal>
       </section>
+
+      {/* ─────────────────── Latest articles ─────────────────── */}
+      <LatestArticles posts={posts} />
 
       {/* ─────────────────── Featured products (store) ─────────────────── */}
       <FeaturedProducts />
