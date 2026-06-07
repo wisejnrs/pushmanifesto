@@ -76,6 +76,9 @@ export async function generateMetadata({
       follow: true,
       googleBot: { index: true, follow: true, "max-image-preview": "large" },
     },
+    // Set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in Vercel to emit the Search
+    // Console HTML-tag verification meta (omitted when unset).
+    verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION },
   };
 }
 
