@@ -263,8 +263,8 @@ gtag('config', 'G-VZ3GBPF421');`}
       </section>
 
       {/* ───────────────────── Voices / quotes ───────────────────── */}
-      <section className="border-y border-border/60 bg-muted/50">
-        <div className="container py-14 md:py-20">
+      <section className="border-y border-border/60 bg-muted/50 py-14 md:py-20">
+        <div className="container">
           <Reveal>
             <Eyebrow>{t("voices.eyebrow")}</Eyebrow>
             <h2 className="mt-5 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
@@ -272,7 +272,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </Reveal>
         </div>
-        <Reveal className="pb-14 md:pb-20">
+        <Reveal className="mt-8 md:mt-10">
           <QuotesMarquee quotes={quotes} />
         </Reveal>
       </section>
