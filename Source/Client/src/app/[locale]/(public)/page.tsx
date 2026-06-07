@@ -188,7 +188,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ─────────────────── The Manifesto intro ─────────────────── */}
       <section id="manifesto" className="scroll-mt-20 border-t border-border/60">
-        <div className="container grid gap-8 py-16 md:grid-cols-[1fr_2fr] md:py-24">
+        <div className="container grid gap-8 py-12 md:grid-cols-[1fr_2fr] md:py-16">
           <Reveal>
             <div className="md:sticky md:top-28">
               <Eyebrow>{t("manifesto.eyebrow")}</Eyebrow>
@@ -213,7 +213,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ───────────────────── Principles ───────────────────── */}
       <section className="border-t border-border/60">
-        <div className="container py-16 md:py-24">
+        <div className="container py-12 md:py-20">
           <Reveal>
             <Eyebrow>{t("principles.eyebrow")}</Eyebrow>
             <h2 className="mt-5 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
@@ -221,7 +221,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             </h2>
           </Reveal>
 
-          <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {PRINCIPLE_KEYS.map((key, i) => {
               const label = t(`principles.items.${key}.label`);
               const description = t(`principles.items.${key}.description`);
@@ -263,7 +263,7 @@ gtag('config', 'G-VZ3GBPF421');`}
       </section>
 
       {/* ───────────────────── Voices / quotes ───────────────────── */}
-      <section className="border-y border-border/60 bg-muted/50 py-14 md:py-20">
+      <section className="border-y border-border/60 bg-muted/50 py-12 md:py-16">
         <div className="container">
           <Reveal>
             <Eyebrow>{t("voices.eyebrow")}</Eyebrow>
@@ -282,7 +282,7 @@ gtag('config', 'G-VZ3GBPF421');`}
 
       {/* ───────────────────── Closing CTA ───────────────────── */}
       <section className="border-t border-border/60">
-        <div className="container py-24 text-center md:py-32">
+        <div className="container py-16 text-center md:py-24">
           <Reveal>
             <h2 className="mx-auto max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-5xl">
               {t("cta.headingLead")}{" "}
