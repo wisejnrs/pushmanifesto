@@ -436,3 +436,27 @@
 .reveal-up {
   animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+/* Scrollable menus (e.g. the palette picker): smooth scroll + a slim, themed
+   scrollbar that stays out of the way until you need it. */
+.menu-scroll {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground) / 0.35) transparent;
+  overscroll-behavior: contain;
+}
+.menu-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.menu-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.menu-scroll::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted-foreground) / 0.35);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+.menu-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--muted-foreground) / 0.55);
+}
