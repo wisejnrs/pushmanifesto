@@ -22,7 +22,7 @@ const STORE_URL = "https://wisejnrs.myshopify.com";
 
 export function FeaturedProducts() {
   return (
-    <section className="container max-w-5xl px-6 py-16 md:py-24">
+    <section className="container py-16 md:py-24">
       <div className="mb-8 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-end">
         <div>
           <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Featured Products</h2>
