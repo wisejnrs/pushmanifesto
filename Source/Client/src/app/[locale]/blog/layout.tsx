@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-background text-foreground">
+    <div className="flex min-h-[100dvh] flex-col text-foreground">
       <SiteHeader />
       <main id="main-content" className="flex-1">{children}</main>
       <SiteFooter />

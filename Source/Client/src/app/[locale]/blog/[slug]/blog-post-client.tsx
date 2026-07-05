@@ -307,7 +307,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
     }, [fontSize]);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-background to-muted/20">
+        <div className="min-h-screen">
             <div aria-hidden="true" className="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-muted/10 to-muted/30 z-50 shadow-sm">
                 <motion.div
                     className="h-full bg-gradient-brand shadow-lg shadow-primary/20"
