@@ -25,21 +25,23 @@
   }
 
   .dark {
-    --background: 222 47% 5%;
+    /* Lifted a few points from the original near-black (5%/9%/17.5%) — the
+       default read as too dark; this keeps the mood but lets surfaces breathe. */
+    --background: 222 42% 8%;
     --foreground: 210 40% 98%;
     /* Card slightly lifted off the background for elevation in dark mode. */
-    --card: 222 40% 9%;
+    --card: 222 36% 12%;
     --card-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217.2 30% 20%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
+    --muted: 217.2 30% 20%;
+    --muted-foreground: 215 22% 70%;
+    --accent: 217.2 30% 20%;
     --accent-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --border: 217.2 30% 21%;
+    --input: 217.2 30% 21%;
     --ring: 212.7 26.8% 83.9%;
   }
 
@@ -309,9 +311,9 @@
   .dark body {
     background-image:
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E"),
-      radial-gradient(48rem 48rem at 90% -12%, rgba(231, 60, 111, 0.24), transparent 60%),
-      radial-gradient(46rem 46rem at -10% 12%, rgba(35, 148, 213, 0.24), transparent 60%),
-      radial-gradient(44rem 44rem at 55% 122%, rgba(42, 243, 183, 0.16), transparent 62%);
+      radial-gradient(48rem 48rem at 90% -12%, rgba(231, 60, 111, 0.28), transparent 60%),
+      radial-gradient(46rem 46rem at -10% 12%, rgba(35, 148, 213, 0.28), transparent 60%),
+      radial-gradient(44rem 44rem at 55% 122%, rgba(42, 243, 183, 0.20), transparent 62%);
   }
   /* Named palettes derive their mesh-glow from their own accent vars, so each
      theme gets a distinct ambient world. Placed after .dark body to win. */
