@@ -125,6 +125,12 @@ export default async function LocaleLayout({
         >
           {t("skipToContent")}
         </a>
+        {/* Ambient veil: a soft generated light-wash in the brand palette,
+            fixed behind everything so the dark base reads lit, not void. */}
+        <div
+          aria-hidden
+          className="pointer-events-none fixed inset-0 -z-10 bg-[url('/img/ambient-veil.jpg')] bg-cover bg-top opacity-40"
+        />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" forcedTheme="dark">
             {children}
