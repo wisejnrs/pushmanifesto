@@ -66,7 +66,7 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-background to-muted/30">
+        <div className="min-h-screen">
             <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-8">
                 {/* Header */}
                 <motion.div
