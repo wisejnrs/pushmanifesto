@@ -56,6 +56,7 @@ export function MagneticButton({
       onMouseMove={reduce ? undefined : onMove}
       onMouseLeave={reset}
       style={reduce ? undefined : { x, y }}
+      whileTap={reduce ? undefined : { scale: 0.97 }}
       className={className}
     >
       {children}

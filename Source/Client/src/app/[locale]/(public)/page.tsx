@@ -168,7 +168,7 @@ gtag('config', 'G-VZ3GBPF421');`}
               <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-10">
                 <MagneticButton
                   href="#manifesto"
-                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/25 transition-transform duration-300 active:scale-[0.97]"
+                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/25"
                 >
                   {t("hero.readManifesto")}
                   <span className="grid h-8 w-8 place-items-center rounded-full bg-white/25 transition-transform duration-300 group-hover:translate-y-0.5">
@@ -237,7 +237,7 @@ gtag('config', 'G-VZ3GBPF421');`}
                     href={tweetHref(`${label}: ${description.replace(/[*_]/g, "")}`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group glass gradient-ring relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_34px_70px_-22px_rgba(231,60,111,0.55)]"
+                    className="group glass gradient-ring relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_34px_70px_-22px_rgba(231,60,111,0.55)]"
                   >
                     {/* brand wash glows up from the bottom on hover */}
                     <span
@@ -249,10 +249,10 @@ gtag('config', 'G-VZ3GBPF421');`}
                       }}
                     />
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-all duration-300 group-hover:scale-125 group-hover:text-[#e73c6f]">
+                      <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-[transform,color] duration-200 group-hover:scale-125 group-hover:text-[#e73c6f]">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:scale-110 group-hover:text-[#e73c6f]" />
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/40 transition-[transform,color] duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:scale-110 group-hover:text-[#e73c6f]" />
                     </div>
                     <h3 className="font-display text-lg font-semibold tracking-tight transition-colors duration-300 group-hover:text-foreground">
                       {label}
@@ -260,6 +260,7 @@ gtag('config', 'G-VZ3GBPF421');`}
                     <p className="text-[14px] leading-relaxed text-muted-foreground">
                       {emphasise(description)}
                     </p>
+                    <span className="sr-only">Shares this principle on X (opens in new tab)</span>
                   </a>
                 </Reveal>
               );
@@ -305,7 +306,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <Link
                 href="/blog"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20 transition-transform duration-300 active:scale-[0.98]"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20"
               >
                 {t("cta.readBlog")}
                 <span className="grid h-8 w-8 place-items-center rounded-full bg-white/20 transition-transform duration-300 group-hover:translate-x-0.5">

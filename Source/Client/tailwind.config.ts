@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  future: { hoverOnlyWhenSupported: true },
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{ts,tsx}",
@@ -53,8 +54,8 @@ const config: Config = {
       },
       keyframes: {
         "float-slow": {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-14px)" },
+          "0%, 100%": { transform: "translateY(0px) rotate(-1.2deg)" },
+          "50%": { transform: "translateY(-22px) rotate(1.2deg)" },
         },
         "float-slower": {
           "0%, 100%": { transform: "translateY(0px)" },
@@ -66,7 +67,7 @@ const config: Config = {
         },
       },
       animation: {
-        "float-slow": "float-slow 9s ease-in-out infinite",
+        "float-slow": "float-slow 7s ease-in-out infinite",
         "float-slower": "float-slower 13s ease-in-out infinite",
         marquee: "marquee 48s linear infinite",
       },

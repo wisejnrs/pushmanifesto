@@ -33,6 +33,8 @@ export function ThemeSwitcher() {
   const [open, setOpen] = React.useState(false);
   const [active, setActive] = React.useState("default");
   const ref = React.useRef<HTMLDivElement>(null);
+  const triggerRef = React.useRef<HTMLButtonElement>(null);
+  const itemRefs = React.useRef<(HTMLButtonElement | null)[]>([]);
 
   React.useEffect(() => {
     setActive(localStorage.getItem(STORAGE_KEY) || "default");
@@ -43,7 +45,13 @@ export function ThemeSwitcher() {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen((was) => {
+          // Return focus to the trigger so keyboard users aren't dropped on <body>.
+          if (was) triggerRef.current?.focus();
+          return false;
+        });
+      }
     }
     document.addEventListener("mousedown", onDoc);
     document.addEventListener("keydown", onKey);
@@ -52,6 +60,14 @@ export function ThemeSwitcher() {
       document.removeEventListener("keydown", onKey);
     };
   }, []);
+
+  // Menu pattern contract: opening a role="menu" moves focus into it (on the
+  // currently-active palette, so arrowing starts from the selection).
+  React.useEffect(() => {
+    if (!open) return;
+    const activeIdx = Math.max(0, THEMES.findIndex((t) => t.id === active));
+    itemRefs.current[activeIdx]?.focus();
+  }, [open, active]);
 
   function apply(id: string) {
     const root = document.documentElement;
@@ -62,17 +78,35 @@ export function ThemeSwitcher() {
     } catch {}
     setActive(id);
     setOpen(false);
+    triggerRef.current?.focus();
+  }
+
+  // Roving focus: ArrowUp/Down cycle, Home/End jump — what role="menu" promises.
+  function onMenuKeyDown(e: React.KeyboardEvent) {
+    const items = itemRefs.current.filter(Boolean) as HTMLButtonElement[];
+    if (!items.length) return;
+    const idx = items.indexOf(document.activeElement as HTMLButtonElement);
+    let next = -1;
+    if (e.key === "ArrowDown") next = (idx + 1) % items.length;
+    else if (e.key === "ArrowUp") next = (idx - 1 + items.length) % items.length;
+    else if (e.key === "Home") next = 0;
+    else if (e.key === "End") next = items.length - 1;
+    if (next !== -1) {
+      e.preventDefault();
+      items[next].focus();
+    }
   }
 
   return (
     <div ref={ref} className="relative">
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label="Change colour theme"
         aria-haspopup="menu"
         aria-expanded={open}
-        className="glass inline-flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground transition-colors duration-200 hover:text-foreground active:scale-95"
+        className="glass inline-flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground transition-[color,transform] duration-150 ease-out hover:text-foreground active:scale-95"
       >
         <Palette className="h-4 w-4" />
       </button>
@@ -80,19 +114,29 @@ export function ThemeSwitcher() {
       {open && (
         <div
           role="menu"
-          className="menu-scroll absolute right-0 z-50 mt-2 max-h-[min(70vh,24rem)] w-56 origin-top-right overflow-y-auto rounded-2xl border border-border/60 bg-card/95 p-1.5 shadow-[0_24px_50px_-20px_rgba(0,0,0,0.6)] backdrop-blur-xl"
+          aria-label="Colour theme"
+          onKeyDown={onMenuKeyDown}
+          className="menu-scroll menu-pop absolute right-0 z-50 mt-2 max-h-[min(70vh,24rem)] w-56 origin-top-right overflow-y-auto rounded-2xl border border-border/60 bg-card/95 p-1.5 shadow-[0_24px_50px_-20px_rgba(0,0,0,0.6)] backdrop-blur-xl"
         >
-          <p className="px-2.5 pb-1 pt-1.5 text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+          <p
+            role="presentation"
+            aria-hidden="true"
+            className="px-2.5 pb-1 pt-1.5 text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground"
+          >
             Palette
           </p>
-          {THEMES.map((t) => (
+          {THEMES.map((t, i) => (
             <button
               key={t.id}
+              ref={(el) => {
+                itemRefs.current[i] = el;
+              }}
               type="button"
               role="menuitemradio"
               aria-checked={active === t.id}
+              tabIndex={-1}
               onClick={() => apply(t.id)}
-              className="flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors hover:bg-foreground/5"
+              className="flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors hover:bg-foreground/5 focus-visible:bg-foreground/5"
             >
               <span className="flex gap-1">
                 {t.swatches.map((c, i) => (

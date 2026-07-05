@@ -130,6 +130,7 @@ export default function SearchComponent({
                                 clearSearch();
                                 setIsOpen(false);
                             }}
+                            aria-label="Clear search"
                             className="h-6 w-6 p-0"
                         >
                             <X className="h-3 w-3" />
@@ -141,6 +142,8 @@ export default function SearchComponent({
                             variant="ghost"
                             size="sm"
                             onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
+                            aria-label="Toggle search filters"
+                            aria-expanded={showAdvancedFilters}
                             className={`h-6 w-6 p-0 ${searchStats.hasFilters ? 'text-primary' : ''}`}
                         >
                             <Filter className="h-3 w-3" />

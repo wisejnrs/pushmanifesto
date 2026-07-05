@@ -90,11 +90,11 @@ export function MobileMenu({
             initial={reduce ? { opacity: 1 } : { opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={reduce ? { opacity: 1 } : { opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm lg:hidden"
             onClick={onClose}
             aria-hidden="true"
           />
-          <div className="pointer-events-none fixed inset-0 z-[101] flex items-start justify-center p-4 pt-20 md:hidden">
+          <div className="pointer-events-none fixed inset-0 z-[101] flex items-start justify-center p-4 pt-20 lg:hidden">
             <motion.div
               ref={panelRef}
               id="mobile-menu"

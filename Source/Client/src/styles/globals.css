@@ -365,7 +365,8 @@
   /* The original Push Manifesto brand gradient: orange → pink → blue → teal,
      slowly panning. Used for accent text. */
   .text-gradient-brand {
-    background-image: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    /* #ef5c86 (not brand #e73c6f) so 11px gradient labels clear 4.5:1 on cards. */
+    background-image: linear-gradient(-45deg, #eeaa52, #ef5c86, #2394d5, #2af3b7);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -399,12 +400,14 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
-    transition: opacity 0.45s ease;
+    transition: opacity 200ms ease;
     pointer-events: none;
   }
-  .gradient-ring:hover::after {
-    opacity: 1;
-    animation: gradient-pan 6s ease infinite;
+  @media (hover: hover) and (pointer: fine) {
+    .gradient-ring:hover::after {
+      opacity: 1;
+      animation: gradient-pan 6s ease infinite;
+    }
   }
 }
 
@@ -448,6 +451,7 @@
 }
 .reveal-up {
   animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--reveal-i, 0) * 70ms);
 }
 
 /* Scrollable menus (e.g. the palette picker): smooth scroll + a slim, themed
@@ -472,4 +476,28 @@
 }
 .menu-scroll::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--muted-foreground) / 0.55);
+}
+
+/* Theme menu enter: scale from its trigger corner (origin set in markup). */
+.menu-pop {
+  transition:
+    opacity 180ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@starting-style {
+  .menu-pop {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+/* Reduced motion means gentler, not frozen: keep color/opacity feedback on
+   interactive elements so hover/focus still reads (movement stays killed). */
+@media (prefers-reduced-motion: reduce) {
+  a,
+  button,
+  [role="button"] {
+    transition-duration: 150ms !important;
+    transition-property: color, background-color, border-color, opacity !important;
+  }
 }
