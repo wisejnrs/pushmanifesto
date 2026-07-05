@@ -58,4 +58,4 @@ So treat clarity as a discipline you practise, not a trait you happen to have. N
 
 ---
 
-*Further reading: Daniel Kahneman's __Thinking, Fast and Slow__ is the deep well this post drinks from — System 1's confident shortcuts, WYSIATI ("what you see is all there is"), and why the fog feels like clarity from the inside. If you read one book on bias, make it that one.*
+*Further reading: Daniel Kahneman's [__Thinking, Fast and Slow__](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) is the deep well this post drinks from — System 1's confident shortcuts, WYSIATI ("what you see is all there is"), and why the fog feels like clarity from the inside. If you read one book on bias, make it that one.*

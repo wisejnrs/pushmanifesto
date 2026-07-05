@@ -48,3 +48,7 @@ This is the quiet break from time-boxing. The box can be useful for rhythm, but 
 A thing with a beginning, middle, and end has a shape, and a shape gives you somewhere to stand. You know where you are in it. You know what "done" looks like before you start. You know when to roll 'em. You can hand it to someone and they can see its edges.
 
 That's what the word "push" is protecting. Not a methodology — a shape. The simple, almost old-fashioned idea that work should be the kind of thing you can finish, and then actually finish it.
+
+---
+
+*Further reading: this idea is older than software by about 2,300 years — Aristotle's [Poetics](https://en.wikipedia.org/wiki/Poetics_%28Aristotle%29) defines a whole as "that which has a beginning, a middle, and an end," and every board that never empties is quietly failing his test. Psychology agrees: the [Zeigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) is why unfinished work keeps renting space in your head long after the standup ends. And from a wonderfully unglamorous corner of the library, Lawson's __Project Management for the Process Industries__ says the quiet part plainly: projects which drag on ultimately become processes — which are never completed.*

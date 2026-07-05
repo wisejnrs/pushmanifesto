@@ -48,3 +48,7 @@ You can feel the difference in how a project moves through an organisation. The 
 So the discipline is two-sided. Ruthlessly cut the ceremony — the rituals that perform collaboration without creating value. And invest, equally ruthlessly, in the real thing: understanding what the people around you need, and building in a way that gives them some of it. Less theatre, more shared interest.
 
 Your project isn't the centre of the universe. Build like you know that, and you'll be amazed how much of the universe decides to help.
+
+---
+
+*Further reading: Porter and Kramer's ["Creating Shared Value"](https://hbr.org/2011/01/the-big-idea-creating-shared-value) (HBR, 2011) makes the same argument at civilisational scale — the highest-leverage move is the one that creates value for the people around you too — and the logic survives the trip down to a platform team's backlog intact. Cecil Rupp's __Driving DevOps with Value Streams__ supplies the test for the other half of this post: any activity that doesn't create value for someone is waste, and ceremony rarely survives the audit. The [principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html) said the quiet part years ago: simplicity is the art of maximising the amount of work not done.*

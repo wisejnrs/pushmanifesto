@@ -46,3 +46,7 @@ This connects to the whole philosophy, because the manifesto is suspicious of ex
 I'm not arguing against abstraction. I'd get nothing done without it, and neither would you. I'm arguing for knowing it's there — for being the kind of practitioner who can use the high-level tool fluently and still drop to the primitives when it lies to you. Use the framework. Trust the abstraction. But keep a map of what's underneath, because the day it leaks, that map is the only thing that helps.
 
 Loops, sequences, decisions. Everything else is a story we tell to make the truth easier to hold. Good stories. Just remember they're stories.
+
+---
+
+*Further reading: the slogan has a proper theorem behind it — Böhm and Jacopini proved in 1966 that sequence, selection, and iteration are all you ever need, a result now known as the [structured program theorem](https://en.wikipedia.org/wiki/Structured_program_theorem). Joel Spolsky's [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) is the classic essay on the loan coming due. And James Streib's __Guide to Assembly Language__ shows the primitives up close — every elegant control structure compiling down to compares and branches.*

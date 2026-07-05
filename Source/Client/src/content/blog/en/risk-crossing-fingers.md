@@ -49,4 +49,4 @@ The teams that ship genuinely hard things rarely look heroic doing it. There's n
 
 ---
 
-*Further reading: George Fairbanks' __Just Enough Software Architecture: A Risk-Driven Approach__ makes the same argument for architecture — do exactly as much design as your risks demand, no more. For a plain-language governance take, the Queensland Government CIO office's __Guide to Risk Management__ is a solid, unpretentious field manual.*
+*Further reading: George Fairbanks' [__Just Enough Software Architecture: A Risk-Driven Approach__](https://georgefairbanks.com/book/) makes the same argument for architecture — do exactly as much design as your risks demand, no more. For a plain-language governance take, the Queensland Government's [__Guide to Risk Management__](https://www.forgov.qld.gov.au/information-and-communication-technology/qgea-policies-standards-and-guidelines) is a solid, unpretentious field manual.*
