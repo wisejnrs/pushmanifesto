@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
+import { CoverImage } from "@/components/cover-image";
 import { CalendarDays, Clock, ArrowRight } from "lucide-react";
 
 import {
@@ -66,7 +67,7 @@ export function LatestArticles({ posts }: { posts: BlogPost[] }) {
             >
               {p.coverImage && (
                 <div className="relative aspect-[16/10] overflow-hidden bg-muted/30">
-                  <Image
+                  <CoverImage
                     src={p.coverImage}
                     alt=""
                     aria-hidden
