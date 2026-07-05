@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> The first principle is that you must not fool yourself—and you are the easiest person to fool. — Richard P. Feynman, *Cargo Cult Science* (1974)
+
 If you autopsy enough failed projects, you stop blaming the obvious things. It's rarely that the team couldn't code, or didn't care, or ran out of hours. Far more often, the cause of death is fog: two people who used the same word to mean different things, an assumption nobody wrote down, a decision made by a brain quietly fooling itself.
 
 The manifesto names two of these directly, and calls them what they are. Ambiguity and cognitive bias kill projects.
@@ -58,4 +60,7 @@ So treat clarity as a discipline you practise, not a trait you happen to have. N
 
 ---
 
-*Further reading: Daniel Kahneman's [__Thinking, Fast and Slow__](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) is the deep well this post drinks from — System 1's confident shortcuts, WYSIATI ("what you see is all there is"), and why the fog feels like clarity from the inside. If you read one book on bias, make it that one.*
+## References
+
+- Kahneman, D. (2011). *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)*. Farrar, Straus and Giroux. — The owner's manual for the brain that keeps confirming itself; WYSIATI alone explains half of all project post-mortems.
+- Feynman, R. P. (1974). "[Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)." *Engineering and Science*, 37(7), 10–13. California Institute of Technology. — A physicist explaining, decades before "cognitive bias" was a meeting topic, that the easiest person to fool sits in your own chair.

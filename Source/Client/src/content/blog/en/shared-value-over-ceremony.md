@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> Shared value is not social responsibility, philanthropy, or even sustainability, but a new way to achieve economic success. It is not on the margin of what companies do but at the center. — Porter & Kramer, *Harvard Business Review* (2011)
+
 Here's a humbling thing to internalise early in a project: it matters enormously to you, and barely at all to most of the people whose help you need. Your project is the centre of your universe. To the platform team, the finance approver, the other squad whose roadmap you're about to disrupt, it's one of forty things competing for attention this week. The sooner you accept that, the more value you'll create — for them and for you.
 
 The manifesto calls this creating shared value, and asks for an inclusive, humble approach in recognition that your project, whilst valuable to you, sits inside a larger system of people with their own priorities.
@@ -51,4 +53,8 @@ Your project isn't the centre of the universe. Build like you know that, and you
 
 ---
 
-*Further reading: Porter and Kramer's ["Creating Shared Value"](https://hbr.org/2011/01/the-big-idea-creating-shared-value) (HBR, 2011) makes the same argument at civilisational scale — the highest-leverage move is the one that creates value for the people around you too — and the logic survives the trip down to a platform team's backlog intact. Cecil Rupp's __Driving DevOps with Value Streams__ supplies the test for the other half of this post: any activity that doesn't create value for someone is waste, and ceremony rarely survives the audit. The [principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html) said the quiet part years ago: simplicity is the art of maximising the amount of work not done.*
+## References
+
+- Porter, M. E., & Kramer, M. R. (2011). "[Creating Shared Value](https://hbr.org/2011/01/the-big-idea-creating-shared-value)". *Harvard Business Review*, 89(1–2), 62–77. — The same argument as this post at civilisational scale, and proof that "make it worth their while" can be dressed up as reinventing capitalism.
+- Rupp, C. G. (2021). *[Driving DevOps with Value Stream Management](https://www.oreilly.com/library/view/driving-devops-with/9781801078061/)*. Packt Publishing. — Supplies the audit ceremony fails: any activity that doesn't add value to the stream is waste with a recurring calendar invite.
+- Beck, K., et al. (2001). "[Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)". agilemanifesto.org. — Twelve principles, one of which — maximising the amount of work not done — would quietly delete most status meetings.

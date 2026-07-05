@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> People will not be persuaded just by listening. They have to see it with their own eyes. — Taiichi Ohno, *Workplace Management* (1982)
+
 Here's a pattern you'll recognise. Two smart people in a meeting, each certain about how something works — the legacy system, the customer, the other team's roadmap. The argument goes in circles because neither of them actually _knows_. They're both reasoning from a model in their head, and the models disagree. Half an hour of confident debate, and the thing they're arguing about is sitting right there, knowable, one conversation away.
 
 The manifesto's answer is blunt: go find out. Engage early, and enough — even if only to make friends. Get out of the chair.
@@ -51,4 +53,9 @@ When a project stalls on a disagreement, the question is rarely "who's right?" I
 
 ---
 
-*Further reading: Toyota got here first — [genchi genbutsu](https://en.wikipedia.org/wiki/Genchi_Genbutsu), "go and see for yourself," is a pillar of the [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/) and the industrial-strength version of getting out of the chair. Eric Ries carries it into product work in __The Lean Startup__, where "get out of the building" is the whole game. And Bill Aulet's __Disciplined Entrepreneurship__ is ruthless on the same point — primary market research means talking to the actual customer, because every hop away from the source degrades the signal into someone else's interpretation.*
+## References
+
+- Ohno, T. (1988). *[Workplace Management](https://archive.org/details/wokplace-management-ohno-taiichi)* (A. P. Dillon, Trans.). Productivity Press. (Original *Genba Keiei*, 1982.) — The man who built Toyota's system explaining, at book length, why he trusts eyes over reports.
+- Toyota Motor Corporation. *[Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/)*. Toyota Global. — The official statement of the system that turned [genchi genbutsu](https://en.wikipedia.org/wiki/Genchi_Genbutsu) — "go and see" — into industrial doctrine.
+- Ries, E. (2011). *[The Lean Startup](https://theleanstartup.com/book)*. Crown Business. — Carries the factory habit into product work: the facts are outside the building.
+- Aulet, B. (2013). *[Disciplined Entrepreneurship: 24 Steps to a Successful Startup](https://www.d-eship.com/)*. John Wiley & Sons. — Ruthless on primary market research: every hop from the customer degrades the signal.

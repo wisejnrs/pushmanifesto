@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> Plans are worthless, but planning is everything. — Dwight D. Eisenhower, National Defense Executive Reserve Conference (1957)
+
 A milestone is a date with a flag on it. It exists so that someone not on the journey can look at a chart and feel informed. A waypoint is different. A waypoint is a place you actually stand, look around, and decide where to step next. One is reporting. The other is navigation.
 
 Most teams drown in the first and starve for the second.
@@ -55,4 +57,7 @@ Plan the journey in waypoints — real places where you stop, look, and choose �
 
 ---
 
-*Further reading: the capability-based planning literature (the Open Group's [TOGAF guidance](https://pubs.opengroup.org/togaf-standard/business-architecture/capability-based-planning.html) is the canonical version) is essentially this argument at organisational scale — plan in terms of what you'll be able to do, not what you'll have done. I've written up [how that map fits the push](/blog/draw-the-map-before-the-route).*
+## References
+
+- Eisenhower, D. D. (1957). "[Remarks at the National Defense Executive Reserve Conference](https://www.presidency.ucsb.edu/documents/remarks-the-national-defense-executive-reserve-conference)". The American Presidency Project, UC Santa Barbara. — A five-star general's ruling that the artefact is disposable and the navigating is the point.
+- The Open Group. (2023). *[TOGAF Series Guide: Business Capability Planning](https://publications.opengroup.org/g233)* (G233). — The canonical treatment of planning by what you'll be able to do rather than what you'll have done, in prose only an architect could love. See also [the map that goes with it](/blog/draw-the-map-before-the-route).

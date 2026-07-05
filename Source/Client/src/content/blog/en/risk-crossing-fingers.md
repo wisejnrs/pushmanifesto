@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> For a successful technology, reality must take precedence over public relations, for nature cannot be fooled. — Richard P. Feynman, Appendix F, *Rogers Commission Report* (1986)
+
 Nobody straps themselves to a rocket and hopes for the best. The whole apparatus of spaceflight is a machine for taking risk seriously: redundant systems, abort criteria, endless rehearsal, a culture where saying "I'm not comfortable with that number" stops the count. You don't get to space by crossing your fingers. You get there by refusing to.
 
 Software likes to think it's different because the stakes feel lower. Usually they are. But the habit that gets rockets off the pad is exactly the one most projects lack — not bravery, but the unglamorous practice of continuously citing risk out loud.
@@ -49,4 +51,8 @@ The teams that ship genuinely hard things rarely look heroic doing it. There's n
 
 ---
 
-*Further reading: George Fairbanks' [__Just Enough Software Architecture: A Risk-Driven Approach__](https://georgefairbanks.com/book/) makes the same argument for architecture — do exactly as much design as your risks demand, no more. For a plain-language governance take, the Queensland Government's [__Guide to Risk Management__](https://www.forgov.qld.gov.au/information-and-communication-technology/qgea-policies-standards-and-guidelines) is a solid, unpretentious field manual.*
+## References
+
+- Feynman, R. P. (1986). "[Personal Observations on the Reliability of the Shuttle](https://www.nasa.gov/history/rogersrep/v2appf.htm)." Appendix F in *Report of the Presidential Commission on the Space Shuttle Challenger Accident*, Vol. 2. U.S. Government Printing Office. — Ten pages of a physicist refusing to cross his fingers, ending in the most quotable sentence engineering ever produced about crossed fingers.
+- Fairbanks, G. (2010). *[Just Enough Software Architecture: A Risk-Driven Approach](https://georgefairbanks.com/book/)*. Marshall & Brainerd. — The same thesis pointed at architecture: do exactly as much design as your risks demand, then put the whiteboard marker down.
+- Queensland Treasury. (2020). *[A Guide to Risk Management](https://www.treasury.qld.gov.au/files/Guide-to-Risk-Management-June-2020.pdf)*. Queensland Government. — The unpretentious public-sector field manual: identify it, treat it, own it — ISO 31000 in plain Queensland English.

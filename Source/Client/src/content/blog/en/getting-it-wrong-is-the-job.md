@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> Science is one of the very few human activities — perhaps the only one — in which errors are systematically criticized and fairly often, in time, corrected. — Karl Popper, *Conjectures and Refutations* (1963)
+
 There's a particular silence that falls over a room when someone admits they were wrong. You can feel everyone deciding whether to be kind about it. We've built a culture where being wrong is a small moral failing — a thing to apologise for, to explain away, to quietly bury in a follow-up commit.
 
 This is exactly backwards. In any work where the answer isn't known in advance — which is to say, in all the work worth doing — being wrong is not the failure. It's the method.
@@ -53,4 +55,9 @@ Getting it wrong isn't the thing that goes wrong with the work. Done well, out l
 
 ---
 
-*Further reading: Karl Popper's idea of [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) is the engine under this post — a belief only earns its keep once you've stated what would kill it. Rittel and Webber's 1973 essay __Dilemmas in a General Theory of Planning__ takes that engine somewhere uncomfortable, arguing that in wicked problems "the planner has no right to be wrong" — which is precisely why you want your wrongness cheap and early, before it's load-bearing. And the "wrong out loud" half of the argument stands on Amy Edmondson's work on [psychological safety](https://en.wikipedia.org/wiki/Psychological_safety) — teams that can admit error out loud learn faster than teams that bury it.*
+## References
+
+- Popper, K. R. (1959). *[The Logic of Scientific Discovery](https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery)*. Hutchinson. — Where falsifiability earns its formal definition: a theory that can't lose isn't playing the game.
+- Popper, K. R. (1963). *[Conjectures and Refutations: The Growth of Scientific Knowledge](https://www.routledge.com/Conjectures-and-Refutations-The-Growth-of-Scientific-Knowledge/Popper-Karl/p/book/9780415285940)*. Routledge & Kegan Paul. — The friendlier Popper, arguing that being corrected in time is the whole trick, not the embarrassment.
+- Rittel, H. W. J., & Webber, M. M. (1973). "[Dilemmas in a General Theory of Planning](https://link.springer.com/article/10.1007/BF01405730)." *Policy Sciences*, 4(2), 155–169. — The wicked-problems essay in which "the planner has no right to be wrong" — all the more reason to be wrong before it's load-bearing.
+- Edmondson, A. (1999). "[Psychological Safety and Learning Behavior in Work Teams](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Performance/Edmondson%20Psychological%20safety.pdf)." *Administrative Science Quarterly*, 44(2), 350–383. — The field study proving that teams which admit error out loud learn faster than teams that bury it in a follow-up commit.

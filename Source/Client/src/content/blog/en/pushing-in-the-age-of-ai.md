@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> Judgment is a complement to prediction and therefore when the cost of prediction falls demand for judgment rises. We’ll want more human judgment. — Agrawal, Gans & Goldfarb, *Harvard Business Review* (2016)
+
 I wrote the Push Manifesto thinking about humans doing hard creative work. Then the ground moved. A model can now draft the code, the copy, the test plan, the first three designs — in seconds, for almost nothing. It's reasonable to ask whether a philosophy about the discipline of making things still applies when the making got so cheap.
 
 My honest answer, after a couple of years of using these tools in anger: the manifesto doesn't just survive the shift. It becomes the load-bearing part. When output is free, the scarce thing is judgement — and judgement is exactly what the manifesto is about.
@@ -55,4 +57,7 @@ The manifesto was always about doing creativity deliberately, in a world that re
 
 ---
 
-*Further reading: the economics here were mapped before the boom — Agrawal, Gans and Goldfarb's [The Simple Economics of Machine Intelligence](https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence) argues that when machines make one input cheap, the human complement — judgement — is what appreciates. Which is this post in an economist's accent. On the fluent-wrongness itself, [hallucination](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) is a documented failure mode, not a grumble — __The Developer's Playbook for Large Language Model Security__ turns "never take output at face value" into working practice.*
+## References
+
+- Agrawal, A., Gans, J., & Goldfarb, A. (2016, November 17). "[The Simple Economics of Machine Intelligence](https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence)." *Harvard Business Review*. — Three economists priced the AI boom two years before it happened: generation gets cheap, judgement gets dear, and this post is largely their invoice arriving.
+- Wilson, S. (2024). *[The Developer's Playbook for Large Language Model Security](https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/)*. O'Reilly Media. — From the founder of the OWASP Top 10 for LLMs: "never take the model's output at face value" turned from folk wisdom into engineering checklist — because [hallucination](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) is a catalogued failure mode, not a CIO being grumpy about it.

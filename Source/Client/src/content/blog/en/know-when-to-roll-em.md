@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> The sunk cost effect is manifested in a greater tendency to continue an endeavor once an investment in money, effort, or time has been made. — Arkes & Blumer, *The Psychology of Sunk Cost* (1985)
+
 There's an old gambler's wisdom about knowing when to hold and when to fold. The manifesto borrows a cousin of it: know when to roll 'em. Manage your effort, dial in your approach, and don't push your luck. Only kick off a push when it's the right one — and just as importantly, know when the current one is done.
 
 This is the principle people resist most, because it argues against a thing we've been taught to admire: relentless effort.
@@ -51,4 +53,9 @@ So manage the effort like the finite resource it is. Start the right pushes. Spe
 
 ---
 
-*Further reading: Josh Kaufman's __The Personal MBA__ covers the two traps this post walks between — [sunk costs](https://en.wikipedia.org/wiki/Sunk_cost) that keep a dead push alive, and the point of diminishing returns where perfectionism stops paying. Saltzer and Kaashoek's __Principles of Computer System Design__ enshrines the same curve as an engineering law: the more you improve a thing, the more the next improvement costs. And the original text is, of course, [Don Schlitz's "The Gambler"](https://en.wikipedia.org/wiki/The_Gambler_%28song%29) — the secret to survivin' is knowin' what to throw away, and knowin' what to keep.*
+## References
+
+- Arkes, H. R., & Blumer, C. (1985). "[The Psychology of Sunk Cost](https://doi.org/10.1016/0749-5978%2885%2990049-4)". *Organizational Behavior and Human Decision Processes*, 35(1), 124–140. — The experiments proving we keep pushing precisely because we've already pushed.
+- Kaufman, J. (2010). *[The Personal MBA: Master the Art of Business](https://personalmba.com/)*. Portfolio/Penguin. — The two traps in one volume: sunk costs that keep a dead push alive, and diminishing returns that make the tenth polish worthless.
+- Saltzer, J. H., & Kaashoek, M. F. (2009). *[Principles of Computer System Design](https://ocw.mit.edu/courses/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/)*. Morgan Kaufmann. — Diminishing returns enshrined as an engineering law: the more you improve a thing, the more the next improvement costs.
+- Schlitz, D. (1978). "[The Gambler](https://en.wikipedia.org/wiki/The_Gambler_%28song%29)" [Song, recorded by Kenny Rogers]. United Artists. — The title's source text; the decision science above says the gambler was right.

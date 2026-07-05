@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> We are uncovering better ways of developing software by doing it and helping others do it. — *Manifesto for Agile Software Development* (2001)
+
 # Push Manifesto: Embracing the Journey Over the Destination
 
 ## Listen to the Podcast
@@ -230,4 +232,8 @@ But remember: you're pushing a trolley, not a boulder. Direction matters more th
 And most importantly: **the journey always completes**.
 ---
 
-*Further reading: start where this post started — Brian Eno and Peter Schmidt's [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies), the 1975 card deck that breaks creative deadlock by forcing a sideways move; Push is an attempt at the same trick for delivery. The [Agile Manifesto](https://agilemanifesto.org/) is the obvious ancestor for values-over-process, and worth rereading for how little ceremony it actually prescribes. For the claim that Push complements rather than replaces the heavyweight frameworks, Paul McMahon's __Integrating CMMI and Agile Development__ is a whole book of evidence that maturity models and adaptive delivery can share a project without a fight.*
+## References
+
+- Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., et al. (2001). *[Manifesto for Agile Software Development](https://agilemanifesto.org/)*. agilemanifesto.org. — The values-over-process ancestor of Push; reread it and notice it prescribes exactly zero ceremonies, which will surprise anyone who has attended one in its name.
+- Eno, B., & Schmidt, P. (1975). *[Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies)*. Self-published card deck. — The 1975 deck that breaks creative deadlock by forcing a sideways move; Push is an admitted attempt at the same trick for delivery teams.
+- McMahon, P. E. (2010). *[Integrating CMMI and Agile Development](https://www.informit.com/store/integrating-cmmi-and-agile-development-case-studies-9780321714107)*. Addison-Wesley Professional (SEI Series in Software Engineering). — A whole book of case-study evidence that maturity models and adaptive delivery can share a project without a fight, which is Push's "not anti-framework" claim with footnotes.

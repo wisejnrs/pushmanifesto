@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> Not the verifiability but the falsifiability of a system is to be taken as a criterion of demarcation. — Karl Popper, *The Logic of Scientific Discovery* (1959)
+
 Every great idea starts with a test strategy. That sounds like an engineering platitude until you sit with it. It means that before the idea is real — before it earns a place on the board, a sprint, a budget line — you should be able to say how you'd know whether it's any good.
 
 If you can't, you don't have an idea. You have a wish wearing an idea's clothes.
@@ -57,4 +59,8 @@ So before you build the thing, decide how you'd know it worked. If you can't, th
 
 ---
 
-*Further reading: Eric Ries's __The Lean Startup__ is the operating manual for this post — validated learning, [Build-Measure-Learn](https://theleanstartup.com/principles), and the blunt reminder that if you cannot fail, you cannot learn. Daniel Kahneman's __Thinking, Fast and Slow__ explains why the goalposts move the moment you stop nailing them down in advance. And the philosophical spine is Karl Popper's [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) — a claim that no evidence could ever dent isn't strong, it's empty.*
+## References
+
+- Popper, K. (1959). *[The Logic of Scientific Discovery](https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery)*. Hutchinson. (Original *Logik der Forschung*, 1934.) — The philosophical spine: a claim no evidence could dent isn't strong, it's not even in the game.
+- Ries, E. (2011). *[The Lean Startup](https://theleanstartup.com/principles)*. Crown Business. — Build-Measure-Learn is [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) with a burn rate.
+- Kahneman, D. (2011). *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)*. Farrar, Straus and Giroux. — Why the goalposts wander the moment you stop nailing them down in advance.
