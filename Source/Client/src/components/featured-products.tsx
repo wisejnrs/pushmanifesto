@@ -2,6 +2,14 @@ import type { CSSProperties } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 type Product = {
   title: string;
   price: string;
@@ -23,6 +31,7 @@ const STORE_URL = "https://wisejnrs.myshopify.com";
 export function FeaturedProducts() {
   return (
     <section className="container py-12 md:py-20">
+      <Carousel opts={{ align: "start" }}>
       <div className="mb-8 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-end">
         <div>
           <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Featured Products</h2>
@@ -30,26 +39,36 @@ export function FeaturedProducts() {
             Handpicked pieces from the WiseJNRS store. Quality merch for makers and the creatively restless.
           </p>
         </div>
-        <a
-          href={STORE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border/70 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-foreground/10"
-        >
-          View store
-          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </a>
+        <div className="flex shrink-0 items-center gap-4">
+          <a
+            href={STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border/70 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-foreground/10"
+          >
+            View store
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          </a>
+          <div className="hidden items-center gap-2 sm:flex">
+            <CarouselPrevious className="glass static h-8 w-8 translate-y-0 border-border/70" />
+            <CarouselNext className="glass static h-8 w-8 translate-y-0 border-border/70" />
+          </div>
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
+      {/* pt-2 gives the hover lift headroom inside embla's overflow clip */}
+      <CarouselContent className="-ml-5 pb-1 pt-2">
         {PRODUCTS.map((p, i) => (
-          <a
+          <CarouselItem
             key={p.href}
+            style={{ "--reveal-i": i } as CSSProperties}
+            className="reveal-up basis-[70%] pl-5 sm:basis-1/2 lg:basis-1/4"
+          >
+          <a
             href={p.href}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ "--reveal-i": i } as CSSProperties}
-            className="reveal-up gradient-ring glass group flex flex-col overflow-hidden rounded-2xl transition-transform duration-300 hover:-translate-y-1"
+            className="gradient-ring glass group flex h-full flex-col overflow-hidden rounded-2xl transition-transform duration-300 hover:-translate-y-1"
           >
             <div className="relative aspect-square overflow-hidden bg-muted/30">
               <Image
@@ -69,8 +88,10 @@ export function FeaturedProducts() {
               <span className="mt-auto pt-1 font-mono text-sm font-semibold text-gradient-brand">{p.price}</span>
             </div>
           </a>
+          </CarouselItem>
         ))}
-      </div>
+      </CarouselContent>
+      </Carousel>
     </section>
   );
 }
