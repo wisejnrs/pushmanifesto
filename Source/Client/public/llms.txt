@@ -7,6 +7,7 @@
 - [Principles](https://www.pushmanifesto.org/#principles): the building blocks of a push — Push, Ambiguity & Cognitive Bias, Risk, Check-ins/Waypoints/Reviews, Identify & Remove Road Blocks, Creating Shared Value, Mise en place, Work Items, Getting it Wrong, Go Find Out, Know when to Roll 'Em, and Hypothesis (an idea doesn't exist if it can't be tested).
 - [Blog](https://www.pushmanifesto.org/blog): essays expanding on the manifesto, starting with "Journey over Destination."
 - [Blog RSS feed](https://www.pushmanifesto.org/feed.xml): subscribe in any reader.
+- [Full content for LLMs](https://www.pushmanifesto.org/llms-full.txt): every essay, complete, in one plain-text file.
 
 ## About
 - Author: Michael Wise — technology leader writing about creativity, delivery, and the Push philosophy.

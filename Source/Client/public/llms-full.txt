@@ -1,0 +1,980 @@
+# Push Manifesto — Full Content
+
+> Complete text of every Push Manifesto essay, with verified epigraphs and references. Index: https://www.pushmanifesto.org/llms.txt
+
+
+---
+
+# Push Manifesto: Embracing the Journey Over the Destination
+
+Published 2025-10-04 — https://www.pushmanifesto.org/blog/push-manifesto-journey-over-destination
+
+> We are uncovering better ways of developing software by doing it and helping others do it. — *Manifesto for Agile Software Development* (2001)
+
+# Push Manifesto: Embracing the Journey Over the Destination
+
+## Listen to the Podcast
+
+Prefer to listen? Here's a podcast discussion exploring the Push Manifesto philosophy:
+
+```audio
+https://s3.us-west-1.amazonaws.com/cdn.wisejnrs.net/blogs/push-manifesto-journey-over-destination/Decoding_the_Push_Manifesto.mp3
+```
+
+## Watch the Video Explainer
+
+Get a visual overview of Push Manifesto principles:
+
+```video
+https://s3.us-west-1.amazonaws.com/cdn.wisejnrs.net/blogs/push-manifesto-journey-over-destination/The_Push_Manifesto.mp4
+```
+
+---
+
+I had been thinking about Brian Eno's work and his approach to creativity. You know the one - the [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies) cards he created with the painter Peter Schmidt, which break creative blocks by forcing unexpected perspectives.
+
+At the same time, I was dismayed with the application and evolution of various "ways of working" in our industry.
+
+## The Journey, Not the Destination
+
+From 30 years of observation, reflection and participation, I've realised that my work has always been "journey" based. "Get to base camp". "Get up the hill". "Deliver".
+
+But when things go wrong: "work out a way around". That's the important bit.
+
+It's funny. When people leave projects they always reflect on the journey.
+
+## Introducing Push
+
+As such I've attempted a similar exercise to Mr Eno and developed a "manifesto" called **Push**.
+
+> **Push Manifesto is about vision, collaboration, inclusive behaviours, determination, communication, governance, learning, and above all prioritises the journey; using waypoints over iterations and milestones, balancing the desire for fit-for-purpose, targeting shared value outcomes for users and stakeholders.**
+>
+> **Push Manifesto feeds the Maturity Model, evidence-based mindset, supporting the scientific approach daring to explore the latent space, with a pragmatic world-view.**
+
+You know, as in: "I push the trolley around the supermarket. I push myself to exercise. I push my kids through school. Why is the creative process any different?" Corny, but true.
+
+## The Core Principle: Waypoints & Shared Value
+
+Here's the meat. **Set yourself/team/business/company "waypoints" that have shared value and go from there.**
+
+You can choose different modes of progress, depending on the context:
+
+- **[Iterate](https://en.wikipedia.org/wiki/Iterative_and_incremental_development)** – cycle through ideas and improvements.
+- **[Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)** – plan sequentially when clarity is high.
+- **Tick-tock** – alternate between two focuses or approaches (similar to Intel’s [tick–tock model](https://en.wikipedia.org/wiki/Tick%E2%80%93tock_model)).
+- **Spin** – rotate quickly through options to test viability (see [spiral model](https://en.wikipedia.org/wiki/Spiral_model) for structured variation).
+- **[Rapids](https://en.wikipedia.org/wiki/Extreme_programming_practices)** – move fast and adapt while navigating turbulence.
+
+However it feels best for your situation to get results. We all do multiple projects, right?
+
+**Most projects fail, but all journeys complete, one way or another.**
+
+## The Creative Reality
+
+**"Creativity has no timeline"** — and forcing it tends not to satisfy the art form or the artist.
+
+Rigid methodologies assume creativity can be scheduled, innovation can be sprint-planned, and breakthroughs happen in two-week increments.
+
+Sometimes they do. Often they don't.
+
+## AI and the Push Philosophy
+
+Artificial Intelligence changes the dynamic. AI accelerates iteration, reveals latent connections, and enables teams to test ideas faster than ever before. But AI also tempts us to move too fast, to automate before understanding, and to confuse output with progress.
+
+Push provides the balance:
+- **AI as a compass, not a crutch** – use it to find new directions but keep human judgement on course.
+- **Evidence over hype** – measure AI results, validate them, and feed learning into the journey.
+- **Waypoints over promises** – instead of "AI will transform everything in 3 months", set practical AI milestones that create shared value.
+- **Keep creativity human** – AI expands the palette, but humans still choose the canvas.
+
+Push doesn’t resist AI; it integrates it responsibly. It acknowledges that AI can change velocity but insists that direction and value stay in focus.
+
+## Working with Push
+
+### Does it work with SAFe and Agile?
+
+Can you use Push at work? **Yes.**  
+Does it work with SAFe and Agile? **Sure.**  
+Isn't it just common sense? **Maybe.**  
+Are you against Agile? **No, calm your farm, go have a strong hot cup of tea.**
+
+### Practical Push Principles
+
+**1. Condense your stand-ups** – 2 a week max, top-and-bottom. Afternoon times. Consolidate multiple projects into these stand-ups.
+
+**2. Use software for card walls** – Physical boards are great for co-located teams. Most of us aren't co-located anymore.
+
+**3. Manage knowledge with assets** – Don't update the card with "findings". Work items should mutate assets. The knowledge should live with the code, design files, and documentation.
+
+**4. Kill ceremonies** – Do reviews, any kind, but **inline and when it matters**.
+
+**5. Talk to each other** – Like you're around the campfire of creativity. Not scheduled 15-minute blocks. Talk when you need to.
+
+## Why This Matters Now
+
+We are in the middle of an **AI gold rush**. Tools, models, and platforms appear daily, each promising transformation. The pressure to adopt is immense, with leaders demanding AI strategies, investors asking for AI roadmaps, and teams scrambling to bolt AI into everything.
+
+This environment creates risk: chasing hype, burning out teams, and prioritising speed over purpose. Push provides a counterbalance.
+
+It says: **"Focus on the waypoints that matter. Get there however works. Keep the journey healthy."**
+
+AI may accelerate the journey, but without waypoints and shared value, the rush risks becoming aimless. Push ensures that amidst the noise, progress is still grounded.
+
+## The Philosophical Shift
+
+Traditional project management asks: *"Are we on track to hit the milestone?"*  
+Push asks: *"Are we learning? Are we creating shared value? Are we moving forward?"*
+
+One creates pressure and false precision. The other creates space for creativity while maintaining momentum.
+
+## Evidence-Based, Not Faith-Based
+
+Push feeds the maturity model. It supports an evidence-based mindset and the scientific approach.
+
+**Dare to explore the latent space** – that area between what you know and what you don't. With pragmatism.
+
+- Measure what matters
+- Iterate based on evidence
+- Pivot when data says to pivot
+- Persist when you're on the right path
+
+This isn't about abandoning structure. It's about choosing structure that serves the journey.
+
+## Push Compared to Other Frameworks
+
+### Design Thinking
+- Design Thinking focuses on empathy, ideation, and prototyping to solve human-centred problems.  
+- Push aligns with its emphasis on exploration and learning but broadens scope to any journey, not just product/service design.  
+- Design Thinking provides structured stages (empathise, define, ideate, prototype, test), while Push offers waypoints without prescribing order.  
+- They complement each other: Design Thinking shapes problem understanding; Push sustains momentum through uncertain execution.
+
+### ASPICE and CMMI
+- [ASPICE (Automotive SPICE)](https://www.aptiv.com/en/insights/article/what-is-aspice) and [CMMI (Capability Maturity Model Integration)](https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration) focus on defined processes and measurable maturity levels.
+- Push aligns in spirit with evidence-based improvement but avoids prescriptive steps.
+- Where ASPICE/CMMI enforce structured compliance, Push emphasises adaptability and shared value.
+
+### Prince2
+- [Prince2 (PRojects IN Controlled Environments)](https://en.wikipedia.org/wiki/PRINCE2) relies on stage-gates, plans, and management products.
+- Push shifts the lens from milestones to waypoints, reducing false certainty.
+- They can complement each other: Prince2 provides control; Push adds flexibility in navigating uncertainty.
+
+### Agile
+- Agile iterates through sprints, ceremonies, and backlogs.  
+- Push values iteration but strips away ceremony overload, keeping inline communication.  
+- Both value adaptability and collaboration, but Push removes the rigid cadence assumption.
+
+**Summary:** Push is not anti-framework. It’s a philosophy that complements ASPICE, CMMI, Prince2, and Agile by rebalancing focus toward waypoints, shared value, and the health of the journey.
+
+## The Journey Completes
+
+Here's what I've learned: **All journeys complete, one way or another.**
+
+Projects get cancelled. They miss deadlines. They ship incomplete. They succeed. They fail.
+
+But the journey? The journey always completes. The team learns. The product evolves. The market responds. The next thing begins.
+
+By focusing on waypoints instead of rigid destinations, we acknowledge that the path might change, but progress is still real.
+
+By prioritising shared value, we ensure that even if plans change, something worthwhile emerges.
+
+By keeping communication human and inline, we maintain the creative flow that produces our best work.
+
+## Join the Conversation
+
+Push Manifesto is a living idea. It's informed by decades of experience, but it's not dogmatic.
+
+If this resonates with you, I'd love to hear about it. If you think I'm full of it, that's fine too – the conversation matters more than agreement.
+
+You can find the manifesto and related materials at:
+- [Push Manifesto](https://www.pushmanifesto.org/)
+- [Push Manifesto T-Shirt](https://wisejnrs.myshopify.com/products/push-manifesto) – Wear the journey!
+
+Feel free to PR me on GitHub if you have thoughts, improvements, or war stories.
+
+## Prescriptive Structure: Project Architecture
+
+For teams looking for a prescriptive outline, see the [Project Architecture](https://github.com/wisejnrs/pushmanifesto/wiki/Project-Architecture) guide. It translates Push principles into a structured approach with clear layers, responsibilities, and artefacts while retaining the journey-first philosophy.
+
+This provides:
+- Alignment with existing governance structures
+- Clarity on artefacts and checkpoints
+- Flexibility to adapt the flow without losing direction
+
+## Afterthoughts: Spec-Driven Approaches
+
+Push resonates strongly with **spec-driven thinking**. Two references that influence this perspective are:
+- [GitHub Spec Kit](https://github.com/github/spec-kit) – an approach to unify specs and design documents as first-class citizens in development workflows.
+- [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) – a structured, open method focusing on clarity, outcomes, and practical implementation.
+
+These efforts show the importance of specification as a shared artefact that connects intent, collaboration, and delivery. Push aligns with this: specs become waypoints, not paperwork. They ground creativity with clarity without stifling exploration.
+
+## Final Thought
+
+Most methodologies tell you **how** to work.  
+Push reminds you **why** you work: to create value, to solve problems, to make things better.
+
+The journey matters because the journey is where the work happens. Where the learning happens. Where the creativity happens.
+
+**Push yourself. Push your team. Push for better outcomes.**
+
+But remember: you're pushing a trolley, not a boulder. Direction matters more than speed. Waypoints matter more than deadlines.
+
+And most importantly: **the journey always completes**.
+---
+
+## References
+
+- Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., et al. (2001). *[Manifesto for Agile Software Development](https://agilemanifesto.org/)*. agilemanifesto.org. — The values-over-process ancestor of Push; reread it and notice it prescribes exactly zero ceremonies, which will surprise anyone who has attended one in its name.
+- Eno, B., & Schmidt, P. (1975). *[Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies)*. Self-published card deck. — The 1975 deck that breaks creative deadlock by forcing a sideways move; Push is an admitted attempt at the same trick for delivery teams.
+- McMahon, P. E. (2010). *[Integrating CMMI and Agile Development](https://www.informit.com/store/integrating-cmmi-and-agile-development-case-studies-9780321714107)*. Addison-Wesley Professional (SEI Series in Software Engineering). — A whole book of case-study evidence that maturity models and adaptive delivery can share a project without a fight, which is Push's "not anti-framework" claim with footnotes.
+
+---
+
+# A Push Has a Beginning, a Middle, and an End
+
+Published 2026-03-12 — https://www.pushmanifesto.org/blog/beginning-middle-end
+
+> A whole is that which has a beginning, a middle, and an end. — Aristotle, *Poetics* (c. 335 BC)
+
+People ask why I bothered with a new word. We already have sprints, stories, tasks, epics, tickets, cards. Did the world need "push"? I think it did, because the words we had quietly lost the most important property of a unit of work: that it _ends_.
+
+A push is a logical unit of output with a beginning, a middle, and an end. That's the whole definition, and every word in it is doing a job.
+
+## The tyranny of the open-ended
+
+Watch how work actually behaves in most teams. A "story" gets carried over. A "task" spawns three more and never quite closes. A "sprint" ends on the calendar but the work inside it doesn't, so it migrates to the next one wearing a new number. The unit of work has become a fiction — a label on a continuous, shapeless stream that never resolves.
+
+This is corrosive in a way that's hard to see day to day. Work that never ends never gives you the small, real satisfaction of completion. It never lets you stop, look back, and learn from a finished thing. It just flows, and you bail water, and the board is always full.
+
+> A logical unit of output that has a beginning, middle and end. 'End' generally represents completion.
+
+## Why the end is the point
+
+The end is the load-bearing word. A beginning is easy — we start things constantly, often too many. The middle is where the work lives. But the _end_ is what most processes have quietly deleted, and its absence is why teams feel like they're running on a treadmill.
+
+An end means three things. It means the output is complete enough to stand on its own — not perfect, but done in the sense that it delivers the value it set out to. It means you can stop, by definition, because the thing is finished. And it means you get a clean edge to learn from: a finished push is a closed experiment you can actually evaluate, where an open-ended stream of work resists all measurement because it never holds still.
+
+## Logical, not arbitrary
+
+"Logical unit" matters too. A push isn't a fixed-size box you cram work into until the timer goes off. Its size is set by the work's own shape — the natural boundary where one coherent piece of output is complete. Some pushes are an afternoon. Some are three weeks. The discipline is that the boundary is _real_ — it corresponds to a thing being genuinely done — rather than imposed by a ceremony's clock.
+
+This is the quiet break from time-boxing. The box can be useful for rhythm, but when the box becomes the unit, you get work shaped to fit the box rather than the box shaped to fit the work. Half-finished things get declared done because the sprint ended; whole things get artificially split because they didn't fit. The push inverts that: the work defines the boundary, and the boundary is honoured.
+
+## Shape gives you somewhere to stand
+
+A thing with a beginning, middle, and end has a shape, and a shape gives you somewhere to stand. You know where you are in it. You know what "done" looks like before you start. You know when to roll 'em. You can hand it to someone and they can see its edges.
+
+That's what the word "push" is protecting. Not a methodology — a shape. The simple, almost old-fashioned idea that work should be the kind of thing you can finish, and then actually finish it.
+
+---
+
+## References
+
+- Aristotle. (c. 335 BC). *[Poetics](https://classics.mit.edu/Aristotle/poetics.html)* (S. H. Butcher, Trans., 1895). — The original definition of done, some 2,300 years before the first sprint carried over.
+- Zeigarnik, B. (1927). "Das Behalten erledigter und unerledigter Handlungen." *Psychologische Forschung*, 9, 1–85. — The [experiment](https://en.wikipedia.org/wiki/Zeigarnik_effect) behind why the unfinished ticket follows you home and the closed one politely leaves.
+- Lawson, G., Wearne, S., & Iles-Smith, P. (Eds.). (1999). *[Project Management for the Process Industries](https://www.google.com/books/edition/Project_Management_for_the_Process_Indus/1ad4NZEz8d8C)*. Institution of Chemical Engineers. — Chemical engineers stating the quiet part plainly: a project that never ends has stopped being a project.
+
+---
+
+# Shared Value Over Ceremony
+
+Published 2026-03-19 — https://www.pushmanifesto.org/blog/shared-value-over-ceremony
+
+> Shared value is not social responsibility, philanthropy, or even sustainability, but a new way to achieve economic success. It is not on the margin of what companies do but at the center. — Porter & Kramer, *Harvard Business Review* (2011)
+
+Here's a humbling thing to internalise early in a project: it matters enormously to you, and barely at all to most of the people whose help you need. Your project is the centre of your universe. To the platform team, the finance approver, the other squad whose roadmap you're about to disrupt, it's one of forty things competing for attention this week. The sooner you accept that, the more value you'll create — for them and for you.
+
+The manifesto calls this creating shared value, and asks for an inclusive, humble approach in recognition that your project, whilst valuable to you, sits inside a larger system of people with their own priorities.
+
+## Ceremony is value performed at people
+
+The opposite of shared value is ceremony — process performed for its own sake, or to be seen doing process. The status report nobody reads. The sign-off gate that adds a week and catches nothing. The meeting whose real function is to distribute blame in advance. Ceremony has the _shape_ of collaboration without the substance. It's value performed at people rather than created with them.
+
+Ceremony accretes because it feels safe and looks diligent. But it's a tax, and like all taxes it's paid by everyone and noticed by no one until it's crushing. Every ritual that doesn't create value is borrowing time and goodwill from the people forced to attend it.
+
+> An inclusive and humble approach, in recognition that your project, whilst having value, is one of many.
+
+## Build with, not at
+
+Shared value is the practical alternative, and it starts from the humility above. If your project is one of forty things on someone's plate, the way to get their genuine help isn't to demand it through process. It's to make working with you _worth their while_ — to find the version of your goal that also moves theirs.
+
+This is real, not a platitude. The platform team will fast-track the integration that also reduces their support load. The finance approver will move quickly for the person who brought them a clean, honest request instead of a surprise. The other squad will accommodate the change that you shaped _together_ rather than dropping on them. Shared value is just the discovery that the highest-leverage move is usually the one that's good for someone else too.
+
+## Humility is strategic, not just nice
+
+I want to be careful not to make this sound like a morality lecture. Humility here is cold strategy. The arrogant project — the one that assumes its importance entitles it to everyone's time — burns the relationships it depends on and gets quietly deprioritised by the very people who could have unblocked it. The humble project, which shows up acknowledging it's one of many and looks for the win-win, accumulates goodwill that pays out exactly when things get hard.
+
+You can feel the difference in how a project moves through an organisation. The arrogant one grinds against friction at every boundary. The humble one slides, because people want to help it.
+
+## Cut the ceremony, keep the connection
+
+So the discipline is two-sided. Ruthlessly cut the ceremony — the rituals that perform collaboration without creating value. And invest, equally ruthlessly, in the real thing: understanding what the people around you need, and building in a way that gives them some of it. Less theatre, more shared interest.
+
+Your project isn't the centre of the universe. Build like you know that, and you'll be amazed how much of the universe decides to help.
+
+---
+
+## References
+
+- Porter, M. E., & Kramer, M. R. (2011). "[Creating Shared Value](https://hbr.org/2011/01/the-big-idea-creating-shared-value)". *Harvard Business Review*, 89(1–2), 62–77. — The same argument as this post at civilisational scale, and proof that "make it worth their while" can be dressed up as reinventing capitalism.
+- Rupp, C. G. (2021). *[Driving DevOps with Value Stream Management](https://www.oreilly.com/library/view/driving-devops-with/9781801078061/)*. Packt Publishing. — Supplies the audit ceremony fails: any activity that doesn't add value to the stream is waste with a recurring calendar invite.
+- Beck, K., et al. (2001). "[Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)". agilemanifesto.org. — Twelve principles, one of which — maximising the amount of work not done — would quietly delete most status meetings.
+
+---
+
+# Everything Is Loops, Sequences and Decisions
+
+Published 2026-03-26 — https://www.pushmanifesto.org/blog/loops-sequences-decisions
+
+> The purpose of abstracting is not to be vague, but to create a new semantic level in which one can be absolutely precise. — Edsger W. Dijkstra, *The Humble Programmer* (1972)
+
+I've said this enough times that people quote it back to me: programming is loops, sequences and decisions. Everything else is just abstraction from the truth. It sounds like a grumpy old engineer being reductive. It's actually a tool I use constantly, and it cuts deeper than it first appears.
+
+## The three primitives
+
+Underneath every framework, language, and paradigm, a computer does only three kinds of thing. It does steps in order — a sequence. It repeats things — a loop. And it chooses between paths based on conditions — a decision. That's the entire instruction set of the universe, conceptually. Sort algorithms, neural networks, payroll systems, the browser rendering this page: all of it resolves, eventually, to sequences, loops, and decisions running very fast.
+
+Everything we build on top — objects, functions, microservices, frameworks, the whole towering edifice — is abstraction. Layers of convenient fiction that let us think in bigger units without holding the primitives in our heads. Abstraction is wonderful. It's how we build things larger than one mind can contain. But it is, precisely, abstraction _from_ the truth, and the gap matters.
+
+## Abstraction is a loan
+
+Here's the part that's more than a slogan. Every abstraction is a loan against understanding. It lets you move fast now by not thinking about what's underneath — and the bill comes due the day the abstraction leaks, which it always eventually does. The ORM that generates a catastrophic query. The framework whose "magic" does something you didn't ask for. The library that's fine until the one case it wasn't designed for.
+
+When that day comes, the only people who can fix it are the ones who can drop through the layers and see the loops, sequences, and decisions underneath. Everyone else can only file a ticket and hope. The abstraction didn't remove the complexity. It moved it somewhere you agreed not to look, and charged you interest.
+
+> Programming: loops, sequences and decisions. Everything else is just abstraction from the truth.
+
+## Why this is a manifesto idea, not just an engineering one
+
+This connects to the whole philosophy, because the manifesto is suspicious of exactly this kind of comfortable distance. Methodology is an abstraction over working. Ceremony is an abstraction over collaborating. A milestone is an abstraction over progress. Each is useful and each, taken on faith, drifts away from the truth it was supposed to represent — until you're managing the abstraction instead of the thing.
+
+"Go find out" is the instruction to drop through the layers. "It doesn't exist if it can't be tested" is a refusal to accept the abstraction's claim about itself without checking the substance. The scientific habit is, at root, a discipline of staying connected to the ground truth when every convenience is pulling you up into the comfortable fiction.
+
+## Stay close to the ground
+
+I'm not arguing against abstraction. I'd get nothing done without it, and neither would you. I'm arguing for knowing it's there — for being the kind of practitioner who can use the high-level tool fluently and still drop to the primitives when it lies to you. Use the framework. Trust the abstraction. But keep a map of what's underneath, because the day it leaks, that map is the only thing that helps.
+
+Loops, sequences, decisions. Everything else is a story we tell to make the truth easier to hold. Good stories. Just remember they're stories.
+
+---
+
+## References
+
+- Böhm, C., & Jacopini, G. (1966). "[Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules](https://www.cs.unibo.it/~martini/PP/bohm-jac.pdf)". *Communications of the ACM*, 9(5), 366–371. — The [theorem](https://en.wikipedia.org/wiki/Structured_program_theorem) behind the slogan: sequence, selection, iteration, and nothing else required.
+- Dijkstra, E. W. (1972). "[The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)" (EWD340). *Communications of the ACM*, 15(10), 859–866. — The Turing lecture that defends abstraction as precision, not hand-waving — exactly this post's line on convenient fictions.
+- Spolsky, J. (2002). "[The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)". *Joel on Software*. — The classic essay on the loan coming due.
+- Streib, J. T. (2020). *[Guide to Assembly Language: A Concise Introduction](https://link.springer.com/book/10.1007/978-3-030-35639-2)* (2nd ed.). Springer. — The primitives up close: every elegant control structure compiling down to compares and branches.
+
+---
+
+# Chop the Vegetables First: Mise en Place for Projects
+
+Published 2026-04-08 — https://www.pushmanifesto.org/blog/mise-en-place-for-projects
+
+> As a cook, your station, and its condition, its state of readiness, is an extension of your nervous system. — Anthony Bourdain, *Kitchen Confidential* (2000)
+
+Spend any time in a professional kitchen and you'll hear two words before you hear anything else: _mise en place_. Everything in its place. The onions diced, the stock simmering, the knives honed, the pans where your hand expects them. The chef does this before a single order comes in, because once the heat is on there is no time to go looking for the garlic.
+
+Software has a strange relationship with this idea. We celebrate "just start" and "fail fast," and somewhere along the way we decided that preparation was the enemy of momentum. So we kick off projects with a half-formed brief, a repository that doesn't build, and access requests that won't clear for a fortnight. Then we act surprised when the first two weeks evaporate into setup and the team never finds its rhythm.
+
+## Prep is not planning
+
+Let me be clear about what I mean, because mise en place is not a return to the hundred-page project plan. A plan is a guess about the future. Prep is the removal of friction from the present. They are different things, and the manifesto only asks for one of them.
+
+Prep is the boring, knowable work that you will _definitely_ need and can do _now_:
+
+- The environment builds, locally and in CI, on a clean machine.
+- The accounts, credentials, and permissions exist before someone is blocked by them.
+- The data you need to test against is real enough to be useful and safe enough to use.
+- The shape of the first push is agreed — not the whole roadmap, just the first logical unit of output.
+- The people who will say "no" later have already been in the room.
+
+None of that is speculative. None of it is a Gantt chart. It is chopping vegetables.
+
+## Why we skip it
+
+We skip prep because it doesn't feel like progress. There's no demo at the end of a day spent fixing the build and chasing an access ticket. The dopamine of a green checkmark on a feature is real; the quiet satisfaction of a project that simply _works on day one_ is not something we've learned to reward.
+
+But the cost of skipping it is paid with interest. An unprepped project doesn't fail loudly at the start. It bleeds out slowly: a developer idle for a day waiting on a key, a tester who can't trust the data, a review that stalls because nobody can run the thing. Each is small. Together they're the difference between a kitchen that sends plates and one that's in the weeds by 7pm.
+
+> Don't start a project without your mise en place done. Get those vegetables chopped.
+
+## How much is enough?
+
+The honest answer is: enough that the first push can run without stopping to forage. Not more. Mise en place has a failure mode too — the cook who spends so long arranging their station that the guests go home hungry. Prep is in service of the push, not a substitute for it.
+
+A useful test: write down the first push, then ask "what would stop us starting this tomorrow morning?" Every answer on that list is prep. Everything _not_ on that list is planning, and planning can wait until you've learned something by doing.
+
+## The quiet dividend
+
+Teams that prep well look, from the outside, almost boring. There's no heroics, no late-night scramble to get the demo working, no "it works on my machine." There's just a steady cadence of work getting done, because the friction was removed before it could compound.
+
+That's the whole point. Mise en place doesn't make you faster on day one. It makes you _consistent_ for the next ninety. And consistency, not bursts, is what finishes journeys.
+
+So before the heat goes on: chop the vegetables.
+
+---
+
+## References
+
+- Bourdain, A. (2000). *[Kitchen Confidential: Adventures in the Culinary Underbelly](https://en.wikipedia.org/wiki/Kitchen_Confidential)*. Bloomsbury Publishing. — The book that told civilians what cooks already knew: touch a line cook's meez and you will learn what "blocked on setup" really means.
+- Charnas, D. (2017). *[Everything in Its Place: The Power of Mise-En-Place to Organize Your Life, Work, and Mind](https://www.penguinrandomhouse.com/books/594125/everything-in-its-place-by-dan-charnas/)*. Rodale Books. — The definitive kitchen-to-desk translation of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place); first published in hardcover as *Work Clean* (Rodale, 2016), which is worth knowing before you order two copies of the same book.
+- Lawson, G., Wearne, S., & Iles-Smith, P. (Eds.). (1999). *[Project Management for the Process Industries](https://www.google.com/books/edition/Project_Management_for_the_Process_Indus/1ad4NZEz8d8C)*. Institution of Chemical Engineers (IChemE). — Chemical engineers reached "front-end preparation cannot be overemphasised" decades ago, presumably because their unprepped projects explode more literally than ours.
+
+---
+
+# Getting It Wrong Is the Job
+
+Published 2026-04-15 — https://www.pushmanifesto.org/blog/getting-it-wrong-is-the-job
+
+> Science is one of the very few human activities — perhaps the only one — in which errors are systematically criticized and fairly often, in time, corrected. — Karl Popper, *Conjectures and Refutations* (1963)
+
+There's a particular silence that falls over a room when someone admits they were wrong. You can feel everyone deciding whether to be kind about it. We've built a culture where being wrong is a small moral failing — a thing to apologise for, to explain away, to quietly bury in a follow-up commit.
+
+This is exactly backwards. In any work where the answer isn't known in advance — which is to say, in all the work worth doing — being wrong is not the failure. It's the method.
+
+## The map is not the territory
+
+Every project begins with a model of the world: this is what users want, this is how the system behaves, this is what the data says. The model is always wrong in some way you can't yet see. That's not pessimism, it's geometry. A map small enough to carry is a map that's left things out.
+
+The scientific approach the manifesto leans on isn't about being clever. It's about being _disprovable_. You hold a belief, you state what would prove it false, and then you go looking for that evidence on purpose. When you find it, you haven't failed. You've upgraded your map.
+
+> Being learned, critical thinking and taking a scientific approach will always help you climb those mountains.
+
+## Cheap wrong vs expensive wrong
+
+The goal was never to be right first. The goal is to make your wrongness cheap.
+
+Expensive wrong is the belief you carry, unexamined, for six months until it ships and a customer finds it. Cheap wrong is the same belief, tested against reality on a Tuesday afternoon with a throwaway prototype. Same error. Wildly different bill.
+
+Most of what we call "good engineering judgement" is really just a habit of converting expensive wrong into cheap wrong: the spike before the commitment, the prototype before the platform, the conversation before the contract. None of these make you right. They make you wrong _sooner_, while it's still affordable.
+
+## Wrong out loud
+
+The harder part is the social one. A team that punishes wrong gets a team that hides it, and hidden wrong is the most expensive kind of all — it compounds in the dark.
+
+So the leadership job is unglamorous: make it safe to be wrong out loud. Say "I changed my mind, here's what changed it" in front of people. Treat a corrected assumption as a win, not an embarrassment. Notice that the person who surfaced the problem did you a favour, and act like it. Culture is just the sum of what you reward, and if you only reward confident certainty, certainty is what you'll get — whether or not it's warranted.
+
+## The climb
+
+I keep coming back to mountains because the metaphor is honest. You don't summit by knowing the route in advance. You summit by reading the ground in front of you, choosing wrong sometimes, backing down a dead-end gully, and choosing again with better information. The people who get up the mountain aren't the ones who never take a wrong turn. They're the ones who notice quickly and turn around without sulking about it.
+
+Getting it wrong isn't the thing that goes wrong with the work. Done well, out loud, and early — it _is_ the work.
+
+---
+
+## References
+
+- Popper, K. R. (1959). *[The Logic of Scientific Discovery](https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery)*. Hutchinson. — Where falsifiability earns its formal definition: a theory that can't lose isn't playing the game.
+- Popper, K. R. (1963). *[Conjectures and Refutations: The Growth of Scientific Knowledge](https://www.routledge.com/Conjectures-and-Refutations-The-Growth-of-Scientific-Knowledge/Popper-Karl/p/book/9780415285940)*. Routledge & Kegan Paul. — The friendlier Popper, arguing that being corrected in time is the whole trick, not the embarrassment.
+- Rittel, H. W. J., & Webber, M. M. (1973). "[Dilemmas in a General Theory of Planning](https://link.springer.com/article/10.1007/BF01405730)." *Policy Sciences*, 4(2), 155–169. — The wicked-problems essay in which "the planner has no right to be wrong" — all the more reason to be wrong before it's load-bearing.
+- Edmondson, A. (1999). "[Psychological Safety and Learning Behavior in Work Teams](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Performance/Edmondson%20Psychological%20safety.pdf)." *Administrative Science Quarterly*, 44(2), 350–383. — The field study proving that teams which admit error out loud learn faster than teams that bury it in a follow-up commit.
+
+---
+
+# It Doesn't Exist If It Can't Be Tested
+
+Published 2026-04-23 — https://www.pushmanifesto.org/blog/it-doesnt-exist-if-it-cant-be-tested
+
+> Not the verifiability but the falsifiability of a system is to be taken as a criterion of demarcation. — Karl Popper, *The Logic of Scientific Discovery* (1959)
+
+Every great idea starts with a test strategy. That sounds like an engineering platitude until you sit with it. It means that before the idea is real — before it earns a place on the board, a sprint, a budget line — you should be able to say how you'd know whether it's any good.
+
+If you can't, you don't have an idea. You have a wish wearing an idea's clothes.
+
+## The question that deflates the room
+
+Try this in your next planning session. Someone proposes a feature, a rewrite, a new platform. Ask one question: _"What would we expect to see if this is working — and what would we see if it isn't?"_
+
+Watch what happens. Half the proposals survive and get sharper. The other half quietly deflate, because the honest answer is "I'm not sure how we'd tell." That's not a gotcha. It's a gift. You just saved yourself months of building something with no way to know if it mattered.
+
+> Every great idea starts with a test strategy. It doesn't exist if it can't be tested.
+
+## A test strategy is not a test plan
+
+Let me head off a misreading. I'm not asking for a document. A test strategy can be a sentence: "If this onboarding change works, sign-up completion goes up and support tickets about step three go down; if it doesn't, neither moves." That's it. You've made the idea falsifiable.
+
+The strategy comes _first_, before the build, for a specific reason: it stops you from moving the goalposts after the fact. We are extraordinarily good at looking at any outcome and explaining why it confirms what we already believed. Naming the expected signal in advance is how you tie your own hands against your own bias.
+
+## Things that resist testing
+
+Some of the most expensive ideas in any organisation are the ones that have quietly opted out of being tested:
+
+- The re-org that will "improve collaboration" — measured how?
+- The rewrite that will "make us faster" — faster at what, compared to what baseline?
+- The strategy deck whose claims are all directional and none disprovable.
+
+I'm not saying these are wrong. I'm saying that until you can state what would prove them wrong, you can't tell — and neither can anyone else. A claim that survives all possible evidence isn't strong. It's empty.
+
+## Cheap instruments
+
+The good news is that the test rarely needs to be elaborate. A landing page. A wizard-of-oz prototype where a human pretends to be the algorithm. A week of one team using the thing while another doesn't. A single well-chosen metric watched for a fortnight.
+
+The instrument can be crude as long as it can _move_ — as long as a real outcome could push the needle one way or the other. An idea attached to a moving instrument is alive. You can learn from it, kill it, double down on it. An idea with no instrument just sits there, consuming belief and budget, immune to reality.
+
+So before you build the thing, decide how you'd know it worked. If you can't, that's your finding. The idea doesn't exist yet.
+
+---
+
+## References
+
+- Popper, K. (1959). *[The Logic of Scientific Discovery](https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery)*. Hutchinson. (Original *Logik der Forschung*, 1934.) — The philosophical spine: a claim no evidence could dent isn't strong, it's not even in the game.
+- Ries, E. (2011). *[The Lean Startup](https://theleanstartup.com/principles)*. Crown Business. — Build-Measure-Learn is [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) with a burn rate.
+- Kahneman, D. (2011). *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)*. Farrar, Straus and Giroux. — Why the goalposts wander the moment you stop nailing them down in advance.
+
+---
+
+# Waypoints, Not Milestones
+
+Published 2026-04-30 — https://www.pushmanifesto.org/blog/waypoints-not-milestones
+
+> Plans are worthless, but planning is everything. — Dwight D. Eisenhower, National Defense Executive Reserve Conference (1957)
+
+A milestone is a date with a flag on it. It exists so that someone not on the journey can look at a chart and feel informed. A waypoint is different. A waypoint is a place you actually stand, look around, and decide where to step next. One is reporting. The other is navigation.
+
+Most teams drown in the first and starve for the second.
+
+## The trouble with milestones
+
+Milestones aren't evil. They're just optimised for the wrong audience. They answer "are we on schedule?" — a reasonable question — but they answer it with a binary that hides everything interesting. A milestone is hit or missed. It tells you nothing about whether you're walking toward the right summit, only whether you're walking fast enough toward the one someone picked months ago.
+
+And because missing a milestone feels like failure, they quietly corrupt behaviour. Teams hit the date by cutting the corner you couldn't see from the chart. The flag goes up. The map says progress. The territory says debt.
+
+## What a waypoint is for
+
+The manifesto prefers a low-ceremony, low-noise follow-up on the actual work — checking the things, not the calendar. A waypoint is a deliberate pause to ask the only questions that matter mid-journey:
+
+- What do we know now that we didn't at the last waypoint?
+- Is the destination still the right one, given what we've learned?
+- What's the next, smallest, most useful step?
+
+Notice these are navigation questions, not status questions. They assume the map might be wrong — which it always is — and they give the team permission to adjust course without it being a crisis.
+
+> Whilst stand-ups are useful, prefer a low-ceremony, less-noisy follow-up on work items.
+
+## The stand-up trap
+
+I have nothing against stand-ups in principle. But watch one that's gone stale and you'll see the milestone disease in miniature. Three questions, performed daily, optimised for the manager's comfort rather than the team's navigation. "Yesterday I... today I... no blockers." Fifteen minutes of status theatre where the real blocker is the one nobody says out loud because the format doesn't have a slot for it.
+
+A waypoint check-in is quieter and rarer and more honest. It's tied to the work — a push reaching its middle, a result coming in — not to the clock. It can be a fifteen-minute conversation over a screen, or a comment thread on the actual work item, or two people at a whiteboard. The ceremony isn't the point. The course-correction is.
+
+## Following the work, not the watch
+
+Here's the reframe that helps me. Don't ask "where should we be by Friday?" Ask "what's the next thing we need to learn, and what's the cheapest way to learn it?" The first question pulls you toward a flag on someone's chart. The second pulls you along the actual path.
+
+Plan the journey in waypoints — real places where you stop, look, and choose — and let the milestones be a thin reporting layer on top for the people who need a chart. Just don't confuse the chart for the climb. The flag isn't the summit. It's an annotation.
+
+---
+
+## References
+
+- Eisenhower, D. D. (1957). "[Remarks at the National Defense Executive Reserve Conference](https://www.presidency.ucsb.edu/documents/remarks-the-national-defense-executive-reserve-conference)". The American Presidency Project, UC Santa Barbara. — A five-star general's ruling that the artefact is disposable and the navigating is the point.
+- The Open Group. (2023). *[TOGAF Series Guide: Business Capability Planning](https://publications.opengroup.org/g233)* (G233). — The canonical treatment of planning by what you'll be able to do rather than what you'll have done, in prose only an architect could love. See also [the map that goes with it](/blog/draw-the-map-before-the-route).
+
+---
+
+# Go Find Out: Get Out of the Chair
+
+Published 2026-05-07 — https://www.pushmanifesto.org/blog/go-find-out
+
+> People will not be persuaded just by listening. They have to see it with their own eyes. — Taiichi Ohno, *Workplace Management* (1982)
+
+Here's a pattern you'll recognise. Two smart people in a meeting, each certain about how something works — the legacy system, the customer, the other team's roadmap. The argument goes in circles because neither of them actually _knows_. They're both reasoning from a model in their head, and the models disagree. Half an hour of confident debate, and the thing they're arguing about is sitting right there, knowable, one conversation away.
+
+The manifesto's answer is blunt: go find out. Engage early, and enough — even if only to make friends. Get out of the chair.
+
+## Assumption is cheaper than a conversation, and costs more
+
+We default to assuming because assuming is fast and free in the moment. Walking over to the support team, reading the actual logs, ringing the customer, opening the file — all of that has a small upfront cost. So we skip it, and we pay later, when the assumption turns out wrong and the work built on it has to be unwound.
+
+It's the cheap-wrong principle again, applied to knowledge. A two-minute "go find out" turns an expensive, deferred error into a cheap, immediate fact. The asymmetry is enormous and we ignore it constantly.
+
+> Engage. Engage early, and enough — even if to make friends. Get out of the chair and go find out.
+
+## Make friends before you need them
+
+The "even if to make friends" clause is the part people skip, and it's the most strategic. The time to build a relationship with the team that owns the database, the ops person who knows where the bodies are buried, the stakeholder who can quietly kill your project — is _before_ you need anything from them.
+
+Engagement isn't only about extracting facts. It's about being a known, trusted quantity when the awkward moment arrives. The person who's shown up, asked good questions, and listened gets a very different answer at 5pm on a Friday than the stranger who appears only when they're blocked.
+
+## Primary sources
+
+There's a quiet snobbery worth borrowing from historians: prefer primary sources. Don't ask someone what the customer thinks — talk to the customer. Don't infer what the system does from the documentation — read the code, watch the trace. Every hop away from the source is a chance for the signal to degrade into someone else's interpretation.
+
+This is uncomfortable because primary sources are messier than summaries. The customer says something contradictory. The logs don't match the diagram. The code does something nobody remembers writing. Good. That mess is the truth, and the truth is what you came for.
+
+## The smallest expedition
+
+You don't need a research programme. You need to get out of the chair. Send the message. Open the file. Ask the dumb question — the dumb question is almost always the one everyone else was also afraid to ask. The smallest expedition into reality beats the largest debate about it.
+
+When a project stalls on a disagreement, the question is rarely "who's right?" It's "what haven't we actually checked?" Go find out. Then come back and have a much shorter meeting.
+
+---
+
+## References
+
+- Ohno, T. (1988). *[Workplace Management](https://archive.org/details/wokplace-management-ohno-taiichi)* (A. P. Dillon, Trans.). Productivity Press. (Original *Genba Keiei*, 1982.) — The man who built Toyota's system explaining, at book length, why he trusts eyes over reports.
+- Toyota Motor Corporation. *[Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/)*. Toyota Global. — The official statement of the system that turned [genchi genbutsu](https://en.wikipedia.org/wiki/Genchi_Genbutsu) — "go and see" — into industrial doctrine.
+- Ries, E. (2011). *[The Lean Startup](https://theleanstartup.com/book)*. Crown Business. — Carries the factory habit into product work: the facts are outside the building.
+- Aulet, B. (2013). *[Disciplined Entrepreneurship: 24 Steps to a Successful Startup](https://www.d-eship.com/)*. John Wiley & Sons. — Ruthless on primary market research: every hop from the customer degrades the signal.
+
+---
+
+# Ambiguity and Bias Are Project Killers
+
+Published 2026-05-14 — https://www.pushmanifesto.org/blog/ambiguity-and-bias
+
+> The first principle is that you must not fool yourself—and you are the easiest person to fool. — Richard P. Feynman, *Cargo Cult Science* (1974)
+
+If you autopsy enough failed projects, you stop blaming the obvious things. It's rarely that the team couldn't code, or didn't care, or ran out of hours. Far more often, the cause of death is fog: two people who used the same word to mean different things, an assumption nobody wrote down, a decision made by a brain quietly fooling itself.
+
+The manifesto names two of these directly, and calls them what they are. Ambiguity and cognitive bias kill projects.
+
+## Ambiguity: the same word, two worlds
+
+"Done." "Soon." "The user." "Integrated." These words feel precise in the moment and mean wildly different things to the people in the room. The designer's "done" includes the empty state; the developer's "done" is the happy path. Nobody's lying. They've just exported the word from different mental models, and the gap stays invisible until it ships.
+
+The fix isn't more documentation. It's _readability_ — clear mental models, plain language, and a deliberate effort to support the diverse audience actually doing the work. Say what "done" includes. Draw the thing. Show an example. Replace the abstract noun with a concrete one. The goal is that two people, from two backgrounds, build the same picture in their heads from the same words. That almost never happens by accident.
+
+> Offer high readability, clear mental models, support a diverse audience.
+
+## Bias: the brain that confirms itself
+
+Cognitive bias is the more insidious of the two, because it operates on people who are being careful. You can't will it away by being smart — smart people are, if anything, better at constructing convincing reasons for what they already believed.
+
+The ones that ambush projects most:
+
+- **Confirmation bias** — we notice the evidence that fits and skim past the rest. The demo that worked sticks; the three that didn't get explained away.
+- **The curse of knowledge** — once you understand something, you genuinely cannot remember not understanding it, so you write docs and interfaces for a person who no longer exists: a past version of yourself.
+- **Sunk cost** — the more we've invested, the harder it is to see that we should stop. The bias grows with the budget.
+
+## Designing against your own brain
+
+You don't beat bias with willpower. You beat it with structure — small process that does the noticing your brain won't:
+
+- State the disprover in advance (the Hypothesis principle is an anti-bias device).
+- Have someone whose explicit job in the review is to argue the other side.
+- Show the work to someone outside the bubble, who hasn't absorbed the assumptions.
+- Write decisions down with their reasoning, so future-you can audit past-you's logic instead of trusting their memory of it.
+
+## Clarity as kindness
+
+There's a humane reading of all this. Reducing ambiguity and checking your bias isn't only about efficiency. It's how you make space for people who don't share your context — the new starter, the stakeholder from another discipline, the user who doesn't think like you. Fog advantages the insider and quietly excludes everyone else. Clarity is inclusive by construction.
+
+So treat clarity as a discipline you practise, not a trait you happen to have. Name the ambiguity. Design against the bias. The fog is the enemy, and it's the one enemy that's always partly inside the building.
+
+---
+
+## References
+
+- Kahneman, D. (2011). *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)*. Farrar, Straus and Giroux. — The owner's manual for the brain that keeps confirming itself; WYSIATI alone explains half of all project post-mortems.
+- Feynman, R. P. (1974). "[Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm)." *Engineering and Science*, 37(7), 10–13. California Institute of Technology. — A physicist explaining, decades before "cognitive bias" was a meeting topic, that the easiest person to fool sits in your own chair.
+
+---
+
+# You Don't Get to Space by Crossing Your Fingers
+
+Published 2026-05-21 — https://www.pushmanifesto.org/blog/risk-crossing-fingers
+
+> For a successful technology, reality must take precedence over public relations, for nature cannot be fooled. — Richard P. Feynman, Appendix F, *Rogers Commission Report* (1986)
+
+Nobody straps themselves to a rocket and hopes for the best. The whole apparatus of spaceflight is a machine for taking risk seriously: redundant systems, abort criteria, endless rehearsal, a culture where saying "I'm not comfortable with that number" stops the count. You don't get to space by crossing your fingers. You get there by refusing to.
+
+Software likes to think it's different because the stakes feel lower. Usually they are. But the habit that gets rockets off the pad is exactly the one most projects lack — not bravery, but the unglamorous practice of continuously citing risk out loud.
+
+## Risk doesn't disappear when you stop looking at it
+
+The most common way teams handle risk is to not. There's an optimism that sets in once a project is moving: the integration will probably be fine, the third party will probably deliver, the data will probably be clean. Each "probably" is a finger crossed. Stack enough of them and you've built a plan that only works if nothing surprising happens — in a domain that is nothing but surprises.
+
+The manifesto's instruction is deliberately repetitive: continuously cite risk. Not once, in a register that gets filed and forgotten. Continuously, as a running commentary on the work. "This depends on the vendor's API behaving — we haven't confirmed it does." "We're assuming the data migrates cleanly — untested." Saying it doesn't make the risk go away, but it makes it _visible_, and visible risk is risk you can do something about.
+
+> Risk kills projects. You don't get to space by crossing your fingers — continuously cite it.
+
+## Naming a risk is half of managing it
+
+Here's what changes the moment a risk is named out loud: it becomes a shared object instead of a private worry. Someone can challenge it, size it, or — best of all — cheaply retire it. Half the risks I've seen sink projects could have been killed in an afternoon if anyone had said them early enough to act.
+
+A named risk gets one of three honest responses: we'll test it now and find out (turn the unknown into a known), we'll mitigate it (build the fallback before we need it), or we'll accept it on purpose (eyes open, written down, owned). All three are fine. The only bad option is the fourth — the silent finger-cross — and it's the default.
+
+## The culture part
+
+Continuous risk-citing only works if it's safe to do. On a launch pad, anyone can call a hold; that authority is the point. On a project, if naming a risk gets you labelled negative or "not a team player," people will stop naming them, and you'll have optimised your culture for pleasant silence right up until the failure.
+
+So the leadership job is to make risk-citing normal and unpunished — boring, even. Reward the person who surfaces the uncomfortable dependency. Treat "what could go wrong here?" as a standing question, not a sign of cold feet. The goal is a team where pointing at the iceberg is just part of steering the ship.
+
+## Boring is the achievement
+
+The teams that ship genuinely hard things rarely look heroic doing it. There's no last-minute miracle, because the risks that would have required one were named and retired weeks earlier. It looks, frankly, a bit dull. That dullness is the achievement. Crossed fingers make for a better story and a worse outcome. Aim for the boring launch.
+
+---
+
+## References
+
+- Feynman, R. P. (1986). "[Personal Observations on the Reliability of the Shuttle](https://www.nasa.gov/history/rogersrep/v2appf.htm)." Appendix F in *Report of the Presidential Commission on the Space Shuttle Challenger Accident*, Vol. 2. U.S. Government Printing Office. — Ten pages of a physicist refusing to cross his fingers, ending in the most quotable sentence engineering ever produced about crossed fingers.
+- Fairbanks, G. (2010). *[Just Enough Software Architecture: A Risk-Driven Approach](https://georgefairbanks.com/book/)*. Marshall & Brainerd. — The same thesis pointed at architecture: do exactly as much design as your risks demand, then put the whiteboard marker down.
+- Queensland Treasury. (2020). *[A Guide to Risk Management](https://www.treasury.qld.gov.au/files/Guide-to-Risk-Management-June-2020.pdf)*. Queensland Government. — The unpretentious public-sector field manual: identify it, treat it, own it — ISO 31000 in plain Queensland English.
+
+---
+
+# Know When to Roll 'Em
+
+Published 2026-05-28 — https://www.pushmanifesto.org/blog/know-when-to-roll-em
+
+> The sunk cost effect is manifested in a greater tendency to continue an endeavor once an investment in money, effort, or time has been made. — Arkes & Blumer, *The Psychology of Sunk Cost* (1985)
+
+There's an old gambler's wisdom about knowing when to hold and when to fold. The manifesto borrows a cousin of it: know when to roll 'em. Manage your effort, dial in your approach, and don't push your luck. Only kick off a push when it's the right one — and just as importantly, know when the current one is done.
+
+This is the principle people resist most, because it argues against a thing we've been taught to admire: relentless effort.
+
+## More effort is not more progress
+
+Somewhere we absorbed the idea that working harder is always virtuous, that the team grinding late is the team that cares. But effort and progress are different quantities, and past a certain point they stop correlating. The tenth revision of a paragraph nobody will read. The gold-plating on a feature whose core hypothesis is still untested. The all-nighter to hit a date that didn't need hitting. That's effort spent like water, producing nothing but tiredness.
+
+Pushing harder feels like doing something. Often it's the most expensive way to avoid the real decision, which is: is this still worth the push?
+
+> Manage your work effort, dial in your approach and don't push your luck. Only kick a push when it's the right one.
+
+## Diminishing returns have a shape
+
+Most pushes follow the same curve. Early effort buys enormous value — the thing goes from nothing to working. Then the curve bends. You're now polishing, hardening, handling the long tail of cases that may or may not matter. The value of each additional hour drops, sometimes steeply.
+
+The skill is feeling where you are on that curve. The first 80% and the last 20% cost about the same, and the last 20% is only worth it _sometimes_ — for the parts that genuinely need it. Knowing which 20% deserves the effort, and which is luck-pushing, is most of the craft of shipping.
+
+## Don't push your luck
+
+"Don't push your luck" is a specific warning. It's the moment when a thing is working, the result is in, and you decide to keep going anyway — one more refactor, one more feature, one more clever optimisation. Sometimes that's right. Often it's how a finished thing gets broken, or a clean result gets muddied, or a team that should be resting burns itself out on a push that already paid off.
+
+A finished push has a beginning, a middle, and an _end_. Honouring the end — actually stopping, shipping, and moving on — is harder than it sounds, because stopping feels like giving up and continuing feels like dedication. Reframe it: stopping at the right moment is the dedication. It's what lets you spend the next push's effort where it'll actually count.
+
+## Roll the right one
+
+The flip side is the start. "Only kick a push when it's the right one" is permission to _not_ start things — to let an idea sit until it's earned the effort, rather than reflexively beginning work to look busy. A push you start for the wrong reason consumes the same effort as a good one and returns less.
+
+So manage the effort like the finite resource it is. Start the right pushes. Spend hard where the curve is steep. And when a push is done, have the discipline to roll 'em, rack up the chips, and walk to the next table.
+
+---
+
+## References
+
+- Arkes, H. R., & Blumer, C. (1985). "[The Psychology of Sunk Cost](https://doi.org/10.1016/0749-5978%2885%2990049-4)". *Organizational Behavior and Human Decision Processes*, 35(1), 124–140. — The experiments proving we keep pushing precisely because we've already pushed.
+- Kaufman, J. (2010). *[The Personal MBA: Master the Art of Business](https://personalmba.com/)*. Portfolio/Penguin. — The two traps in one volume: sunk costs that keep a dead push alive, and diminishing returns that make the tenth polish worthless.
+- Saltzer, J. H., & Kaashoek, M. F. (2009). *[Principles of Computer System Design](https://ocw.mit.edu/courses/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/)*. Morgan Kaufmann. — Diminishing returns enshrined as an engineering law: the more you improve a thing, the more the next improvement costs.
+- Schlitz, D. (1978). "[The Gambler](https://en.wikipedia.org/wiki/The_Gambler_%28song%29)" [Song, recorded by Kenny Rogers]. United Artists. — The title's source text; the decision science above says the gambler was right.
+
+---
+
+# Give the Work a Shape: How to Structure a Push
+
+Published 2026-05-30 — https://www.pushmanifesto.org/blog/give-the-work-a-shape
+
+> We shape our buildings and afterwards our buildings shape us. — Winston Churchill, House of Commons (1943)
+
+There's a false choice that haunts delivery: heavyweight process on one side, chaos on the other. Pick the binder full of templates, or pick "we'll figure it out as we go." Both are traps. The binder buries the work in ceremony; the free-for-all leaves it unaccountable. What you actually want is a *shape* — a light skeleton the work hangs on, with no more structure than the work earns.
+
+After enough projects I've settled on a skeleton I trust. It's not a methodology. It's a place for things to live, so that nothing important is homeless and nothing unimportant gets a meeting.
+
+## The skeleton
+
+Most work, large or small, moves through the same few rooms:
+
+- **Initiate** — the idea brief and the high-level goals. One page: what this is, why it matters, what "done" roughly looks like. If you can't write the brief, you're not ready to start (that's [mise en place](/blog/mise-en-place-for-projects)).
+- **Design** — business processes, the user stories, the technical shape, and the decisions you made *and why*. Crucially, this is where the **test strategy** lives — because [an idea doesn't exist if it can't be tested](/blog/it-doesnt-exist-if-it-cant-be-tested).
+- **Build & Test** — the work itself, against defined environments. The pushes happen here.
+- **Release** — the quality plan, the road map, the operational handover, and a go-live readiness checklist. The unglamorous bit that decides whether the good work actually reaches anyone.
+- **Govern** — risks, acceptance criteria, the definition of done, retrospectives, and ways of working. The thin layer that keeps the whole thing honest.
+
+That's the whole shape. Notice what it is and isn't: it's a set of *homes*, not a set of *gates*. You don't need permission to move between rooms. You need somewhere to put the test strategy so it isn't lost.
+
+## Decision records over status reports
+
+The single highest-leverage habit in that skeleton is writing down decisions *with their reasoning*. Not what's on track — what was decided, and why, given what was known at the time.
+
+Status reports rot the moment they're written. Decision records compound. Six months on, when someone asks "why on earth did we build it this way," the answer is a paragraph instead of an argument. And future-you gets to audit past-you's logic instead of trusting a faded memory of it — the best defence against the bias that quietly rewrites history in your favour.
+
+## Definition of done is a boundary, not a wish
+
+Every room benefits from one honest line: what does *done* mean here? Not "done-ish," not "done except the edge cases" — the real boundary. A push [has an end](/blog/beginning-middle-end), and the definition of done is where you draw it before you start, so you can't move it afterward to make yourself feel finished.
+
+This is the piece teams skip, and it's why so much work has the texture of a treadmill. Without a stated boundary, nothing is ever quite done, so nothing is ever quite celebrated, and the team just keeps running.
+
+## Version the truth
+
+One small discipline that pays off forever: version things properly. [Semantic versioning](https://semver.org/) — major for breaking changes, minor for backwards-compatible features, patch for fixes — isn't just for libraries. It's a shared language for "how much did this change?" that a whole team, technical or not, can read at a glance.
+
+## The point of the skeleton
+
+A shape doesn't slow the work down. It speeds it up, because nobody's wondering where the test strategy went or whether the thing is allowed to ship. The structure absorbs the questions that would otherwise become meetings.
+
+Keep it light. Give every important thing a home and nothing unimportant a ceremony. Then get on with the pushes — which is where the actual work was always going to happen.
+
+---
+
+## References
+
+- Nygard, M. (2011). "[Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)." Cognitect. — The two-page origin of the ADR: keep the documentation that answers "why," and skip the rest.
+- McCabe, T. (2024). *[Fundamentals of Enterprise Architecture](https://www.oreilly.com/library/view/fundamentals-of-enterprise/9781098159368/)*. O'Reilly Media. — The full anatomy of a decision record, for when the two-page version grows up and gets a governance layer.
+- Preston-Werner, T. (2013). *[Semantic Versioning 2.0.0](https://semver.org/)*. semver.org. — Three integers that give an entire organisation, technical or not, one shared answer to "how much did this change?"
+- Churchill, W. S. (1943). "[House of Commons Rebuilding](https://api.parliament.uk/historic-hansard/commons/1943/oct/28/house-of-commons-rebuilding)." *Hansard*, HC Deb, vol. 393. — Parliament's architect-in-chief on why the shape you give a thing quietly governs everything done inside it.
+
+---
+
+# Pushing in the Age of AI
+
+Published 2026-06-04 — https://www.pushmanifesto.org/blog/pushing-in-the-age-of-ai
+
+> Judgment is a complement to prediction and therefore when the cost of prediction falls demand for judgment rises. We’ll want more human judgment. — Agrawal, Gans & Goldfarb, *Harvard Business Review* (2016)
+
+I wrote the Push Manifesto thinking about humans doing hard creative work. Then the ground moved. A model can now draft the code, the copy, the test plan, the first three designs — in seconds, for almost nothing. It's reasonable to ask whether a philosophy about the discipline of making things still applies when the making got so cheap.
+
+My honest answer, after a couple of years of using these tools in anger: the manifesto doesn't just survive the shift. It becomes the load-bearing part. When output is free, the scarce thing is judgement — and judgement is exactly what the manifesto is about.
+
+## The cost of being wrong didn't fall. The cost of generating did.
+
+This is the distinction everyone blurs. AI collapsed the cost of _producing_ a thing. It did almost nothing to the cost of producing the _wrong_ thing and discovering it too late. A model will confidently generate a beautiful solution to the problem you didn't actually have, and it will do it fast enough to flood you with plausible wrongness before you've thought to ask whether it's right.
+
+So the old principles get sharper, not softer:
+
+- **Hypothesis.** When you can generate ten implementations before lunch, "it doesn't exist if it can't be tested" stops being a nice idea and becomes the only thing standing between you and ten untested guesses. The test strategy is now the bottleneck, and that's correct — it's the part that should be.
+- **Getting it wrong.** The model is wrong constantly, and fluently. Fluent wrong is more dangerous than obvious wrong because it disarms your scepticism. The scientific habit — state the disprover, go looking for it — is your only defence against being charmed.
+- **Go find out.** A model will happily hallucinate how the legacy system works. The antidote is unchanged: get out of the chair, read the actual code, talk to the actual person. Primary sources beat a confident summary, and they especially beat a generated one.
+
+## The grunt work was never the value
+
+There's a grief I see in good engineers and writers: if the machine can do the typing, what was I for? It helps to be precise about what just got automated. The model automated the _generation_ of a candidate. It did not automate deciding which candidate is worth having, why, for whom, and at what cost. It chopped the vegetables. It did not decide what to cook, for whom, or whether the dish is any good.
+
+That deciding — the mise en place of judgement, the citing of risk, the knowing when to roll 'em — was always the value. We just couldn't see it clearly while it was tangled up with the typing. Now that the typing is cheap, the judgement stands exposed as the real work. The people who thrive won't be the ones who generate the most. They'll be the ones who know what's worth generating and can tell good output from confident noise.
+
+> Every great idea starts with a test strategy. It doesn't exist if it can't be tested. That goes double for the ones a machine wrote.
+
+## Pushes get smaller and faster, not fewer
+
+Practically, AI changes the rhythm of a push. The beginning is faster — you get to a working candidate in minutes. Which means the middle, the testing and deciding, arrives sooner and matters more. The danger is using the speed to skip it: to ship the generated thing because it _looks_ done, without ever attaching it to a moving instrument.
+
+Resist that. Spend the time you saved on generation buying certainty instead. Use the model to make wrong cheaper — generate three approaches, test the hypothesis behind each, kill two without ceremony. That's not slower. It's the same discipline at higher speed, which is the whole promise of the tools if you don't squander it on volume.
+
+## Don't push your luck — now with a faster engine
+
+A faster engine makes it easier to push your luck. You can generate your way deep into a bad idea before noticing, because every step felt productive. The "know when to roll 'em" principle is now a safety system. A working result is still a place to stop and bank the win, not a runway for the model to keep building on a foundation nobody checked.
+
+The manifesto was always about doing creativity deliberately, in a world that rewards looking busy. AI didn't change that. It just turned up the volume on both sides — more output, and more ways to fool yourself with it. The deliberate ones will be fine. They'll be better than fine. The rest will generate a great deal, very quickly, and learn the cost of the wrong thing on the same brutal schedule as always.
+
+---
+
+## References
+
+- Agrawal, A., Gans, J., & Goldfarb, A. (2016, November 17). "[The Simple Economics of Machine Intelligence](https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence)." *Harvard Business Review*. — Three economists priced the AI boom two years before it happened: generation gets cheap, judgement gets dear, and this post is largely their invoice arriving.
+- Wilson, S. (2024). *[The Developer's Playbook for Large Language Model Security](https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/)*. O'Reilly Media. — From the founder of the OWASP Top 10 for LLMs: "never take the model's output at face value" turned from folk wisdom into engineering checklist — because [hallucination](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) is a catalogued failure mode, not a CIO being grumpy about it.
+
+---
+
+# A Toolkit for Getting Unstuck
+
+Published 2026-06-06 — https://www.pushmanifesto.org/blog/toolkit-for-getting-unstuck
+
+> State the problem in words as clearly as possible. — Brian Eno & Peter Schmidt, *Oblique Strategies* (1975)
+
+When a problem won't move, the instinct is to push harder at it from the same angle. That rarely works, because if the straight-on approach were going to crack it, it already would have. Brian Eno and Peter Schmidt understood this with their _Oblique Strategies_ — a deck of cards you'd draw when stuck in the studio, each one nudging you sideways. "Honour thy error as a hidden intention." "Use an old idea." The point wasn't the specific instruction; it was being forced off the rut.
+
+Over the years I've collected my own deck — not cards, but a handful of thinking tools I reach for when something is jammed. None are mine. All are oblique. Here are the ones I use most.
+
+## Ask the seven questions
+
+When I'm stuck, I'm usually stuck because I haven't actually defined the problem. So I run a short, almost coaching-style sequence out loud or on paper:
+
+- What's the aim of this, really?
+- What needs to change?
+- What's happening *now*?
+- What have I already tried?
+- What did that produce?
+- What are my options?
+- What's the smallest first step?
+
+It looks trivial. It isn't. Half the time the honest answer to "what's happening now?" contradicts the story I'd been telling myself, and the stuckness dissolves on the spot. Naming the present is underrated.
+
+## Sort it: influence vs concern
+
+Stephen Covey's two circles are the fastest way I know to stop spinning. Draw a big circle (everything you're *concerned* about) and a smaller one inside it (everything you can actually *influence*). Most anxiety lives in the gap — the stuff that matters and that you can do nothing about.
+
+The move is brutal and simple: spend your energy only in the inner circle. Not because the outer ring doesn't matter, but because effort spent there is effort converted directly into frustration. Stuck often means "exhausted from pushing on the outer ring." Redraw the circles and the next real step is usually sitting in the middle.
+
+## Change one constraint
+
+If the problem won't move, change the shape of the room. Pick one constraint you've been treating as fixed and break it, just to see:
+
+- What if it had to ship tomorrow?
+- What if it had to cost nothing?
+- What if you couldn't use the obvious tool?
+- What if you had ten times the scope? A tenth?
+
+This is pure pattern interruption. You're not committing to the new constraint — you're using it as a crowbar to pry your assumptions loose. The answer that falls out is rarely the literal one; it's the *insight* the absurd constraint exposed.
+
+## Ride the circle from order to chaos
+
+Dan Harmon's story circle describes how every satisfying story moves: a character leaves the comfort of order, descends into chaos and the unknown, finds what they went looking for, and returns changed. It's a narrative tool, but it's also a description of any real piece of creative work.
+
+When a project feels stuck, I check where we are on the circle. Usually we're refusing to leave order — polishing the safe thing instead of going down into the messy unknown where the actual answer lives. Stuck is often just *comfortable*. The circle reminds me that the descent isn't the problem; it's the path.
+
+## Get out of the chair
+
+The bluntest tool, and the one I reach for most: when I can't think my way out, it's almost always because I'm reasoning from a model in my head instead of the world. So I go and look. Read the actual code, talk to the actual person, watch the actual user. ([I've written about this one before.](/blog/go-find-out)) Stuck-in-your-head is cured by primary sources more often than by more thinking.
+
+## The meta-tool
+
+None of these are clever. That's the point. A thinking tool's job isn't to be impressive — it's to break the symmetry of being stuck, to make you approach the wall from a side you weren't looking at. Keep a few in your pocket. When something jams, don't push harder. Draw a card.
+
+---
+
+## References
+
+- Eno, B., & Schmidt, P. (1975). *[Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies)*. Card deck; still in print via the Eno Shop. — The framing device of this post, and still cheaper than a facilitator.
+- Covey, S. R. (1989). *[The 7 Habits of Highly Effective People](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People)*. Free Press. — Buried in the seminar prose is one diagram, concern versus influence, that earns the whole cover price.
+- Lawson, B. (2005). *[How Designers Think: The Design Process Demystified](https://www.routledge.com/How-Designers-Think/Lawson/p/book/9780750660778)* (4th ed.). Architectural Press. — Four decades of watching real designers confirms they escape dead ends by reframing the problem, not by pushing harder at it.
+
+---
+
+# Draw the Map Before the Route
+
+Published 2026-07-05 — https://www.pushmanifesto.org/blog/draw-the-map-before-the-route
+
+> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness. — Alfred Korzybski, *Science and Sanity* (1933)
+
+# Draw the Map Before the Route
+
+Ask a team what they're building and you'll get a confident answer. Ask them what the organisation will be *able to do* when they're done — that it couldn't do before — and the room goes quiet. That silence is the gap between activity and capability, and it's where a lot of good pushes quietly go to waste.
+
+## Projects end. Capabilities don't.
+
+Here's the distinction that changed how I plan. A project is transient: it has a team, a budget, an end date, and then it's gone. A capability is durable: it's a thing your organisation can *do* — onboard a customer, forecast demand, answer a question from its own data — and it persists long after the project that built it has been archived and the Slack channel muted.
+
+Strategy people have a whole discipline for this — capability-based planning, with roots in enterprise architecture — and the core move is almost embarrassingly simple: describe the organisation as a map of what it can do, rather than a list of what it's working on. Then point your investment at the capabilities that matter and let projects be the *vehicles*, not the destination.
+
+If that sounds familiar, it should. It's [waypoints, not milestones](/blog/waypoints-not-milestones), one level up. Milestones track the vehicle. Waypoints track the journey. Capabilities are the terrain the journey crosses.
+
+## Why the map earns its keep
+
+**It survives reorgs.** Team names, product names and org charts churn. "We can settle a claim end-to-end without a human touch" is stable language across all of it. When your plan is written in capability terms, a restructure doesn't invalidate it.
+
+**It exposes the real gaps.** Lay the map out and heat-map it — where are we strong, where are we duct tape and heroics? The uncomfortable colours usually cluster somewhere nobody's roadmap was pointing. That's information you can't get from a backlog, because backlogs are lists of what you already decided to do.
+
+**It makes "why this push?" answerable.** Every push should be able to complete the sentence: "after this, we will be able to ___." If the blank stays blank, you're not pushing toward anything — you're just busy. Structure the work so each increment leaves a capability measurably better than it found it, and [give the work a shape](/blog/give-the-work-a-shape) that matches.
+
+## The failure mode: map worship
+
+A warning from the field, because every good tool has one. Capability maps attract a certain kind of meeting. The map becomes an artifact to be curated, versioned, argued about at level three of decomposition, laminated. Six months in, nobody has shipped anything but the map has a style guide.
+
+The map is for *choosing*. One page, coarse boxes, honest colours. If drawing it takes longer than a couple of working sessions, you're building furniture, not navigating. The moment the map stops changing which pushes you fund and which you decline, it has stopped earning its keep — roll it up and get back on the trail.
+
+## Starting small
+
+You don't need an enterprise architecture function to do this. Take one page. Write the eight to twelve things your part of the organisation must be able to do well for the strategy to be real. Colour each one green, amber or red — gut feel is fine, the argument the colours provoke is the actual product. Then look at your current pushes and draw the lines. Pushes with no line to the map are candidates for [knowing when to roll 'em](/blog/know-when-to-roll-em). Red capabilities with no push pointing at them are your next conversation.
+
+The route matters — of course it does. But routes are easy to argue about and cheap to redraw. It's the map that tells you whether you're arguing about the right terrain.
+
+---
+
+## References
+
+- Korzybski, A. (1933). *[Science and Sanity](https://archive.org/details/sciencesanityint0000korz)*. International Non-Aristotelian Library. — Source of the epigraph, and of ninety years of people misquoting "the map is not the territory" at each other in meetings.
+- The Open Group. (2023). *[TOGAF Series Guide: Business Capability Planning](https://publications.opengroup.org/g233)* (G233). — Capabilities as the bridge from strategy to implementation, straight from the people who laminate maps for a living.
+- The Open Group. (2016). *[Capability-Based Planning: The Link Between Strategy and Enterprise Architecture](https://publications.opengroup.org/w16c)* (White Paper W16C). — The genuinely short version.
+- Cheng, S. (2015). "[Translating Strategy into Implementation via Capability-Based Planning](https://essay.utwente.nl/68067/)" (MSc thesis, University of Twente). — The "shorter, very readable take" turns out to be a 155-page thesis, which says everything about enterprise architecture's idea of brevity.

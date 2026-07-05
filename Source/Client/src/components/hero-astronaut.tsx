@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import {
   motion,
@@ -37,10 +38,14 @@ export function HeroAstronaut() {
       />
       <motion.div style={reduce ? undefined : { y, rotate, opacity }}>
         <div className="animate-float-slow">
-          <img
+          <Image
             src="/img/manifesto.png"
             alt="The Push Manifesto astronaut, drifting through space"
-            className="mx-auto w-[200px] drop-shadow-2xl sm:w-[300px] lg:w-[480px] dark:invert"
+            width={2296}
+            height={1814}
+            priority
+            sizes="(min-width: 1024px) 480px, (min-width: 640px) 300px, 200px"
+            className="mx-auto h-auto w-[200px] drop-shadow-2xl sm:w-[300px] lg:w-[480px] dark:invert"
           />
         </div>
       </motion.div>
