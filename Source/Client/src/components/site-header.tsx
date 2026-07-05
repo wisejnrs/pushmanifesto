@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import { Github, BookOpen, Store, Menu, X } from "lucide-react";
+import { Github, BookOpen, Store, Menu, X, ArrowUpRight } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -55,6 +55,7 @@ export function SiteHeader() {
         className={navLinkClass}
       >
         {t(`nav.${item.key}`)}
+        <ArrowUpRight aria-hidden className="ml-1 inline h-3 w-3 opacity-60" />
         <span className="sr-only"> {t("common.newTab")}</span>
       </a>
     ) : (
