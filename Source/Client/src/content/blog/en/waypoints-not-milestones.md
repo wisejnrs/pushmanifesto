@@ -52,3 +52,7 @@ A waypoint check-in is quieter and rarer and more honest. It's tied to the work 
 Here's the reframe that helps me. Don't ask "where should we be by Friday?" Ask "what's the next thing we need to learn, and what's the cheapest way to learn it?" The first question pulls you toward a flag on someone's chart. The second pulls you along the actual path.
 
 Plan the journey in waypoints — real places where you stop, look, and choose — and let the milestones be a thin reporting layer on top for the people who need a chart. Just don't confuse the chart for the climb. The flag isn't the summit. It's an annotation.
+
+---
+
+*Further reading: the capability-based planning literature (the Open Group's TOGAF/ArchiMate guidance is the canonical version) is essentially this argument at organisational scale — plan in terms of what you'll be able to do, not what you'll have done. I've written up [how that map fits the push](/blog/draw-the-map-before-the-route).*

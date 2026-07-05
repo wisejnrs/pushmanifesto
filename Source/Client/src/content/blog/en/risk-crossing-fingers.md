@@ -46,3 +46,7 @@ So the leadership job is to make risk-citing normal and unpunished — boring, e
 ## Boring is the achievement
 
 The teams that ship genuinely hard things rarely look heroic doing it. There's no last-minute miracle, because the risks that would have required one were named and retired weeks earlier. It looks, frankly, a bit dull. That dullness is the achievement. Crossed fingers make for a better story and a worse outcome. Aim for the boring launch.
+
+---
+
+*Further reading: George Fairbanks' __Just Enough Software Architecture: A Risk-Driven Approach__ makes the same argument for architecture — do exactly as much design as your risks demand, no more. For a plain-language governance take, the Queensland Government CIO office's __Guide to Risk Management__ is a solid, unpretentious field manual.*

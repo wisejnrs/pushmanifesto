@@ -55,3 +55,7 @@ You don't beat bias with willpower. You beat it with structure — small process
 There's a humane reading of all this. Reducing ambiguity and checking your bias isn't only about efficiency. It's how you make space for people who don't share your context — the new starter, the stakeholder from another discipline, the user who doesn't think like you. Fog advantages the insider and quietly excludes everyone else. Clarity is inclusive by construction.
 
 So treat clarity as a discipline you practise, not a trait you happen to have. Name the ambiguity. Design against the bias. The fog is the enemy, and it's the one enemy that's always partly inside the building.
+
+---
+
+*Further reading: Daniel Kahneman's __Thinking, Fast and Slow__ is the deep well this post drinks from — System 1's confident shortcuts, WYSIATI ("what you see is all there is"), and why the fog feels like clarity from the inside. If you read one book on bias, make it that one.*
