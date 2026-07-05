@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Script from "next/script";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, Share2 } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/reveal";
@@ -70,6 +70,22 @@ function emphasise(text: string) {
     return <Fragment key={i}>{part}</Fragment>;
   });
 }
+
+// Each principle deep-links to the essay that expands it.
+const PRINCIPLE_POSTS: Record<string, string> = {
+  push: "push-manifesto-journey-over-destination",
+  ambiguity: "ambiguity-and-bias",
+  risk: "risk-crossing-fingers",
+  checkins: "waypoints-not-milestones",
+  roadblocks: "toolkit-for-getting-unstuck",
+  sharedValue: "shared-value-over-ceremony",
+  miseEnPlace: "mise-en-place-for-projects",
+  workItems: "give-the-work-a-shape",
+  gettingItWrong: "getting-it-wrong-is-the-job",
+  goFindOut: "go-find-out",
+  rollEm: "know-when-to-roll-em",
+  hypothesis: "it-doesnt-exist-if-it-cant-be-tested",
+};
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -168,10 +184,10 @@ gtag('config', 'G-VZ3GBPF421');`}
               <div className="mt-7 flex flex-wrap items-center gap-3 md:mt-10">
                 <MagneticButton
                   href="#manifesto"
-                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/25"
+                  className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-semibold text-[#071018] shadow-lg shadow-[#e73c6f]/25"
                 >
                   {t("hero.readManifesto")}
-                  <span className="grid h-8 w-8 place-items-center rounded-full bg-white/25 transition-transform duration-300 group-hover:translate-y-0.5">
+                  <span className="grid h-8 w-8 place-items-center rounded-full bg-black/10 transition-transform duration-300 group-hover:translate-y-0.5">
                     <ArrowDown className="h-4 w-4" />
                   </span>
                 </MagneticButton>
@@ -233,12 +249,7 @@ gtag('config', 'G-VZ3GBPF421');`}
               const description = t(`principles.items.${key}.description`);
               return (
                 <Reveal as="li" key={key} delay={(i % 3) * 0.08}>
-                  <a
-                    href={tweetHref(`${label}: ${description.replace(/[*_]/g, "")}`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group glass gradient-ring relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_34px_70px_-22px_rgba(231,60,111,0.55)]"
-                  >
+                  <div className="group glass gradient-ring relative isolate flex h-full flex-col gap-3 overflow-hidden rounded-2xl p-6 transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_34px_70px_-22px_rgba(231,60,111,0.55)]">
                     {/* brand wash glows up from the bottom on hover */}
                     <span
                       aria-hidden
@@ -252,16 +263,29 @@ gtag('config', 'G-VZ3GBPF421');`}
                       <span className="font-mono text-sm tabular-nums text-muted-foreground/70 transition-[transform,color] duration-200 group-hover:scale-125 group-hover:text-[#e73c6f]">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground/40 transition-[transform,color] duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:scale-110 group-hover:text-[#e73c6f]" />
+                      <a
+                        href={tweetHref(`${label}: ${description.replace(/[*_]/g, "")}`)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Share “${label}” on X (opens in a new tab)`}
+                        className="relative z-10 -m-2 grid h-11 w-11 place-items-center rounded-full text-muted-foreground/40 transition-[transform,color] duration-200 hover:scale-110 hover:text-[#e73c6f]"
+                      >
+                        <Share2 className="h-4 w-4" />
+                      </a>
                     </div>
                     <h3 className="font-display text-lg font-semibold tracking-tight transition-colors duration-300 group-hover:text-foreground">
-                      {label}
+                      <Link
+                        href={`/blog/${PRINCIPLE_POSTS[key]}`}
+                        className="after:absolute after:inset-0 after:z-0 after:content-['']"
+                      >
+                        {label}
+                      </Link>
                     </h3>
                     <p className="text-[14px] leading-relaxed text-muted-foreground">
                       {emphasise(description)}
                     </p>
-                    <span className="sr-only">Shares this principle on X (opens in new tab)</span>
-                  </a>
+
+                  </div>
                 </Reveal>
               );
             })}
@@ -306,7 +330,7 @@ gtag('config', 'G-VZ3GBPF421');`}
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <Link
                 href="/blog"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-medium text-white shadow-lg shadow-[#e73c6f]/20"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-brand py-3 pl-6 pr-3 text-sm font-semibold text-[#071018] shadow-lg shadow-[#e73c6f]/20"
               >
                 {t("cta.readBlog")}
                 <span className="grid h-8 w-8 place-items-center rounded-full bg-white/20 transition-transform duration-300 group-hover:translate-x-0.5">
