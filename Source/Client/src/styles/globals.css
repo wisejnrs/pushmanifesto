@@ -412,6 +412,17 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Hero: slowly drifting aurora glow orbs (reverse variant so the two orbs
+   move against each other rather than in lockstep). Collapsed to a static
+   glow by the reduced-motion rule below. */
+@keyframes aurora-drift {
+  0%   { transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1.05); }
+  50%  { transform: translate3d(5%, 3%, 0) rotate(6deg) scale(1.18); }
+  100% { transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1.05); }
+}
+.aurora { animation: aurora-drift 20s ease-in-out infinite; }
+.aurora-reverse { animation: aurora-drift 26s ease-in-out infinite reverse; }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

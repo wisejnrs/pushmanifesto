@@ -74,7 +74,10 @@ function emphasise(text: string) {
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground shadow-sm">
-      <span className="h-1.5 w-1.5 rounded-full bg-gradient-brand" />
+      {/* pulse on the wrapper — bg-gradient-brand's own animation would override it */}
+      <span className="animate-pulse">
+        <span className="block h-1.5 w-1.5 rounded-full bg-gradient-brand" />
+      </span>
       {children}
     </span>
   );
@@ -133,11 +136,11 @@ gtag('config', 'G-VZ3GBPF421');`}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-grid-faint opacity-[0.5] [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]" />
         <div
-          className="pointer-events-none absolute -top-24 right-[-10%] h-[36rem] w-[36rem] rounded-full opacity-30 blur-3xl"
+          className="aurora pointer-events-none absolute -top-24 right-[-10%] h-[36rem] w-[36rem] rounded-full opacity-30 blur-3xl"
           style={{ background: "radial-gradient(circle at center, rgba(231,60,111,0.42), transparent 60%)" }}
         />
         <div
-          className="pointer-events-none absolute top-40 left-[-10%] h-[28rem] w-[28rem] rounded-full opacity-25 blur-3xl"
+          className="aurora-reverse pointer-events-none absolute top-40 left-[-10%] h-[28rem] w-[28rem] rounded-full opacity-25 blur-3xl"
           style={{ background: "radial-gradient(circle at center, rgba(238,170,82,0.45), transparent 60%)" }}
         />
 
