@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { CalendarDays, Clock, User, TrendingUp, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { CoverImage } from '@/components/cover-image';
 import { BlogPost } from '@/lib/blog';
 
 interface RelatedPostsProps {
@@ -118,7 +119,7 @@ export default function RelatedPosts({
                             <Card className="h-full hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10 overflow-hidden">
                                 <CardHeader className="p-0">
                                     <div className="relative h-48 overflow-hidden">
-                                        <Image
+                                        <CoverImage
                                             src={post.coverImage || '/music/SocialsHeader-min.png'}
                                             alt={post.title}
                                             fill

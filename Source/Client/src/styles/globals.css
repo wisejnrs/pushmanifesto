@@ -501,3 +501,19 @@
     transition-property: color, background-color, border-color, opacity !important;
   }
 }
+
+/* Image loading shimmer: a soft light sweep that holds the frame until the
+   cover decodes (CoverImage fades the real image in over it). */
+.img-shimmer {
+  background: linear-gradient(
+    100deg,
+    hsl(var(--muted) / 0.35) 40%,
+    hsl(var(--muted) / 0.65) 50%,
+    hsl(var(--muted) / 0.35) 60%
+  );
+  background-size: 200% 100%;
+  animation: img-shimmer 1.6s linear infinite;
+}
+@keyframes img-shimmer {
+  to { background-position: -200% 0; }
+}

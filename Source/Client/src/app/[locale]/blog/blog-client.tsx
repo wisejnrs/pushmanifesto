@@ -9,6 +9,7 @@ import { GradientButton } from "@/components/ui/gradient-button";
 import { CalendarDays, Clock, Tag, User, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { CoverImage } from "@/components/cover-image";
 import { BlogPost } from "@/lib/blog";
 import SearchComponent from "@/components/blog/search-component";
 import { useSearch } from "@/hooks/use-search";
@@ -141,7 +142,7 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
                 <div className="md:w-1/2">
                     {post.coverImage && (
                         <div className="relative h-72 md:h-full bg-muted/20 overflow-hidden">
-                            <Image
+                            <CoverImage
                                 src={post.coverImage}
                                 alt={post.title}
                                 fill
@@ -226,7 +227,7 @@ function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: stri
         <Card className="h-full overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group flex flex-col focus-within:ring-2 focus-within:ring-[#e73c6f] focus-within:ring-offset-2 focus-within:ring-offset-background bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10">
             {post.coverImage && (
                 <div className="relative h-56 overflow-hidden bg-muted/20">
-                    <Image
+                    <CoverImage
                         src={post.coverImage}
                         alt={post.title}
                         fill
