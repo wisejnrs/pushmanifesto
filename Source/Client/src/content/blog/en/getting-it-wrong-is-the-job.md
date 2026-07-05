@@ -50,3 +50,7 @@ So the leadership job is unglamorous: make it safe to be wrong out loud. Say "I 
 I keep coming back to mountains because the metaphor is honest. You don't summit by knowing the route in advance. You summit by reading the ground in front of you, choosing wrong sometimes, backing down a dead-end gully, and choosing again with better information. The people who get up the mountain aren't the ones who never take a wrong turn. They're the ones who notice quickly and turn around without sulking about it.
 
 Getting it wrong isn't the thing that goes wrong with the work. Done well, out loud, and early — it _is_ the work.
+
+---
+
+*Further reading: Karl Popper's idea of [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) is the engine under this post — a belief only earns its keep once you've stated what would kill it. Rittel and Webber's 1973 essay __Dilemmas in a General Theory of Planning__ takes that engine somewhere uncomfortable, arguing that in wicked problems "the planner has no right to be wrong" — which is precisely why you want your wrongness cheap and early, before it's load-bearing. And the "wrong out loud" half of the argument stands on Amy Edmondson's work on [psychological safety](https://en.wikipedia.org/wiki/Psychological_safety) — teams that can admit error out loud learn faster than teams that bury it.*

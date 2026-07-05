@@ -48,4 +48,4 @@ The route matters — of course it does. But routes are easy to argue about and 
 
 ---
 
-*Further reading, from the library that informed this one: the Open Group's capability-based planning guidance (TOGAF/ArchiMate) is the canonical treatment of capabilities as the bridge from strategy to implementation; "Translating Strategy into Implementation via Capability-Based Planning" is a shorter, very readable take on the same line of sight.*
+*Further reading, from the library that informed this one: the Open Group's [capability-based planning guidance](https://pubs.opengroup.org/togaf-standard/business-architecture/capability-based-planning.html) (TOGAF/ArchiMate) is the canonical treatment of capabilities as the bridge from strategy to implementation; "Translating Strategy into Implementation via Capability-Based Planning" is a shorter, very readable take on the same line of sight.*

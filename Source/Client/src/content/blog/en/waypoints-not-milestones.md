@@ -55,4 +55,4 @@ Plan the journey in waypoints — real places where you stop, look, and choose �
 
 ---
 
-*Further reading: the capability-based planning literature (the Open Group's TOGAF/ArchiMate guidance is the canonical version) is essentially this argument at organisational scale — plan in terms of what you'll be able to do, not what you'll have done. I've written up [how that map fits the push](/blog/draw-the-map-before-the-route).*
+*Further reading: the capability-based planning literature (the Open Group's [TOGAF guidance](https://pubs.opengroup.org/togaf-standard/business-architecture/capability-based-planning.html) is the canonical version) is essentially this argument at organisational scale — plan in terms of what you'll be able to do, not what you'll have done. I've written up [how that map fits the push](/blog/draw-the-map-before-the-route).*

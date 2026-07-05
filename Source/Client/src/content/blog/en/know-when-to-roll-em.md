@@ -48,3 +48,7 @@ A finished push has a beginning, a middle, and an _end_. Honouring the end — a
 The flip side is the start. "Only kick a push when it's the right one" is permission to _not_ start things — to let an idea sit until it's earned the effort, rather than reflexively beginning work to look busy. A push you start for the wrong reason consumes the same effort as a good one and returns less.
 
 So manage the effort like the finite resource it is. Start the right pushes. Spend hard where the curve is steep. And when a push is done, have the discipline to roll 'em, rack up the chips, and walk to the next table.
+
+---
+
+*Further reading: Josh Kaufman's __The Personal MBA__ covers the two traps this post walks between — [sunk costs](https://en.wikipedia.org/wiki/Sunk_cost) that keep a dead push alive, and the point of diminishing returns where perfectionism stops paying. Saltzer and Kaashoek's __Principles of Computer System Design__ enshrines the same curve as an engineering law: the more you improve a thing, the more the next improvement costs. And the original text is, of course, [Don Schlitz's "The Gambler"](https://en.wikipedia.org/wiki/The_Gambler_%28song%29) — the secret to survivin' is knowin' what to throw away, and knowin' what to keep.*

@@ -56,3 +56,7 @@ One small discipline that pays off forever: version things properly. [Semantic v
 A shape doesn't slow the work down. It speeds it up, because nobody's wondering where the test strategy went or whether the thing is allowed to ship. The structure absorbs the questions that would otherwise become meetings.
 
 Keep it light. Give every important thing a home and nothing unimportant a ceremony. Then get on with the pushes — which is where the actual work was always going to happen.
+
+---
+
+*Further reading: the decision-records habit has a canonical origin — Michael Nygard's short 2011 essay [Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions), which makes the case in two pages that agile teams shouldn't skip documentation, just keep the kind that answers "why." McCabe's __Fundamentals of Enterprise Architecture__ gives the fuller anatomy of a good decision record if you want to formalise it, and the [semantic versioning spec](https://semver.org/) itself is a five-minute read that hands a whole team — technical or not — a shared language for how much something changed.*

@@ -58,3 +58,7 @@ Teams that prep well look, from the outside, almost boring. There's no heroics, 
 That's the whole point. Mise en place doesn't make you faster on day one. It makes you _consistent_ for the next ninety. And consistency, not bursts, is what finishes journeys.
 
 So before the heat goes on: chop the vegetables.
+
+---
+
+*Further reading: Dan Charnas spent years shadowing chefs and turned what he saw into [Everything in Its Place](https://en.wikipedia.org/wiki/Dan_Charnas) — the definitive translation of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) from the kitchen to the desk, and the book to read if this post struck a nerve. The engineering world reached the same conclusion in drabber prose: Lawson's __Project Management for the Process Industries__ insists the project "front end" cannot be overemphasised. Different kitchens, same vegetables.*

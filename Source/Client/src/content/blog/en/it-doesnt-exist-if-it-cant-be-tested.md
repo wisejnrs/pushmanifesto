@@ -54,3 +54,7 @@ The good news is that the test rarely needs to be elaborate. A landing page. A w
 The instrument can be crude as long as it can _move_ — as long as a real outcome could push the needle one way or the other. An idea attached to a moving instrument is alive. You can learn from it, kill it, double down on it. An idea with no instrument just sits there, consuming belief and budget, immune to reality.
 
 So before you build the thing, decide how you'd know it worked. If you can't, that's your finding. The idea doesn't exist yet.
+
+---
+
+*Further reading: Eric Ries's __The Lean Startup__ is the operating manual for this post — validated learning, [Build-Measure-Learn](https://theleanstartup.com/principles), and the blunt reminder that if you cannot fail, you cannot learn. Daniel Kahneman's __Thinking, Fast and Slow__ explains why the goalposts move the moment you stop nailing them down in advance. And the philosophical spine is Karl Popper's [falsifiability](https://en.wikipedia.org/wiki/Falsifiability) — a claim that no evidence could ever dent isn't strong, it's empty.*

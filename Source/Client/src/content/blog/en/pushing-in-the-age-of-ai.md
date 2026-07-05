@@ -52,3 +52,7 @@ Resist that. Spend the time you saved on generation buying certainty instead. Us
 A faster engine makes it easier to push your luck. You can generate your way deep into a bad idea before noticing, because every step felt productive. The "know when to roll 'em" principle is now a safety system. A working result is still a place to stop and bank the win, not a runway for the model to keep building on a foundation nobody checked.
 
 The manifesto was always about doing creativity deliberately, in a world that rewards looking busy. AI didn't change that. It just turned up the volume on both sides — more output, and more ways to fool yourself with it. The deliberate ones will be fine. They'll be better than fine. The rest will generate a great deal, very quickly, and learn the cost of the wrong thing on the same brutal schedule as always.
+
+---
+
+*Further reading: the economics here were mapped before the boom — Agrawal, Gans and Goldfarb's [The Simple Economics of Machine Intelligence](https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence) argues that when machines make one input cheap, the human complement — judgement — is what appreciates. Which is this post in an economist's accent. On the fluent-wrongness itself, [hallucination](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) is a documented failure mode, not a grumble — __The Developer's Playbook for Large Language Model Security__ turns "never take output at face value" into working practice.*

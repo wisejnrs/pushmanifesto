@@ -48,3 +48,7 @@ This is uncomfortable because primary sources are messier than summaries. The cu
 You don't need a research programme. You need to get out of the chair. Send the message. Open the file. Ask the dumb question — the dumb question is almost always the one everyone else was also afraid to ask. The smallest expedition into reality beats the largest debate about it.
 
 When a project stalls on a disagreement, the question is rarely "who's right?" It's "what haven't we actually checked?" Go find out. Then come back and have a much shorter meeting.
+
+---
+
+*Further reading: Toyota got here first — [genchi genbutsu](https://en.wikipedia.org/wiki/Genchi_Genbutsu), "go and see for yourself," is a pillar of the [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/) and the industrial-strength version of getting out of the chair. Eric Ries carries it into product work in __The Lean Startup__, where "get out of the building" is the whole game. And Bill Aulet's __Disciplined Entrepreneurship__ is ruthless on the same point — primary market research means talking to the actual customer, because every hop away from the source degrades the signal into someone else's interpretation.*

@@ -67,3 +67,7 @@ The bluntest tool, and the one I reach for most: when I can't think my way out, 
 ## The meta-tool
 
 None of these are clever. That's the point. A thinking tool's job isn't to be impressive — it's to break the symmetry of being stuck, to make you approach the wall from a side you weren't looking at. Keep a few in your pocket. When something jams, don't push harder. Draw a card.
+
+---
+
+*Further reading: the framing device is real and still in print — [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies), the card deck Brian Eno and Peter Schmidt first published in 1975, is worth owning just to hold the idea in your hand. The two circles come from Stephen Covey's [The 7 Habits of Highly Effective People](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People), which buries that one genuinely great tool inside a lot of seminar prose. And from the library, Bryan Lawson's __How Designers Think__ is decades of observed evidence that skilled designers escape dead ends by reframing the problem rather than pushing harder at it.*

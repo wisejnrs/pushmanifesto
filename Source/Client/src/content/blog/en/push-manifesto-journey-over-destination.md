@@ -39,7 +39,7 @@ https://s3.us-west-1.amazonaws.com/cdn.wisejnrs.net/blogs/push-manifesto-journey
 
 ---
 
-I had been thinking about Brian Eno's work and his approach to creativity. You know the one - his [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies) cards that break creative blocks by forcing unexpected perspectives.
+I had been thinking about Brian Eno's work and his approach to creativity. You know the one - the [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies) cards he created with the painter Peter Schmidt, which break creative blocks by forcing unexpected perspectives.
 
 At the same time, I was dismayed with the application and evolution of various "ways of working" in our industry.
 
@@ -79,7 +79,7 @@ However it feels best for your situation to get results. We all do multiple proj
 
 ## The Creative Reality
 
-Famously, **"creativity has no timeline"** and forcing it tends not to satisfy the art form or the artist.
+**"Creativity has no timeline"** — and forcing it tends not to satisfy the art form or the artist.
 
 Rigid methodologies assume creativity can be scheduled, innovation can be sprint-planned, and breakthroughs happen in two-week increments.
 
@@ -228,3 +228,6 @@ The journey matters because the journey is where the work happens. Where the lea
 But remember: you're pushing a trolley, not a boulder. Direction matters more than speed. Waypoints matter more than deadlines.
 
 And most importantly: **the journey always completes**.
+---
+
+*Further reading: start where this post started — Brian Eno and Peter Schmidt's [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies), the 1975 card deck that breaks creative deadlock by forcing a sideways move; Push is an attempt at the same trick for delivery. The [Agile Manifesto](https://agilemanifesto.org/) is the obvious ancestor for values-over-process, and worth rereading for how little ceremony it actually prescribes. For the claim that Push complements rather than replaces the heavyweight frameworks, Paul McMahon's __Integrating CMMI and Agile Development__ is a whole book of evidence that maturity models and adaptive delivery can share a project without a fight.*
