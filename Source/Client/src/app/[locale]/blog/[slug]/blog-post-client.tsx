@@ -887,7 +887,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                             </p>
                         </div>
                         <div
-                            className="article-content prose prose-lg dark:prose-invert max-w-none [&>*:first-child]:mt-0"
+                            className="article-content prose prose-lg dark:prose-invert max-w-[68ch] [&>*:first-child]:mt-0"
                             style={{
                                 fontSize: `${fontSize}px`,
                                 lineHeight: fontSize < 18 ? '1.75' : '1.8'

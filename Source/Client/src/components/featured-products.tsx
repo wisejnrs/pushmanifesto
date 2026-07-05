@@ -31,7 +31,7 @@ const STORE_URL = "https://wisejnrs.myshopify.com";
 export function FeaturedProducts() {
   return (
     <section className="container py-12 md:py-20">
-      <Carousel opts={{ align: "start" }}>
+      <Carousel opts={{ align: "start" }} aria-label="Featured products">
       <div className="mb-8 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-end">
         <div>
           <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Featured Products</h2>
@@ -49,9 +49,9 @@ export function FeaturedProducts() {
             View store
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
-          <div className="hidden items-center gap-2 sm:flex">
-            <CarouselPrevious className="glass static h-8 w-8 translate-y-0 border-border/70" />
-            <CarouselNext className="glass static h-8 w-8 translate-y-0 border-border/70" />
+          <div className="flex items-center gap-2">
+            <CarouselPrevious className="glass static h-11 w-11 translate-y-0 border-border/70" />
+            <CarouselNext className="glass static h-11 w-11 translate-y-0 border-border/70" />
           </div>
         </div>
       </div>
@@ -61,6 +61,7 @@ export function FeaturedProducts() {
         {PRODUCTS.map((p, i) => (
           <CarouselItem
             key={p.href}
+            aria-label={`${i + 1} of ${PRODUCTS.length}`}
             style={{ "--reveal-i": i } as CSSProperties}
             className="reveal-up basis-[70%] pl-5 sm:basis-1/2 lg:basis-1/4"
           >

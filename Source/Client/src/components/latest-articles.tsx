@@ -28,7 +28,7 @@ export function LatestArticles({ posts }: { posts: BlogPost[] }) {
   return (
     <section className="border-t border-border/60">
       <div className="container py-12 md:py-20">
-        <Carousel opts={{ align: "start" }}>
+        <Carousel opts={{ align: "start" }} aria-label="Latest articles">
         <div className="mb-8 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Latest Articles</h2>
@@ -44,9 +44,9 @@ export function LatestArticles({ posts }: { posts: BlogPost[] }) {
               View all articles
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
-            <div className="hidden items-center gap-2 sm:flex">
-              <CarouselPrevious className="glass static h-8 w-8 translate-y-0 border-border/70" />
-              <CarouselNext className="glass static h-8 w-8 translate-y-0 border-border/70" />
+            <div className="flex items-center gap-2">
+              <CarouselPrevious className="glass static h-11 w-11 translate-y-0 border-border/70" />
+              <CarouselNext className="glass static h-11 w-11 translate-y-0 border-border/70" />
             </div>
           </div>
         </div>
@@ -56,6 +56,7 @@ export function LatestArticles({ posts }: { posts: BlogPost[] }) {
           {latest.map((p, i) => (
             <CarouselItem
               key={p.slug}
+              aria-label={`${i + 1} of ${latest.length}`}
               style={{ "--reveal-i": i } as CSSProperties}
               className="reveal-up basis-[84%] pl-5 sm:basis-1/2 lg:basis-1/3"
             >
@@ -84,7 +85,7 @@ export function LatestArticles({ posts }: { posts: BlogPost[] }) {
                   {p.title}
                 </h3>
                 <p className="line-clamp-2 text-sm leading-relaxed text-muted-foreground">{p.excerpt}</p>
-                <div className="mt-auto flex items-center gap-4 pt-2 text-xs text-muted-foreground/70">
+                <div className="mt-auto flex items-center gap-4 pt-2 text-xs text-muted-foreground/80">
                   <span className="inline-flex items-center gap-1.5">
                     <CalendarDays className="h-3.5 w-3.5" />
                     {formatDate(p.publishedAt)}

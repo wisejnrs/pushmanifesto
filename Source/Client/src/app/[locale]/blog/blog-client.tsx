@@ -12,7 +12,6 @@ import Image from "next/image";
 import { BlogPost } from "@/lib/blog";
 import SearchComponent from "@/components/blog/search-component";
 import { useSearch } from "@/hooks/use-search";
-import { useKeyboardNavigation } from "@/hooks/use-keyboard-navigation";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
 
@@ -25,8 +24,6 @@ interface BlogClientProps {
 
 export default function BlogClient({ initialPosts, categories, featuredPost, allTags }: BlogClientProps) {
     const t = useTranslations("blog");
-    const router = useRouter();
-    const blogGridRef = useRef<HTMLDivElement>(null);
 
     const search = useSearch(initialPosts);
     const {
@@ -36,19 +33,6 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
         filters
     } = search;
 
-    // Keyboard navigation for blog posts grid
-    useKeyboardNavigation({
-        containerRef: blogGridRef,
-        itemSelector: '[data-keyboard-item]',
-        gridMode: true,
-        columnsPerRow: 3, // lg:grid-cols-3
-        onSelect: (index) => {
-            const post = regularPosts[index];
-            if (post) {
-                router.push(`/blog/${post.slug}`);
-            }
-        }
-    });
 
     // Get posts to display (either search results or all posts)
     const displayPosts = searchStats.hasQuery || searchStats.hasFilters
@@ -114,7 +98,6 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
 
                 {/* Regular Posts Grid */}
                 <motion.div
-                    ref={blogGridRef}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, duration: 0.6 }}
@@ -126,17 +109,6 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 * index, duration: 0.5 }}
-                            data-keyboard-item
-                            tabIndex={0}
-                            className="focus:outline-none"
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter' || e.key === ' ') {
-                                    e.preventDefault();
-                                    router.push(`/blog/${post.slug}`);
-                                }
-                            }}
-                            role="button"
-                            aria-label={`Read blog post: ${post.title}`}
                         >
                             <PostCard post={post} onTagClick={handleTagClick} />
                         </motion.div>
@@ -182,12 +154,12 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
                 </div>
                 <div className="md:w-1/2 p-10 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-6">
-                        <Badge className="bg-gradient-to-r from-[#D247BF] to-[#FF6B35] text-white shadow-lg px-4 py-1.5 text-sm font-medium tracking-wide">FEATURED</Badge>
+                        <Badge className="bg-gradient-to-r from-[#e73c6f] to-[#eeaa52] text-white shadow-lg px-4 py-1.5 text-sm font-medium tracking-wide">FEATURED</Badge>
                         <Badge className="bg-background/30 backdrop-blur-xl text-foreground border-white/30 dark:border-slate-400/40 px-4 py-1.5 text-sm font-medium tracking-wide">{post.category}</Badge>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-[1.2] tracking-tight">
                         <Link href={`/blog/${post.slug}`} className="hover:opacity-90 transition-opacity">
-                            <span className="bg-gradient-to-r from-[#D247BF] via-primary to-[#FF6B35] bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#eeaa52] via-[#e73c6f] to-[#2394d5] bg-clip-text text-transparent">
                                 {post.title}
                             </span>
                         </Link>
@@ -251,7 +223,7 @@ function FeaturedPostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (t
 function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: string) => void }) {
     const t = useTranslations("blog");
     return (
-        <Card className="h-full overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group flex flex-col focus-within:ring-2 focus-within:ring-[#F97316] focus-within:ring-offset-2 focus-within:ring-offset-background bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10">
+        <Card className="h-full overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 group flex flex-col focus-within:ring-2 focus-within:ring-[#e73c6f] focus-within:ring-offset-2 focus-within:ring-offset-background bg-background/20 dark:bg-background/15 backdrop-blur-md border border-white/10 dark:border-white/5 hover:border-white/20 dark:hover:border-white/10">
             {post.coverImage && (
                 <div className="relative h-56 overflow-hidden bg-muted/20">
                     <Image
@@ -274,8 +246,8 @@ function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: stri
                         <span className="font-medium">{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
                     </div>
                 </div>
-                <h3 className="font-bold text-xl leading-[1.3] tracking-tight mb-3 group-hover:text-[#F97316] transition-colors duration-300">
-                    <Link href={`/blog/${post.slug}`} className="hover:underline decoration-2 underline-offset-4 decoration-[#F97316]/50">
+                <h3 className="font-bold text-xl leading-[1.3] tracking-tight mb-3 group-hover:text-[#e73c6f] transition-colors duration-300">
+                    <Link href={`/blog/${post.slug}`} className="hover:underline decoration-2 underline-offset-4 decoration-[#e73c6f]/50">
                         {post.title}
                     </Link>
                 </h3>
@@ -299,7 +271,7 @@ function PostCard({ post, onTagClick }: { post: BlogPost; onTagClick: (tag: stri
                     {post.tags.slice(0, 3).map(tag => (
                         <motion.div key={tag} whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05, y: -2 }}>
                             <Badge
-                                className="bg-background/25 backdrop-blur-xl text-foreground/80 border-white/20 dark:border-slate-400/30 hover:bg-background/35 hover:border-[#F97316]/30 cursor-pointer px-2.5 py-1 text-xs font-medium tracking-wide transition-all duration-200"
+                                className="bg-background/25 backdrop-blur-xl text-foreground/80 border-white/20 dark:border-slate-400/30 hover:bg-background/35 hover:border-[#e73c6f]/30 cursor-pointer px-2.5 py-1 text-xs font-medium tracking-wide transition-all duration-200"
                                 role="button"
                                 tabIndex={0}
                                 onClick={() => onTagClick(tag)}

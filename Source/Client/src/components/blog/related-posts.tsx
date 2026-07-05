@@ -137,9 +137,9 @@ export default function RelatedPosts({
                                                 {post.category}
                                             </Badge>
                                         )}
-                                        {showTags && post.tags.length > 0 && (
+                                        {showTags && post.tags.some(t => t !== post.category) && (
                                             <Badge className="bg-background/20 backdrop-blur-xl text-foreground/80 border-white/20 dark:border-slate-400/30 px-2.5 py-1 text-xs font-medium tracking-wide">
-                                                {post.tags[0]}
+                                                {post.tags.find(t => t !== post.category)}
                                             </Badge>
                                         )}
                                         {post.tags.length > 1 && (
