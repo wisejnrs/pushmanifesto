@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> As a cook, your station, and its condition, its state of readiness, is an extension of your nervous system. — Anthony Bourdain, *Kitchen Confidential* (2000)
+
 Spend any time in a professional kitchen and you'll hear two words before you hear anything else: _mise en place_. Everything in its place. The onions diced, the stock simmering, the knives honed, the pans where your hand expects them. The chef does this before a single order comes in, because once the heat is on there is no time to go looking for the garlic.
 
 Software has a strange relationship with this idea. We celebrate "just start" and "fail fast," and somewhere along the way we decided that preparation was the enemy of momentum. So we kick off projects with a half-formed brief, a repository that doesn't build, and access requests that won't clear for a fortnight. Then we act surprised when the first two weeks evaporate into setup and the team never finds its rhythm.
@@ -61,4 +63,8 @@ So before the heat goes on: chop the vegetables.
 
 ---
 
-*Further reading: Dan Charnas spent years shadowing chefs and turned what he saw into [Everything in Its Place](https://en.wikipedia.org/wiki/Dan_Charnas) — the definitive translation of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) from the kitchen to the desk, and the book to read if this post struck a nerve. The engineering world reached the same conclusion in drabber prose: Lawson's __Project Management for the Process Industries__ insists the project "front end" cannot be overemphasised. Different kitchens, same vegetables.*
+## References
+
+- Bourdain, A. (2000). *[Kitchen Confidential: Adventures in the Culinary Underbelly](https://en.wikipedia.org/wiki/Kitchen_Confidential)*. Bloomsbury Publishing. — The book that told civilians what cooks already knew: touch a line cook's meez and you will learn what "blocked on setup" really means.
+- Charnas, D. (2017). *[Everything in Its Place: The Power of Mise-En-Place to Organize Your Life, Work, and Mind](https://www.penguinrandomhouse.com/books/594125/everything-in-its-place-by-dan-charnas/)*. Rodale Books. — The definitive kitchen-to-desk translation of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place); first published in hardcover as *Work Clean* (Rodale, 2016), which is worth knowing before you order two copies of the same book.
+- Lawson, G., Wearne, S., & Iles-Smith, P. (Eds.). (1999). *[Project Management for the Process Industries](https://www.google.com/books/edition/Project_Management_for_the_Process_Indus/1ad4NZEz8d8C)*. Institution of Chemical Engineers (IChemE). — Chemical engineers reached "front-end preparation cannot be overemphasised" decades ago, presumably because their unprepped projects explode more literally than ours.

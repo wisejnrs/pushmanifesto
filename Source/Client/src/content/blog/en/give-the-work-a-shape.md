@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> We shape our buildings and afterwards our buildings shape us. — Winston Churchill, House of Commons (1943)
+
 There's a false choice that haunts delivery: heavyweight process on one side, chaos on the other. Pick the binder full of templates, or pick "we'll figure it out as we go." Both are traps. The binder buries the work in ceremony; the free-for-all leaves it unaccountable. What you actually want is a *shape* — a light skeleton the work hangs on, with no more structure than the work earns.
 
 After enough projects I've settled on a skeleton I trust. It's not a methodology. It's a place for things to live, so that nothing important is homeless and nothing unimportant gets a meeting.
@@ -59,4 +61,9 @@ Keep it light. Give every important thing a home and nothing unimportant a cerem
 
 ---
 
-*Further reading: the decision-records habit has a canonical origin — Michael Nygard's short 2011 essay [Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions), which makes the case in two pages that agile teams shouldn't skip documentation, just keep the kind that answers "why." McCabe's __Fundamentals of Enterprise Architecture__ gives the fuller anatomy of a good decision record if you want to formalise it, and the [semantic versioning spec](https://semver.org/) itself is a five-minute read that hands a whole team — technical or not — a shared language for how much something changed.*
+## References
+
+- Nygard, M. (2011). "[Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)." Cognitect. — The two-page origin of the ADR: keep the documentation that answers "why," and skip the rest.
+- McCabe, T. (2024). *[Fundamentals of Enterprise Architecture](https://www.oreilly.com/library/view/fundamentals-of-enterprise/9781098159368/)*. O'Reilly Media. — The full anatomy of a decision record, for when the two-page version grows up and gets a governance layer.
+- Preston-Werner, T. (2013). *[Semantic Versioning 2.0.0](https://semver.org/)*. semver.org. — Three integers that give an entire organisation, technical or not, one shared answer to "how much did this change?"
+- Churchill, W. S. (1943). "[House of Commons Rebuilding](https://api.parliament.uk/historic-hansard/commons/1943/oct/28/house-of-commons-rebuilding)." *Hansard*, HC Deb, vol. 393. — Parliament's architect-in-chief on why the shape you give a thing quietly governs everything done inside it.

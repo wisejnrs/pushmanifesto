@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> A whole is that which has a beginning, a middle, and an end. — Aristotle, *Poetics* (c. 335 BC)
+
 People ask why I bothered with a new word. We already have sprints, stories, tasks, epics, tickets, cards. Did the world need "push"? I think it did, because the words we had quietly lost the most important property of a unit of work: that it _ends_.
 
 A push is a logical unit of output with a beginning, a middle, and an end. That's the whole definition, and every word in it is doing a job.
@@ -51,4 +53,8 @@ That's what the word "push" is protecting. Not a methodology — a shape. The si
 
 ---
 
-*Further reading: this idea is older than software by about 2,300 years — Aristotle's [Poetics](https://en.wikipedia.org/wiki/Poetics_%28Aristotle%29) defines a whole as "that which has a beginning, a middle, and an end," and every board that never empties is quietly failing his test. Psychology agrees: the [Zeigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) is why unfinished work keeps renting space in your head long after the standup ends. And from a wonderfully unglamorous corner of the library, Lawson's __Project Management for the Process Industries__ says the quiet part plainly: projects which drag on ultimately become processes — which are never completed.*
+## References
+
+- Aristotle. (c. 335 BC). *[Poetics](https://classics.mit.edu/Aristotle/poetics.html)* (S. H. Butcher, Trans., 1895). — The original definition of done, some 2,300 years before the first sprint carried over.
+- Zeigarnik, B. (1927). "Das Behalten erledigter und unerledigter Handlungen." *Psychologische Forschung*, 9, 1–85. — The [experiment](https://en.wikipedia.org/wiki/Zeigarnik_effect) behind why the unfinished ticket follows you home and the closed one politely leaves.
+- Lawson, G., Wearne, S., & Iles-Smith, P. (Eds.). (1999). *[Project Management for the Process Industries](https://www.google.com/books/edition/Project_Management_for_the_Process_Indus/1ad4NZEz8d8C)*. Institution of Chemical Engineers. — Chemical engineers stating the quiet part plainly: a project that never ends has stopped being a project.

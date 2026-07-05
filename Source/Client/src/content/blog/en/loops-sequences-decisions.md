@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> The purpose of abstracting is not to be vague, but to create a new semantic level in which one can be absolutely precise. — Edsger W. Dijkstra, *The Humble Programmer* (1972)
+
 I've said this enough times that people quote it back to me: programming is loops, sequences and decisions. Everything else is just abstraction from the truth. It sounds like a grumpy old engineer being reductive. It's actually a tool I use constantly, and it cuts deeper than it first appears.
 
 ## The three primitives
@@ -49,4 +51,9 @@ Loops, sequences, decisions. Everything else is a story we tell to make the trut
 
 ---
 
-*Further reading: the slogan has a proper theorem behind it — Böhm and Jacopini proved in 1966 that sequence, selection, and iteration are all you ever need, a result now known as the [structured program theorem](https://en.wikipedia.org/wiki/Structured_program_theorem). Joel Spolsky's [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) is the classic essay on the loan coming due. And James Streib's __Guide to Assembly Language__ shows the primitives up close — every elegant control structure compiling down to compares and branches.*
+## References
+
+- Böhm, C., & Jacopini, G. (1966). "[Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules](https://www.cs.unibo.it/~martini/PP/bohm-jac.pdf)". *Communications of the ACM*, 9(5), 366–371. — The [theorem](https://en.wikipedia.org/wiki/Structured_program_theorem) behind the slogan: sequence, selection, iteration, and nothing else required.
+- Dijkstra, E. W. (1972). "[The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)" (EWD340). *Communications of the ACM*, 15(10), 859–866. — The Turing lecture that defends abstraction as precision, not hand-waving — exactly this post's line on convenient fictions.
+- Spolsky, J. (2002). "[The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)". *Joel on Software*. — The classic essay on the loan coming due.
+- Streib, J. T. (2020). *[Guide to Assembly Language: A Concise Introduction](https://link.springer.com/book/10.1007/978-3-030-35639-2)* (2nd ed.). Springer. — The primitives up close: every elegant control structure compiling down to compares and branches.

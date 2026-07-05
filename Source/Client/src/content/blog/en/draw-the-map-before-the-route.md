@@ -14,6 +14,8 @@ status: "published"
 coverImage: "/blog/covers/draw-the-map-before-the-route.jpg"
 ---
 
+> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness. — Alfred Korzybski, *Science and Sanity* (1933)
+
 # Draw the Map Before the Route
 
 Ask a team what they're building and you'll get a confident answer. Ask them what the organisation will be *able to do* when they're done — that it couldn't do before — and the room goes quiet. That silence is the gap between activity and capability, and it's where a lot of good pushes quietly go to waste.
@@ -48,4 +50,9 @@ The route matters — of course it does. But routes are easy to argue about and 
 
 ---
 
-*Further reading, from the library that informed this one: the Open Group's [capability-based planning guidance](https://pubs.opengroup.org/togaf-standard/business-architecture/capability-based-planning.html) (TOGAF/ArchiMate) is the canonical treatment of capabilities as the bridge from strategy to implementation; "Translating Strategy into Implementation via Capability-Based Planning" is a shorter, very readable take on the same line of sight.*
+## References
+
+- Korzybski, A. (1933). *[Science and Sanity](https://archive.org/details/sciencesanityint0000korz)*. International Non-Aristotelian Library. — Source of the epigraph, and of ninety years of people misquoting "the map is not the territory" at each other in meetings.
+- The Open Group. (2023). *[TOGAF Series Guide: Business Capability Planning](https://publications.opengroup.org/g233)* (G233). — Capabilities as the bridge from strategy to implementation, straight from the people who laminate maps for a living.
+- The Open Group. (2016). *[Capability-Based Planning: The Link Between Strategy and Enterprise Architecture](https://publications.opengroup.org/w16c)* (White Paper W16C). — The genuinely short version.
+- Cheng, S. (2015). "[Translating Strategy into Implementation via Capability-Based Planning](https://essay.utwente.nl/68067/)" (MSc thesis, University of Twente). — The "shorter, very readable take" turns out to be a 155-page thesis, which says everything about enterprise architecture's idea of brevity.

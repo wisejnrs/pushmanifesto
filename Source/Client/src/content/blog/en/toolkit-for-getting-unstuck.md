@@ -19,6 +19,8 @@ titleTextStroke: false
 titleTextStrokeWidth: 0
 ---
 
+> State the problem in words as clearly as possible. — Brian Eno & Peter Schmidt, *Oblique Strategies* (1975)
+
 When a problem won't move, the instinct is to push harder at it from the same angle. That rarely works, because if the straight-on approach were going to crack it, it already would have. Brian Eno and Peter Schmidt understood this with their _Oblique Strategies_ — a deck of cards you'd draw when stuck in the studio, each one nudging you sideways. "Honour thy error as a hidden intention." "Use an old idea." The point wasn't the specific instruction; it was being forced off the rut.
 
 Over the years I've collected my own deck — not cards, but a handful of thinking tools I reach for when something is jammed. None are mine. All are oblique. Here are the ones I use most.
@@ -70,4 +72,8 @@ None of these are clever. That's the point. A thinking tool's job isn't to be im
 
 ---
 
-*Further reading: the framing device is real and still in print — [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies), the card deck Brian Eno and Peter Schmidt first published in 1975, is worth owning just to hold the idea in your hand. The two circles come from Stephen Covey's [The 7 Habits of Highly Effective People](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People), which buries that one genuinely great tool inside a lot of seminar prose. And from the library, Bryan Lawson's __How Designers Think__ is decades of observed evidence that skilled designers escape dead ends by reframing the problem rather than pushing harder at it.*
+## References
+
+- Eno, B., & Schmidt, P. (1975). *[Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies)*. Card deck; still in print via the Eno Shop. — The framing device of this post, and still cheaper than a facilitator.
+- Covey, S. R. (1989). *[The 7 Habits of Highly Effective People](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People)*. Free Press. — Buried in the seminar prose is one diagram, concern versus influence, that earns the whole cover price.
+- Lawson, B. (2005). *[How Designers Think: The Design Process Demystified](https://www.routledge.com/How-Designers-Think/Lawson/p/book/9780750660778)* (4th ed.). Architectural Press. — Four decades of watching real designers confirms they escape dead ends by reframing the problem, not by pushing harder at it.
