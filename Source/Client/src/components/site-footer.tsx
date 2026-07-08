@@ -35,7 +35,7 @@ export function SiteFooter() {
               href="https://github.com/wisejnrs/pushmanifesto/releases"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs text-muted-foreground/60 transition-colors hover:text-foreground"
+              className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               v{pkg.version}
             </a>

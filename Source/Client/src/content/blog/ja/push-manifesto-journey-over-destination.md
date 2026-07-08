@@ -14,7 +14,6 @@ status: "published"
 aiTranslated: true
 ---
 
-# Push Manifesto：目的地よりも、過程を抱きしめる
 
 ## ポッドキャストを聴く
 

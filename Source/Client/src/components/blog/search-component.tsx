@@ -110,6 +110,7 @@ export default function SearchComponent({
                     ref={inputRef}
                     type="text"
                     placeholder={placeholder}
+                    aria-label={placeholder}
                     value={query}
                     onChange={(e) => {
                         setQuery(e.target.value);
@@ -159,20 +160,28 @@ export default function SearchComponent({
                         <Badge variant="secondary" className="text-xs">
                             <Hash className="h-3 w-3 mr-1" />
                             {filters.category}
-                            <X
-                                className="h-3 w-3 ml-1 cursor-pointer"
+                            <button
+                                type="button"
                                 onClick={() => setCategoryFilter(undefined)}
-                            />
+                                aria-label={`Remove ${filters.category} filter`}
+                                className="ml-1 inline-flex items-center rounded-sm hover:bg-foreground/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                            >
+                                <X className="h-3 w-3" aria-hidden="true" />
+                            </button>
                         </Badge>
                     )}
                     {filters.tags?.map(tag => (
                         <Badge key={tag} variant="secondary" className="text-xs">
                             <Tag className="h-3 w-3 mr-1" />
                             {tag}
-                            <X
-                                className="h-3 w-3 ml-1 cursor-pointer"
+                            <button
+                                type="button"
                                 onClick={() => removeTagFilter(tag)}
-                            />
+                                aria-label={`Remove ${tag} filter`}
+                                className="ml-1 inline-flex items-center rounded-sm hover:bg-foreground/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                            >
+                                <X className="h-3 w-3" aria-hidden="true" />
+                            </button>
                         </Badge>
                     ))}
                 </div>

@@ -14,7 +14,6 @@ status: "published"
 aiTranslated: true
 ---
 
-# Push Manifesto：拥抱过程，而非终点
 
 ## 收听播客
 

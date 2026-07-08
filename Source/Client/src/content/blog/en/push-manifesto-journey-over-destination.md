@@ -21,7 +21,6 @@ titleTextStrokeWidth: 0
 
 > We are uncovering better ways of developing software by doing it and helping others do it. — *Manifesto for Agile Software Development* (2001)
 
-# Push Manifesto: Embracing the Journey Over the Destination
 
 ## Listen to the Podcast
 

@@ -80,7 +80,7 @@ export default function BlogClient({ initialPosts, categories, featuredPost, all
                         placeholder={t("searchPlaceholder")}
                         showFilters={true}
                         maxResults={8}
-                        autoFocus={true}
+                        autoFocus={false}
                         searchState={search}
                     />
                 </motion.div>

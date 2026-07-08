@@ -14,7 +14,6 @@ status: "published"
 aiTranslated: true
 ---
 
-# Push Manifesto: abrazar el camino por encima del destino
 
 ## Escucha el pódcast
 

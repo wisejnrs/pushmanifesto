@@ -13,13 +13,19 @@ export function LanguageSwitcher() {
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
+  const triggerRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
     function onDoc(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen((was) => {
+          if (was) triggerRef.current?.focus();
+          return false;
+        });
+      }
     }
     document.addEventListener("mousedown", onDoc);
     document.addEventListener("keydown", onKey);
@@ -31,12 +37,14 @@ export function LanguageSwitcher() {
 
   function choose(next: Locale) {
     setOpen(false);
+    triggerRef.current?.focus();
     if (next !== locale) router.replace(pathname, { locale: next });
   }
 
   return (
     <div ref={ref} className="relative">
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={t("changeLanguage")}

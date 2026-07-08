@@ -323,7 +323,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                 <div className="relative h-56 md:h-72 overflow-hidden">
                     <Image
                         src={post.coverImage || "/img/space-bg.jpg"}
-                        alt={post.title}
+                        alt=""
                         fill
                         className="object-cover"
                         priority
@@ -373,7 +373,7 @@ export default function BlogPostClient({ post, allPosts = [] }: BlogPostClientPr
                                 <div className="flex items-center gap-2">
                                     <Image
                                         src={post.author.avatar || "/assets/manifesto-ico.svg"}
-                                        alt={post.author.name}
+                                        alt=""
                                         width={32}
                                         height={32}
                                         className="rounded-full"

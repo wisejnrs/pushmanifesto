@@ -16,7 +16,6 @@ coverImage: "/blog/covers/draw-the-map-before-the-route.jpg"
 
 > A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness. — Alfred Korzybski, *Science and Sanity* (1933)
 
-# Draw the Map Before the Route
 
 Ask a team what they're building and you'll get a confident answer. Ask them what the organisation will be *able to do* when they're done — that it couldn't do before — and the room goes quiet. That silence is the gap between activity and capability, and it's where a lot of good pushes quietly go to waste.
 

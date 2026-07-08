@@ -14,7 +14,6 @@ status: "published"
 aiTranslated: true
 ---
 
-# Push Manifesto : embrasser le cheminement plutôt que la destination
 
 ## Écouter le podcast
 

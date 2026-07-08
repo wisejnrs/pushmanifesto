@@ -14,7 +14,6 @@ status: "published"
 aiTranslated: true
 ---
 
-# Push Manifesto: den Weg dem Ziel vorziehen
 
 ## Den Podcast anhören
 
